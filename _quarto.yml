@@ -1,0 +1,34 @@
+project:
+  type: website
+
+website:
+  sidebar:
+    style: "docked"
+    search: true
+    background: primary
+    contents:
+      - text: "Shine with quarto"
+        href: index.qmd
+      - section: "Getting Started"
+        contents: 
+        - R-Project.qmd
+        - git-hub.qmd
+      - text: "Basic documents"
+        contents: 
+        - html-layout.qmd
+        - code-chunk.qmd
+      - text: "Presentation documents"
+        contents: 
+        - html-presentation.qmd
+        - shiny-integration.qmd
+        
+
+format:
+  html:
+    theme:
+      - minty
+    css: styles.css
+    toc: true
+
+
+

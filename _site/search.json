@@ -1,0 +1,39 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
+    "section": "",
+    "text": "This course presents a brief introduction to quarto and shiny.\nQuarto is An open-source scientific and technical publishing system.\nShiny is an R package that allows for Easy web apps for data science without the compromises - No web development skills required",
+    "crumbs": [
+      "Shine with quarto"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html#locations",
+    "href": "index.html#locations",
+    "title": "",
+    "section": "Locations",
+    "text": "Locations\nLectures will be at the Department of Statistical Sciences in via Cesare Battisti 241 Padova, (https://maps.app.goo.gl/JMCthS2eZqWJEnmx8), in room SC20.\n\n\n\n\n\n\nLunch will be served at the University Mensa RistorEsu Nord Piovego in Viale Giuseppe Colombo 1, Padova https://maps.app.goo.gl/Y8ta2wHzbsdn2cMF8",
+    "crumbs": [
+      "Shine with quarto"
+    ]
+  },
+  {
+    "objectID": "index.html#time-schedule",
+    "href": "index.html#time-schedule",
+    "title": "",
+    "section": "Time schedule",
+    "text": "Time schedule",
+    "crumbs": [
+      "Shine with quarto"
+    ]
+  }
+]

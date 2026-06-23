@@ -1,0 +1,46 @@
+---
+title: ""
+execute: 
+  echo: false
+---
+
+This course presents a brief introduction to quarto and shiny. 
+
+[Quarto](https://quarto.org/) is *An open-source scientific and technical publishing system*. 
+
+[Shiny](https://shiny.posit.co/) is an R package that allows for *Easy web apps for data science without the compromises -  No web development skills required*
+
+:::{.callout-tip icon="false"}
+## Best thing 
+
+Quarto and Shiny can work with R, Python, Jupyter and other open source softwares. 
+
+Most importantly, shiny and quarto can be integrated, such that it is possible to develop interactive documents :)
+:::
+
+## Locations
+
+Lectures will be at the Department of Statistical Sciences in via Cesare Battisti 241 Padova, ([https://maps.app.goo.gl/JMCthS2eZqWJEnmx8](https://maps.app.goo.gl/JMCthS2eZqWJEnmx8)), in **room SC20**.
+
+```{r}
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap tiles
+  setView(lng = 11.885365425918087, lat = 45.40464995544754, zoom = 13) %>%
+  addMarkers(lng = 11.885365425918087, lat = 45.40464995544754, popup = "Department of Statistics")
+```
+
+Lunch will be served at the University Mensa RistorEsu Nord Piovego in Viale Giuseppe Colombo 1, Padova [https://maps.app.goo.gl/Y8ta2wHzbsdn2cMF8](https://maps.app.goo.gl/Y8ta2wHzbsdn2cMF8)
+
+```{r}
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap tiles
+  setView(lng =  11.890467829858775, 
+          lat = 45.41117121174326, zoom = 13) %>%
+  addMarkers(lng =  11.890467829858775, 
+             lat = 45.41117121174326, popup = "RistorEsu Nord Piovego")
+
+```
+
+## Time schedule 
