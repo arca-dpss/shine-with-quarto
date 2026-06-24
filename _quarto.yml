@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   sidebar:
@@ -11,7 +12,8 @@ website:
         href: index.qmd
       - section: "Getting Started"
         contents: 
-        - R-Project.qmd
+        - text: R project and basic settings
+          href: R-Project.qmd
         - git-hub.qmd
       - text: "Basic documents"
         contents: 

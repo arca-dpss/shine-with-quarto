@@ -1,5 +1,7 @@
 ---
-title: ""
+title: "Shine with quarto"
+subtitle: "The ARCA initiative: Unlocking psychological expertise for academic and business success"
+author: Ottavia M. Epifania
 execute: 
   echo: false
 ---

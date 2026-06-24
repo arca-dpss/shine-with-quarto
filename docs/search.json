@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "",
+    "title": "Shine with quarto",
     "section": "",
     "text": "This course presents a brief introduction to quarto and shiny.\nQuarto is An open-source scientific and technical publishing system.\nShiny is an R package that allows for Easy web apps for data science without the compromises - No web development skills required",
     "crumbs": [
@@ -12,7 +12,7 @@
   {
     "objectID": "index.html#locations",
     "href": "index.html#locations",
-    "title": "",
+    "title": "Shine with quarto",
     "section": "Locations",
     "text": "Locations\nLectures will be at the Department of Statistical Sciences in via Cesare Battisti 241 Padova, (https://maps.app.goo.gl/JMCthS2eZqWJEnmx8), in room SC20.\n\n\n\n\n\n\nLunch will be served at the University Mensa RistorEsu Nord Piovego in Viale Giuseppe Colombo 1, Padova https://maps.app.goo.gl/Y8ta2wHzbsdn2cMF8",
     "crumbs": [
@@ -22,7 +22,7 @@
   {
     "objectID": "index.html#time-schedule",
     "href": "index.html#time-schedule",
-    "title": "",
+    "title": "Shine with quarto",
     "section": "Time schedule",
     "text": "Time schedule",
     "crumbs": [
@@ -35,5 +35,148 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "R-Project.html",
+    "href": "R-Project.html",
+    "title": "R-Project",
+    "section": "",
+    "text": "R Markdown, next generation\nAll based on knitr to execute R code\n\nAnalyze. Share. Reproduce. You have a story to tell with data—tell it with Quarto.\n\nThis course presents the integration between RStudio and quarto. All the code in the executable code chunks are hence based in R:\n\nDownload R: https://cran.r-project.org/bin/windows/base/\nDownload RStudio: https://posit.co/download/rstudio-desktop/\n\nRMarkdown is the integrated markup language integrated within RStudio is the “predecessor” of quarto.\nMarkup languages such as quarto, markdown, html, latex, are programming languages where formatting is handled by chunk codes, named tags.\n\n\n\nFormat\nExtension\n\n\n\n\nMarkdown\n.md\n\n\nR Markdown\n.Rmd\n\n\nQuarto\n.qmd\n\n\n\n\nHTMLLaTeX\n\n\n\n\n\n\n\nHTML editor\n\n\n\n\n\n\n\n\n\n\n\nLaTex Editor\n\n\n\n\n\n\n\n\n\n\nWhat You See Is What You Get\nThe text is modified with built-in command, you can see immediately the changes:\n\n\n\n\n\nWord\n\n\n\n\n\n\n\nUsing knitr, it allows for integrating analyses, text, and graphs in a single document:\n\nReplicability\nTydiness\nConvenience\n\nCreate dynamic content with Python, R, Julia, and Observable",
+    "crumbs": [
+      "Getting Started",
+      "R project and basic settings"
+    ]
+  },
+  {
+    "objectID": "R-Project.html#quarto",
+    "href": "R-Project.html#quarto",
+    "title": "R-Project",
+    "section": "",
+    "text": "R Markdown, next generation\nAll based on knitr to execute R code\n\nAnalyze. Share. Reproduce. You have a story to tell with data—tell it with Quarto.\n\nThis course presents the integration between RStudio and quarto. All the code in the executable code chunks are hence based in R:\n\nDownload R: https://cran.r-project.org/bin/windows/base/\nDownload RStudio: https://posit.co/download/rstudio-desktop/\n\nRMarkdown is the integrated markup language integrated within RStudio is the “predecessor” of quarto.\nMarkup languages such as quarto, markdown, html, latex, are programming languages where formatting is handled by chunk codes, named tags.\n\n\n\nFormat\nExtension\n\n\n\n\nMarkdown\n.md\n\n\nR Markdown\n.Rmd\n\n\nQuarto\n.qmd\n\n\n\n\nHTMLLaTeX\n\n\n\n\n\n\n\nHTML editor\n\n\n\n\n\n\n\n\n\n\n\nLaTex Editor",
+    "crumbs": [
+      "Getting Started",
+      "R project and basic settings"
+    ]
+  },
+  {
+    "objectID": "R-Project.html#markup-langues-vs.-wysiwyg-languages",
+    "href": "R-Project.html#markup-langues-vs.-wysiwyg-languages",
+    "title": "R-Project",
+    "section": "",
+    "text": "What You See Is What You Get\nThe text is modified with built-in command, you can see immediately the changes:\n\n\n\n\n\nWord",
+    "crumbs": [
+      "Getting Started",
+      "R project and basic settings"
+    ]
+  },
+  {
+    "objectID": "R-Project.html#why",
+    "href": "R-Project.html#why",
+    "title": "R-Project",
+    "section": "",
+    "text": "Using knitr, it allows for integrating analyses, text, and graphs in a single document:\n\nReplicability\nTydiness\nConvenience\n\nCreate dynamic content with Python, R, Julia, and Observable",
+    "crumbs": [
+      "Getting Started",
+      "R-Project"
+    ]
+  },
+  {
+    "objectID": "R-Project.html#little-effort-great-consequences",
+    "href": "R-Project.html#little-effort-great-consequences",
+    "title": "R-Project",
+    "section": "",
+    "text": "Using knitr, it allows for integrating analyses, text, and graphs in a single document:\n\nReplicability\nTydiness\nConvenience\n\nCreate dynamic content with Python, R, Julia, and Observable",
+    "crumbs": [
+      "Getting Started",
+      "R project and basic settings"
+    ]
+  },
+  {
+    "objectID": "R-Project.html#create-an-r-project",
+    "href": "R-Project.html#create-an-r-project",
+    "title": "R-Project",
+    "section": "Create an R Project",
+    "text": "Create an R Project\nFrom File \\(\\rightarrow\\) New Project:\n\n\n\n\n\n\n\n\n\n\n\n(a) Step 1\n\n\n\n\n\n\n\n\n\n\n\n(b) Step 2\n\n\n\n\n\n\n\n\n\n\n\n(c) Step 3\n\n\n\n\n\n\n\nFigure 1: Create a new R Project in 3 steps\n\n\n\nFirst (Figure 1 (a)), declare whether a new folder should be created (New directory) or not (Existing Directory). Then (Figure 1 (b)), the type of project must be selected – for the time being, please stick with the basic project New Project. Finally (Figure 1 (c)), give a name to your project and make sure to tick the Open in new session option.\n\n\n\n\n\n\nDon’t worry\n\n\n\nThe project is completely empty – there are no subfolders nor files\n\n\nThe working directory has been automatically set to be within the R project:\n\ngetwd()\n\n[1] \"C:/Users/Ottavia/Documents/GitHub/shine-with-quarto\"\n\n\nIf you run the dir() function from your console (within the project), the resulting string would be empty.\n\n\n\n\n\n\n\n\nFigure 2: Project folder at the very beginning",
+    "crumbs": [
+      "Getting Started",
+      "R project and basic settings"
+    ]
+  },
+  {
+    "objectID": "R-Project.html#populate-the-project",
+    "href": "R-Project.html#populate-the-project",
+    "title": "R-Project",
+    "section": "Populate the project",
+    "text": "Populate the project\nCreate the sub-folders by using the New folder button\n\n\n\n\n\nCreate New Folder\n\n\n\n\nThe location of the project folder on your computer can be easily found by using the More button and selecting the Show folder in New Window option:\n\n\n\n\n\nOpen Folder on your computer\n\n\n\n\n\nCreate the very first quarto document\n\n\n\n\n\n\n\n\n\n\n\n(a) Inizitialize the document\n\n\n\n\n\n\n\n\n\n\n\n(b) Speicify the type of document and some data\n\n\n\n\n\n\n\nFigure 3: Create a new quarto document\n\n\n\nFigure 3 (a) initializes the creation of a new quarto document, while in Figure 3 (b) format of the document, as well as some of the elements that will populate the YAML (e.g., author and title) are defined. The default characteristics are the html document. Make sure to remove the tick from the Use visual markdown editor option.\n\nCompile quarto document\nThe source file can be compiled and rendered in the desired format:\n\n\n\n\n\n\n\n\n\nThe file can be compiled also using the key combination\nctrl + shift + k \nLeaving the default, the document will be compiled in HTML. Make sure to save the file as index (it will become clear later on)",
+    "crumbs": [
+      "Getting Started",
+      "R project and basic settings"
+    ]
+  },
+  {
+    "objectID": "R-Project.html#warning",
+    "href": "R-Project.html#warning",
+    "title": "R-Project",
+    "section": "WARNING!",
+    "text": "WARNING!\nPlease make sure to save the file as index (it will be useful later on)\n:::",
+    "crumbs": [
+      "Getting Started",
+      "R project and basic settings"
+    ]
+  },
+  {
+    "objectID": "git-hub.html",
+    "href": "git-hub.html",
+    "title": "Git Hub",
+    "section": "",
+    "text": "https://github.com/",
+    "crumbs": [
+      "Getting Started",
+      "Git Hub"
+    ]
+  },
+  {
+    "objectID": "git-hub.html#clone-an-existing-repository-i",
+    "href": "git-hub.html#clone-an-existing-repository-i",
+    "title": "Git Hub",
+    "section": "“Clone” an existing repository I",
+    "text": "“Clone” an existing repository I\nFrom GitHub desktop:\nAdd Local Repository \\(\\rightarrow\\) search for the directory of the R project to publish on GitHub",
+    "crumbs": [
+      "Getting Started",
+      "Git Hub"
+    ]
+  },
+  {
+    "objectID": "git-hub.html#clone-an-existing-repository-ii",
+    "href": "git-hub.html#clone-an-existing-repository-ii",
+    "title": "Git Hub",
+    "section": "“Clone” an existing repository II",
+    "text": "“Clone” an existing repository II\nOption: create a repository\n\n\n\n\n\n\n\n\n\nFlag the option “Initialize the repository with a README",
+    "crumbs": [
+      "Getting Started",
+      "Git Hub"
+    ]
+  },
+  {
+    "objectID": "git-hub.html#did-it-work",
+    "href": "git-hub.html#did-it-work",
+    "title": "Git Hub",
+    "section": "Did it work?",
+    "text": "Did it work?\nNavigate to you GitHub profile on https://github.com/ and to your repositories:",
+    "crumbs": [
+      "Getting Started",
+      "Git Hub"
+    ]
+  },
+  {
+    "objectID": "git-hub.html#the-repository-must-be-public",
+    "href": "git-hub.html#the-repository-must-be-public",
+    "title": "Git Hub",
+    "section": "The repository must be public",
+    "text": "The repository must be public",
+    "crumbs": [
+      "Getting Started",
+      "Git Hub"
+    ]
   }
 ]

@@ -1,1 +1,121 @@
 /* css styles */
+#title-block-header .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+/* Base font size */
+body {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+/* Main content padding */
+main {
+  padding: 2rem 3rem;
+}
+
+/* TOC styling */
+#TOC {
+  font-size: 0.9rem;
+  padding: 0.8rem 1rem;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+}
+
+#toc-title {
+  display: none;
+}
+
+#TOC a {
+  color: #2c3e50;
+  text-decoration: none;
+  padding: 0.2rem 0.5rem;
+  display: block;
+  border-radius: 4px;
+}
+
+#TOC a:hover {
+  background-color: #e9ecef;
+  color: #2c3e50;
+}
+
+#TOC .active {
+  background-color: #2c3e50;
+  color: #ffffff !important;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+
+/* Headings */
+h1 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Spacing */
+p { margin-bottom: 1.5rem; }
+
+ul, ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+li { margin-bottom: 0.8rem; }
+
+/* Callout */
+.callout-title-container,
+.callout-body,
+.callout strong,
+.callout b {
+  font-size: 1.1rem !important;
+}
+
+/* Code blocks */
+pre {
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  margin: 1.5rem 0;
+}
+
+/* Tables */
+table {
+  margin: 2rem 0;
+  font-size: 1.1rem;
+}
+
+th, td { padding: 1rem; }
+
+/* Blockquotes */
+blockquote {
+  font-size: 1.2rem !important;
+  font-style: italic;
+  color: #ffffff !important;
+  background-color: #2c3e56 !important;
+  padding: 2rem;
+  margin: 1rem 0;
+  border-radius: 16px;
+}
+
+/* Links */
+a { color: #3498c1; text-decoration: none; }
+a:hover { color: #3498db; text-decoration: underline; }
