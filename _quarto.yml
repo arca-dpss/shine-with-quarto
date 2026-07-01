@@ -29,8 +29,10 @@ website:
 format:
   html:
     theme:
-      - minty
-    css: styles.css
+      light: journal
+      dark: slate
+    page-layout: full
+    # css: styles.css
     toc: true
     number-sections: true
 
