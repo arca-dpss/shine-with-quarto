@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Git Hub</title>
+<title>GitHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,13 +39,13 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-209d9ab60904f1bb8f31161fafd02104.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-aab4890235fcc168c4da85bc8f7b2891.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -67,170 +67,107 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./R-Project.html">Getting Started</a></li><li class="breadcrumb-item"><a href="./git-hub.html">Git Hub</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Shine with quarto</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-getting-started" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Getting Started</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-getting-started">    
+        <li>
+    <a class="dropdown-item" href="./R-Project.html">
+ <span class="dropdown-text">R project and basic settings</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./git-hub.html">
+ <span class="dropdown-text">Deploy on GitHub</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-basics" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Basics</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-basics">    
+        <li>
+    <a class="dropdown-item" href="./html-layout.html">
+ <span class="dropdown-text">Layout</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./code-chunk.html">
+ <span class="dropdown-text">Code chunk</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./html-presentation.html">
+ <span class="dropdown-text">Presentation documents</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <span class="nav-link">
+<span class="menu-text">Shiny</span>
+    </span>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Shine with quarto</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Getting Started</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./R-Project.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">R project and basic settings</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./git-hub.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Git Hub</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true">
- <span class="menu-text">Basic documents</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./html-layout.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">html-document-layout</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./code-chunk.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">code-integration</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true">
- <span class="menu-text">Presentation documents</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./html-presentation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">html-presentation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./shiny-integration.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">shiny-integration</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#github-desktop" id="toc-github-desktop" class="nav-link active" data-scroll-target="#github-desktop">GitHub Desktop</a>
+  <li><a href="#create-a-github-account" id="toc-create-a-github-account" class="nav-link active" data-scroll-target="#create-a-github-account"><span class="header-section-number">1</span> Create a GitHub account</a></li>
+  <li><a href="#install-github-desktop" id="toc-install-github-desktop" class="nav-link" data-scroll-target="#install-github-desktop"><span class="header-section-number">2</span> Install GitHub Desktop</a></li>
+  <li><a href="#repositories-managment" id="toc-repositories-managment" class="nav-link" data-scroll-target="#repositories-managment"><span class="header-section-number">3</span> Repositories managment</a>
   <ul class="collapse">
-  <li><a href="#clone-an-existing-repository-i" id="toc-clone-an-existing-repository-i" class="nav-link" data-scroll-target="#clone-an-existing-repository-i">“Clone” an existing repository I</a></li>
-  <li><a href="#clone-an-existing-repository-ii" id="toc-clone-an-existing-repository-ii" class="nav-link" data-scroll-target="#clone-an-existing-repository-ii">“Clone” an existing repository II</a></li>
-  <li><a href="#did-it-work" id="toc-did-it-work" class="nav-link" data-scroll-target="#did-it-work">Did it work?</a></li>
-  <li><a href="#the-repository-must-be-public" id="toc-the-repository-must-be-public" class="nav-link" data-scroll-target="#the-repository-must-be-public">The repository must be public</a></li>
+  <li><a href="#create-new-repository" id="toc-create-new-repository" class="nav-link" data-scroll-target="#create-new-repository"><span class="header-section-number">3.1</span> Create new repository</a></li>
+  <li><a href="#add-existing-repository" id="toc-add-existing-repository" class="nav-link" data-scroll-target="#add-existing-repository"><span class="header-section-number">3.2</span> Add existing repository</a></li>
+  <li><a href="#publish-the-repositories" id="toc-publish-the-repositories" class="nav-link" data-scroll-target="#publish-the-repositories"><span class="header-section-number">3.3</span> Publish the repositories</a>
+  <ul class="collapse">
+  <li><a href="#commit-push" id="toc-commit-push" class="nav-link" data-scroll-target="#commit-push"><span class="header-section-number">3.3.1</span> <code>commit + push</code></a></li>
+  <li><a href="#licenses" id="toc-licenses" class="nav-link" data-scroll-target="#licenses"><span class="header-section-number">3.3.2</span> Licenses</a></li>
   </ul></li>
+  </ul></li>
+  <li><a href="#github-pages" id="toc-github-pages" class="nav-link" data-scroll-target="#github-pages"><span class="header-section-number">4</span> GitHub pages</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./R-Project.html">Getting Started</a></li><li class="breadcrumb-item"><a href="./git-hub.html">Git Hub</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Git Hub</h1>
+<h1 class="title">GitHub</h1>
 </div>
 
 
@@ -247,75 +184,337 @@ window.Quarto = {
 </header>
 
 
-<p><a href="https://github.com/" class="uri">https://github.com/</a></p>
-<section id="github-desktop" class="level1">
-<h1>GitHub Desktop</h1>
-<p><a href="https://desktop.github.com/">https://desktop.github.com/</a></p>
-<p><br></p>
-<div class="cell">
+<section id="create-a-github-account" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Create a GitHub account</h1>
+<p>Go to the GitHub website, available at <a href="https://github.com/" class="uri">https://github.com/</a></p>
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/ghMail.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption>GitHub landing page</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/ghMail1.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption>Enter your email</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/ghMailpwd.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption>Set your username and password (Please choose something that you can remember)</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Solve the CAPTCHA and submit</p>
+</section>
+<section id="install-github-desktop" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Install GitHub Desktop</h1>
+<p><a href="https://desktop.github.com/" class="uri">https://desktop.github.com/</a></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/ghDesk.png" class="img-fluid figure-img" width="640"></p>
+<figcaption>GitHub desktop landing page</figcaption>
 </figure>
 </div>
 </div>
 </div>
-<section id="clone-an-existing-repository-i" class="level2">
-<h2 class="anchored" data-anchor-id="clone-an-existing-repository-i">“Clone” an existing repository I</h2>
-<p>From GitHub desktop:</p>
-<p><strong>Add Local Repository</strong> <span class="math inline">\(\rightarrow\)</span> search for the directory of the R project to publish on GitHub</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="img/banner-git.png" class="img-fluid figure-img" style="width:80.0%"></p>
-</figure>
-</div>
-</div>
-</div>
+<p>Once the installer is download, follow the installation instruction. Sign in to your GitHub account</p>
 </section>
-<section id="clone-an-existing-repository-ii" class="level2">
-<h2 class="anchored" data-anchor-id="clone-an-existing-repository-ii">“Clone” an existing repository II</h2>
-<p>Option: <strong>create a repository</strong></p>
-<div class="cell" data-layout-align="center">
+<section id="repositories-managment" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Repositories managment</h1>
+<p>The GitHub repositories are the folders containing the R Project:</p>
+<section id="create-new-repository" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="create-new-repository"><span class="header-section-number">3.1</span> Create new repository</h2>
+<div class="cell fig-cap-location-top" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/clone-repo.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="688"></p>
+<p><img src="img/createNew.png" class="img-fluid figure-img" width="608"></p>
+<figcaption>Create a new repository that does exist yet</figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>Flag the option “Initialize the repository with a <code>README</code></p>
-</section>
-<section id="did-it-work" class="level2">
-<h2 class="anchored" data-anchor-id="did-it-work">Did it work?</h2>
-<p>Navigate to you GitHub profile on <a href="https://github.com/">https://github.com/</a> and to your repositories:</p>
-<div class="cell" data-layout-align="center">
+<p>This initializes a new GitHub repository, where you can provide different information concerning its characteristics</p>
+<div class="cell fig-cap-location-top" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/myGit.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="321"></p>
+<p><img src="img/repoDefinition.png" class="img-fluid figure-img" width="299"></p>
+<figcaption>Create a new repository that does exist yet</figcaption>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="the-repository-must-be-public" class="level2">
-<h2 class="anchored" data-anchor-id="the-repository-must-be-public">The repository must be public</h2>
-<div class="cell">
+<section id="add-existing-repository" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="add-existing-repository"><span class="header-section-number">3.2</span> Add existing repository</h2>
+<div class="cell fig-cap-location-top" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/addRepository.png" class="img-fluid figure-img" width="551"></p>
+<figcaption>Add an existing repository that does exist yet</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="publish-the-repositories" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="publish-the-repositories"><span class="header-section-number">3.3</span> Publish the repositories</h2>
+<p>Once a repository is added (either by adding an existing or creating a new one), it can be published and made available online for other people:</p>
+<div class="cell fig-cap-location-top" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/publish1.png" class="img-fluid figure-img" width="560"></p>
+<figcaption>Publish button</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>If you want your repository to be found by other users, remove the flag from the “Keep this code private”:</p>
+<div class="cell fig-cap-location-top" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/publish2.png" class="img-fluid figure-img" width="330"></p>
+<figcaption>Define the publication policies</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="commit-push" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="commit-push"><span class="header-section-number">3.3.1</span> <code>commit + push</code></h3>
+<p>Everything is ready for the commitment.</p>
+<ol type="1">
+<li>Select specific files and commit them. The commit message is mandatory! It is useful for your future self, just to remember the changes you made, when and possibly why.</li>
+</ol>
+<div class="cell fig-cap-location-top" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/commit1.png" class="img-fluid figure-img" width="716"></p>
+<figcaption>Select &amp; Commit</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li>The changes must be pushed to GitHub:</li>
+</ol>
+<div class="cell fig-cap-location-top" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/commit1.png" class="img-fluid figure-img" width="716"></p>
+<figcaption>Select &amp; Commit</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Check whether the changes are live on GitHub:</li>
+</ol>
+<div class="cell fig-cap-location-top" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/commit3.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>Check Commit</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="licenses" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="licenses"><span class="header-section-number">3.3.2</span> Licenses</h3>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+MIT
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Anyone can use, modify, distribute, and commercialize the software, provided that the original copyright notice and license text are included</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+GNU
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Anyone can use, modify, and distribute the software. Any derivative work or redistributed version must be released under the same GPL license and with source code available.</p>
+</div>
+</div>
+</div>
+<p>Summarizing the differences between the types of licences:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 59%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>MIT</th>
+<th>GNU GPL</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Can be used in proprietary software</td>
+<td>Derivative works must remain open source</td>
+</tr>
+<tr class="even">
+<td>Minimal restrictions</td>
+<td>Requires source code disclosure upon redistribution</td>
+</tr>
+<tr class="odd">
+<td>Maximizes flexibility and adoption</td>
+<td>Ensures openness is preserved</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="github-pages" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> GitHub pages</h1>
+<p>The code is shared online, but it cannot be seen as a document, but only as a raw html code.</p>
+<p>GitHub pages allows for hosting personal websites on the personal GitHub profiles, such as the html documents are rendered as document and not as code.</p>
+<p>Each repository can be set to host the GitHub pages by opening the settings page of the repository and navigating to the Pages section:</p>
+<div class="cell fig-cap-location-top" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/pages-git.png" class="img-fluid figure-img" width="1965"></p>
+<figcaption>GitHub pages settings</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The main setting for the GitHub pages regards the deployment.</p>
+<p>The <code>main</code> branch must be selected, and make sure that the folder for the deployment is set to <code>root</code>.</p>
+<p>This is to check whether the pages are actually active:</p>
+<div class="cell fig-cap-location-top" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/checkPages.png" class="img-fluid figure-img" width="482"></p>
+<figcaption>Instead of the green tick, you might see a yellow dot. It works as well!</figcaption>
+</figure>
+</div>
+</div>
+<p>GitHub pages is on!</p>
+</div>
+<p>To transform your pages in an actual website, you need a functioning url:</p>
+<div class="grid">
+<div class="g-col-6">
+<div class="cell fig-cap-location-top" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/setWebsite.png" class="img-fluid figure-img" width="847"></p>
+<figcaption>The red circle indicates the settings to be changed. The green rectangle indicates that the GitHub pages are online</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="g-col-6">
+<div class="cell fig-cap-location-top" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/setWebsite1.png" class="img-fluid figure-img" width="437"></p>
+<figcaption>Flag the option for setting the GitHub pages as default website option</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Now you have a working website!</p>
+<p>As you can see, the <code>index</code> file has been taken as the default landing page of your website.</p>
+<div class="cell fig-cap-location-top" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/runningWebsite.png" class="img-fluid figure-img" width="842"></p>
+<figcaption>Running website with default index page</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>This means that whatever changes you do in you <code>index</code> file, they will be reflected on your website landing page <strong>if and only if</strong> you commit &amp; push the local changes to GitHub, following the flow</p>
+<div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
-<figure class="figure">
-<p><img src="img/public.png" class="img-fluid figure-img" style="width:90.0%"></p>
-</figure>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+
+    A[Edit index.qmd]
+    B[Render Quarto Project]
+    C{Render successful?}
+    D[Fix errors]
+    E[Review website locally]
+    F[Open GitHub Desktop]
+    G[Review changes]
+    H[Commit changes]
+    I[Push to GitHub]
+    J[Repository updated]
+    K[Website updated]
+
+    A --&gt; B
+    B --&gt; C
+
+    C --&gt;|No| D
+    D --&gt; B
+
+    C --&gt;|Yes| E
+    E --&gt; F
+    F --&gt; G
+    G --&gt; H
+    H --&gt; I
+    I --&gt; J
+    J --&gt; K
+</pre>
+</div>
+<p></p></figure><p></p>
 </div>
 </div>
 </div>
+<p>This flow applies to any document you modify locally.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

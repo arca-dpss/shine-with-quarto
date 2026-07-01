@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>html-document-layout</title>
+<title>HTML document: Layout</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -39,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-209d9ab60904f1bb8f31161fafd02104.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b1c8946065316e3c68fe390f3ff2008f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -68,11 +123,40 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar docked slimcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -81,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./html-layout.html">Basic documents</a></li><li class="breadcrumb-item"><a href="./html-layout.html">html-document-layout</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./html-layout.html">Basic documents</a></li><li class="breadcrumb-item"><a href="./html-layout.html">HTML document: Layout</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -119,13 +203,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./R-Project.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">R-Project</span></a>
+ <span class="menu-text">R project and basic settings</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./git-hub.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">git-hub</span></a>
+ <span class="menu-text">GitHub</span></a>
   </div>
 </li>
       </ul>
@@ -142,13 +226,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./html-layout.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">html-document-layout</span></a>
+ <span class="menu-text">HTML document: Layout</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./code-chunk.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">code-integration</span></a>
+ <span class="menu-text">Code integration</span></a>
   </div>
 </li>
       </ul>
@@ -181,15 +265,51 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#yaml" id="toc-yaml" class="nav-link active" data-scroll-target="#yaml"><span class="header-section-number">1</span> YAML</a>
+  <ul class="collapse">
+  <li><a href="#editor" id="toc-editor" class="nav-link" data-scroll-target="#editor"><span class="header-section-number">1.1</span> <code>editor</code></a></li>
+  <li><a href="#toc" id="toc-toc" class="nav-link" data-scroll-target="#toc"><span class="header-section-number">1.4</span> <code>toc</code></a></li>
+  <li><a href="#themes" id="toc-themes" class="nav-link" data-scroll-target="#themes"><span class="header-section-number">1.5</span> Themes</a></li>
+  <li><a href="#sec-lang" id="toc-sec-lang" class="nav-link" data-scroll-target="#sec-lang"><span class="header-section-number">1.8</span> <code>lang</code></a></li>
+  </ul></li>
+  <li><a href="#markdown-formatting" id="toc-markdown-formatting" class="nav-link" data-scroll-target="#markdown-formatting"><span class="header-section-number">2</span> Markdown formatting</a>
+  <ul class="collapse">
+  <li><a href="#headings" id="toc-headings" class="nav-link" data-scroll-target="#headings"><span class="header-section-number">2.1</span> Headings</a></li>
+  <li><a href="#text-formatting" id="toc-text-formatting" class="nav-link" data-scroll-target="#text-formatting"><span class="header-section-number">2.2</span> Text Formatting</a>
+  <ul class="collapse">
+  <li><a href="#formatting" id="toc-formatting" class="nav-link" data-scroll-target="#formatting"><span class="header-section-number">2.2.1</span> Formatting</a></li>
+  <li><a href="#supersub-script" id="toc-supersub-script" class="nav-link" data-scroll-target="#supersub-script"><span class="header-section-number">2.2.2</span> Super/sub script</a></li>
+  <li><a href="#in-line-code" id="toc-in-line-code" class="nav-link" data-scroll-target="#in-line-code"><span class="header-section-number">2.2.3</span> In line code</a></li>
+  </ul></li>
+  <li><a href="#links-and-images" id="toc-links-and-images" class="nav-link" data-scroll-target="#links-and-images"><span class="header-section-number">2.3</span> Links and images</a></li>
+  <li><a href="#lists" id="toc-lists" class="nav-link" data-scroll-target="#lists"><span class="header-section-number">2.4</span> Lists</a></li>
+  <li><a href="#math" id="toc-math" class="nav-link" data-scroll-target="#math"><span class="header-section-number">2.5</span> Math</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">2.6</span> References</a></li>
+  <li><a href="#citation-keys" id="toc-citation-keys" class="nav-link" data-scroll-target="#citation-keys"><span class="header-section-number">2.7</span> Citation keys</a></li>
+  </ul></li>
+  <li><a href="#document-layout" id="toc-document-layout" class="nav-link" data-scroll-target="#document-layout"><span class="header-section-number">3</span> Document layout</a>
+  <ul class="collapse">
+  <li><a href="#columns" id="toc-columns" class="nav-link" data-scroll-target="#columns"><span class="header-section-number">3.1</span> Columns</a></li>
+  <li><a href="#sec-grid" id="toc-sec-grid" class="nav-link" data-scroll-target="#sec-grid"><span class="header-section-number">3.2</span> Grid</a></li>
+  <li><a href="#tabset-panel" id="toc-tabset-panel" class="nav-link" data-scroll-target="#tabset-panel"><span class="header-section-number">3.3</span> Tabset panel</a></li>
+  <li><a href="#margins" id="toc-margins" class="nav-link" data-scroll-target="#margins"><span class="header-section-number">3.4</span> Margins</a></li>
+  <li><a href="#callout-blocks" id="toc-callout-blocks" class="nav-link" data-scroll-target="#callout-blocks"><span class="header-section-number">3.5</span> Callout blocks</a></li>
+  </ul></li>
+  <li><a href="#sec-cross" id="toc-sec-cross" class="nav-link" data-scroll-target="#sec-cross"><span class="header-section-number">4</span> Cross referencing</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./html-layout.html">Basic documents</a></li><li class="breadcrumb-item"><a href="./html-layout.html">html-document-layout</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./html-layout.html">Basic documents</a></li><li class="breadcrumb-item"><a href="./html-layout.html">HTML document: Layout</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">html-document-layout</h1>
+<h1 class="title">HTML document: Layout</h1>
 </div>
 
 
@@ -206,8 +326,733 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="yaml" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> YAML</h1>
+<p>The overall appearance and behavior of the document is specified in the YAML.</p>
+<p>Importantly the YAML defines the extension of the file rendering:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+HTML default YAML
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<pre><code>---
+title: "Untitled"
+format: html
+editor: visual
+---</code></pre>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+PDF default YAML
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<pre><code>---
+title: "Untitled"
+format: pdf
+editor: visual
+---</code></pre>
+</div>
+</div>
+<section id="editor" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="editor"><span class="header-section-number">1.1</span> <code>editor</code></h2>
+<p>Quarto (as well as as RMarkdown) allows for visualizing the text editor as a WYSIWYG text editor:</p>
+</section>
+<div class="grid">
+<section id="editor-source" class="level2 g-col-6" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="editor-source"><span class="header-section-number">1.2</span> <code>editor: source</code></h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="img/q_source.png" class="img-fluid figure-img" width="954"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="editor-visual" class="level2 g-col-6" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="editor-visual"><span class="header-section-number">1.3</span> <code>editor: visual</code></h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="img/q_visual.png" class="img-fluid figure-img" width="957"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Although at the very beginning, the use of the visual editor might be tempting, don’t indulge! Using the source editor is an investiment in your future programming skills :)</p>
+</div>
+</div>
+</div>
+<section id="toc" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="toc"><span class="header-section-number">1.4</span> <code>toc</code></h2>
+<p><strong>T</strong>able <strong>O</strong>f <strong>C</strong>contents: Defines the index of your document and its associated characteristics (e.g., where it is located):</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "My quarto file"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Jane Doe"</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> today</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true                </span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-title: My contents   </span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-location: left       </span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Be mindful of the indentation!! With the wrong indentation, the YAML breaks down and the document will not compile.</p>
+<ul>
+<li><p><code>toc: true</code>: Set the table of contents<br>
+</p></li>
+<li><p><code>toc-title: My contents</code>: Define the title of the toc</p></li>
+<li><p><code>toc-location: left</code>: Define the position of the toc (options: <code>left</code>, <code>right</code>, <code>body</code>)</p></li>
+</ul>
+</section>
+<section id="themes" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="themes"><span class="header-section-number">1.5</span> Themes</h2>
+<p>The default theme of the document can be modified with the predefined <a href="https://quarto.org/docs/output-formats/html-themes.html">themes</a></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "My quarto file"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Jane Doe"</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> today</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true                   </span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-title: My contents   </span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-location: left</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co">    theme: superhero  </span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">    fontsize: 32px    </span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="an">lang:</span><span class="co"> it                     </span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The theme can be defined with the <code>theme: specific_theme</code> in the YAML. Further customization can be brought with other YAML arguments (e.g.,<code>fontsize</code>) or with specific <code>css</code> settings</p>
+<p>The theme can adapt to specific settings, such as whether you want both ligth and dark theme:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co">    theme:</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co">     light: minty</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co">     dark: superhero</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<div class="grid">
+<section id="day" class="level2 g-col-6" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="day"><span class="header-section-number">1.6</span> Day</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/light.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="night" class="level2 g-col-6" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="night"><span class="header-section-number">1.7</span> Night</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/dark.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</div>
+<section id="sec-lang" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="sec-lang"><span class="header-section-number">1.8</span> <code>lang</code></h2>
+<p>Set the language for your document. This is not the autocorrect!</p>
+<p>It sets the language to be used in the cross-referencing of your document (see <a href="#sec-cross" class="quarto-xref">Section&nbsp;4</a>).</p>
+<div class="[.columns]">
+<div class="column" style="width:48%;">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Language</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>English</td>
+<td><code>en</code></td>
+</tr>
+<tr class="even">
+<td>Chinese</td>
+<td><code>zh</code></td>
+</tr>
+<tr class="odd">
+<td>Spanish</td>
+<td><code>es</code></td>
+</tr>
+<tr class="even">
+<td>French</td>
+<td><code>fr</code></td>
+</tr>
+<tr class="odd">
+<td>Japanese</td>
+<td><code>ja</code></td>
+</tr>
+<tr class="even">
+<td>German</td>
+<td><code>de</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="column" style="width:48%;">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Language</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Portuguese</td>
+<td><code>pt</code></td>
+</tr>
+<tr class="even">
+<td>Russian</td>
+<td><code>ru</code></td>
+</tr>
+<tr class="odd">
+<td>Czech</td>
+<td><code>cs</code></td>
+</tr>
+<tr class="even">
+<td>Finnish</td>
+<td><code>fi</code></td>
+</tr>
+<tr class="odd">
+<td>Dutch</td>
+<td><code>nl</code></td>
+</tr>
+<tr class="even">
+<td>Italian</td>
+<td><code>it</code></td>
+</tr>
+<tr class="odd">
+<td>Polish</td>
+<td><code>pl</code></td>
+</tr>
+<tr class="even">
+<td>Korean</td>
+<td><code>ko</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+<section id="markdown-formatting" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Markdown formatting</h1>
+<section id="headings" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="headings"><span class="header-section-number">2.1</span> Headings</h2>
+<p>The number of <code>#</code> defines the level of the headings (the lower the number of <code>#</code>, the higher the level)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># First level (H1)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Section</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Second level (H2)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Subsection</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">### Third level (H3)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Sub-subsection</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Fourth level (H4)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Paragraph</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">##### Fifth level (H5)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>I frankly have never used that</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">##### Sixth level (H6)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>I have no idea</p>
+</section>
+<section id="text-formatting" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="text-formatting"><span class="header-section-number">2.2</span> Text Formatting</h2>
+<p>The text formatting is defined through specific tags:</p>
+<section id="formatting" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="formatting"><span class="header-section-number">2.2.1</span> Formatting</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>*italics*, **bold**, ***bold italics*** </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><em>italics</em>, <strong>bold</strong>, <strong><em>bold italics</em></strong></p>
+</section>
+<section id="supersub-script" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="supersub-script"><span class="header-section-number">2.2.2</span> Super/sub script</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>textsuperscirpt^2^, textunderscript~2~</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>textsuperscirpt<sup>2</sup>, textunderscript<sub>2</sub></p>
+</section>
+<section id="in-line-code" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="in-line-code"><span class="header-section-number">2.2.3</span> In line code</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="in">`this is myinline code`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><code>this is myinline code</code></p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Code chunk
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>There will be a specific lesson on the code chunks</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="links-and-images" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="links-and-images"><span class="header-section-number">2.3</span> Links and images</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ot">&lt;https://github.com/&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><a href="https://github.com/" class="uri">https://github.com/</a></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>My link is <span class="co">[</span><span class="ot">here</span><span class="co">](https://github.com/)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>My link is <a href="https://github.com/">here</a></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="al">![This is an image](img/picture.jpg)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="fig-cama" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cama-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/picture.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cama-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: This is an image
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="lists" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="lists"><span class="header-section-number">2.4</span> Lists</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Main Unordered List</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="ss">  + </span>First sub-item</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="ss">  + </span>Second sub-item </span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>It's getting weird</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Main Unordered List
+<ul>
+<li>First sub-item</li>
+<li>Second sub-item
+<ul>
+<li>It’s getting weird</li>
+</ul></li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Main ordered list</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Second item</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>   i) First sub-item 1</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>      A.  First sub-sub-item 1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol type="1">
+<li>Main ordered list</li>
+<li>Second item
+<ol type="i">
+<li>First sub-item 1
+<ol type="A">
+<li>First sub-sub-item 1</li>
+</ol></li>
+</ol></li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> First things first 1</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Second things second 2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul class="task-list">
+<li><label><input type="checkbox">First things first 1</label></li>
+<li><label><input type="checkbox">Second things second 2</label></li>
+</ul>
+</section>
+<section id="math" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="math"><span class="header-section-number">2.5</span> Math</h2>
+<p>In-line math:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>This is an in-line equation $y = \beta_0 + \beta_1 X + \varepsilon$</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>This is an in-line equation <span class="math inline">\(y = \beta_0 + \beta_1 X + \varepsilon\)</span></p>
+<p>Math math:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>This is an  equation $$z = \dfrac{\bar{x} -\mu}{\sigma}$$</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>This is an equation <span class="math display">\[z = \dfrac{\bar{x} -\mu}{\sigma}\]</span></p>
+</section>
+<section id="references" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="references"><span class="header-section-number">2.6</span> References</h2>
+<p>Define the path of the bib file in the YAML</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">...</span><span class="co">]</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>bibliography: bib/references.bib</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Then set your file with <code>.bib</code> extension. This file can be created with any text editor, including <code>RStudio</code>.</p>
+<p>To use RStudio as a text editor&gt;</p>
+<ol type="1">
+<li><p>Open a new script:</p>
+<p>shift + ctrl + n</p></li>
+<li><p>Set it to be a text file:</p></li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/text-file.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="406"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Prepare bigliography</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a><span class="sc">@</span>Manual{rsoft,</span>
+<span id="cb24-2"><a href="#cb24-2"></a>    title <span class="ot">=</span> {R<span class="sc">:</span> A Language and Environment <span class="cf">for</span> Statistical Computing},</span>
+<span id="cb24-3"><a href="#cb24-3"></a>    author <span class="ot">=</span> {{R Core Team}},</span>
+<span id="cb24-4"><a href="#cb24-4"></a>    organization <span class="ot">=</span> {R Foundation <span class="cf">for</span> Statistical Computing},</span>
+<span id="cb24-5"><a href="#cb24-5"></a>    address <span class="ot">=</span> {Vienna, Austria},</span>
+<span id="cb24-6"><a href="#cb24-6"></a>    year <span class="ot">=</span> {<span class="dv">2025</span>},</span>
+<span id="cb24-7"><a href="#cb24-7"></a>    url <span class="ot">=</span> {https<span class="sc">:</span><span class="er">//</span>www.R<span class="sc">-</span>project.org<span class="sc">/</span>}</span>
+<span id="cb24-8"><a href="#cb24-8"></a>}</span>
+<span id="cb24-9"><a href="#cb24-9"></a><span class="sc">@</span>Book{ggplot,</span>
+<span id="cb24-10"><a href="#cb24-10"></a>    author <span class="ot">=</span> {Hadley Wickham},</span>
+<span id="cb24-11"><a href="#cb24-11"></a>    title <span class="ot">=</span> {ggplot2<span class="sc">:</span> Elegant Graphics <span class="cf">for</span> Data Analysis},</span>
+<span id="cb24-12"><a href="#cb24-12"></a>    publisher <span class="ot">=</span> {Springer<span class="sc">-</span>Verlag New York},</span>
+<span id="cb24-13"><a href="#cb24-13"></a>    year <span class="ot">=</span> {<span class="dv">2016</span>},</span>
+<span id="cb24-14"><a href="#cb24-14"></a>    isbn <span class="ot">=</span> {<span class="dv">978-3-319-24277-4</span>},</span>
+<span id="cb24-15"><a href="#cb24-15"></a>    url <span class="ot">=</span> {https<span class="sc">:</span><span class="er">//</span>ggplot2.tidyverse.org}</span>
+<span id="cb24-16"><a href="#cb24-16"></a>}</span>
+<span id="cb24-17"><a href="#cb24-17"></a><span class="sc">@</span>article{epifania2024,</span>
+<span id="cb24-18"><a href="#cb24-18"></a>  title<span class="ot">=</span>{A guided tutorial on linear mixed<span class="sc">-</span>effects models <span class="cf">for</span> the analysis of accuracies and response times <span class="cf">in</span> experiments with fully crossed design.},</span>
+<span id="cb24-19"><a href="#cb24-19"></a>  author<span class="ot">=</span>{Epifania, Ottavia M and Anselmi, Pasquale and Robusto, Egidio},</span>
+<span id="cb24-20"><a href="#cb24-20"></a>  journal<span class="ot">=</span>{Psychological Methods},</span>
+<span id="cb24-21"><a href="#cb24-21"></a>  year<span class="ot">=</span>{<span class="dv">2024</span>},</span>
+<span id="cb24-22"><a href="#cb24-22"></a>  publisher<span class="ot">=</span>{American Psychological Association}, </span>
+<span id="cb24-23"><a href="#cb24-23"></a>  doi<span class="ot">=</span>{https<span class="sc">:</span><span class="er">//</span>doi.org<span class="sc">/</span><span class="fl">10.1037</span><span class="sc">/</span>met0000708}</span>
+<span id="cb24-24"><a href="#cb24-24"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Mendeley, Zotero and similar software have built-in function for exporting the bib file. Read the related documentation</p>
+<p>To call a reference:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>@citaton-key</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="citation-keys" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="citation-keys"><span class="header-section-number">2.7</span> Citation keys</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 49%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Key</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>@ggplot</code> does this</td>
+<td>Wickman (2016) does this</td>
+</tr>
+<tr class="even">
+<td><code>ggplot2 is an interesting package [@ggplot2]</code></td>
+<td>ggplot2 is an interesting package (Wickman, 2016)</td>
+</tr>
+<tr class="odd">
+<td><code>bla bla bla [@epifania2024; @ggplot2]</code></td>
+<td>bla bla bla (Epifania et al., 2024; Wickman, 2016)</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="document-layout" class="level1 page-columns page-full" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Document layout</h1>
+<section id="columns" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="columns"><span class="header-section-number">3.1</span> Columns</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>:::: {.columns}</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>::: {.column width="40%"}</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>I want some text in the left column</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>::: {.column width="60%"}</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>And a picture in the right one </span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>::::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>I want some text in the left column</p>
+</div><div class="column" style="width:60%;">
+<p>And a picture in the right one</p>
+</div>
+</div>
+<p>The columns are most convenient in presentation files, while the grid (see <a href="#sec-grid" class="quarto-xref">Section&nbsp;3.2</a>) is the besty option for changing the layout of a text document</p>
+</section>
+<section id="sec-grid" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="sec-grid"><span class="header-section-number">3.2</span> Grid</h2>
+<p>The document length is organized in 12 columns of equal width. This allows for a convenient and flexible environment for aligning the content.</p>
+<p>The margins (left and right) are not counted within the 12-column space:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>::: {.grid}</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>::: {.g-col-3}</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>Everything is fine</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>::: {.g-col-2}</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>until</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>::: </span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>::: {.g-col-5}</span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>the sum of the grid length is equal (or inferior) to 12</span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>::: </span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="grid">
+<div class="g-col-3">
+<p>Everything is fine</p>
+</div>
+<div class="g-col-2">
+<p>until</p>
+</div>
+<div class="g-col-5">
+<p>the sum of the grid length is equal (or inferior) to 12</p>
+</div>
+</div>
+</section>
+<section id="tabset-panel" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="tabset-panel"><span class="header-section-number">3.3</span> Tabset panel</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>::: {.panel-tabset}</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## Aim</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>Here I present the aim of the study </span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Methods</span></span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>Here I present the methods used to pursue the aim</span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## Results</span></span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a>And here I present the results</span>
+<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Aim</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Methods</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Results</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Here I present the aim of the study</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Here I present the methods used to pursue the aim</p>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>And here I present the results</p>
+</div>
+</div>
+</div>
+</section>
+<section id="margins" class="level2 page-columns page-full" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="margins"><span class="header-section-number">3.4</span> Margins</h2>
+<p>Allows for placing images, code, references or equations in the margin of a document</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>For instance, I'm writing a document about peacocks, and I want a picture of a peacock and a little bit of text in the margin of the document, aligned with this text.</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>::: {.column-margin}</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>I want this picture displayed in the margin </span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a><span class="al">![](img/peacock.png)</span></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>For instance, I’m writing a document about peacocks, and I want a picture of a peacock and a little bit of text in the margin of the document, aligned with this text.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>I want this picture displayed in the margin</p>
+<p><img src="img/peacock.png" class="img-fluid"></p>
+</div></div><p>Even references can be placed in the margin, such that they appear alongside the text where they are cited.</p>
+<p>Starting with the right settings in the YAML:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="an">bibliography:</span><span class="co"> biblio.bib</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="an">reference-location:</span><span class="co"> margin</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="an">citation-location:</span><span class="co"> margin</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>These lines of code force the citations to appear in the right margin. The citation key can happen as usual.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>I want to cite the <span class="in">`ggplot2`</span> package because it is the best package ever <span class="co">[</span><span class="ot">@ggplot2</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>I want to cite the <code>ggplot2</code> package because it is the best package ever <span class="citation" data-cites="ggplot2">(<a href="#ref-ggplot2" role="doc-biblioref">Wickham 2016</a>)</span></p>
+<div class="no-row-height column-margin column-container"><div id="ref-ggplot2" class="csl-entry" role="listitem">
+Wickham, Hadley. 2016. <em>Ggplot2: Elegant Graphics for Data Analysis</em>. Springer-Verlag New York. <a href="https://ggplot2.tidyverse.org">https://ggplot2.tidyverse.org</a>.
+</div></div></section>
+<section id="callout-blocks" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="callout-blocks"><span class="header-section-number">3.5</span> Callout blocks</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip}</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="fu">## Title of the tip</span></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>These are my two cents for you</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>:::{.callout-note collapse=true}</span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## Two cents</span></span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a>These are my two cents for you</span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a>:::{.callout-warning icon=false}</span>
+<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pay attention</span></span>
+<span id="cb32-15"><a href="#cb32-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-16"><a href="#cb32-16" aria-hidden="true" tabindex="-1"></a>Please mind the gap</span>
+<span id="cb32-17"><a href="#cb32-17" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb32-18"><a href="#cb32-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-19"><a href="#cb32-19" aria-hidden="true" tabindex="-1"></a>:::{.callout-caution}</span>
+<span id="cb32-20"><a href="#cb32-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## Danger!</span></span>
+<span id="cb32-21"><a href="#cb32-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-22"><a href="#cb32-22" aria-hidden="true" tabindex="-1"></a>This is dangerous!</span>
+<span id="cb32-23"><a href="#cb32-23" aria-hidden="true" tabindex="-1"></a>:::  </span>
+<span id="cb32-24"><a href="#cb32-24" aria-hidden="true" tabindex="-1"></a>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Title of the tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>These are my two cents for you</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Two cents
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>These are my two cents for you</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Pay attention
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Please mind the gap</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Danger!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is dangerous!</p>
+</div>
+</div>
+</section>
+</section>
+<section id="sec-cross" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Cross referencing</h1>
+<p>Everything in quarto can be cross-referenced with the correct key.</p>
+<p>At this page <a href="https://quarto.org/docs/authoring/cross-references.html" class="uri">https://quarto.org/docs/authoring/cross-references.html</a> you can find all the details and help for a correct use of cross-referencing.</p>
+<div class="grid">
+<div class="g-col-6">
+<p>Label definition in the object to be referenced</p>
+<pre><code>{#obj-label}</code></pre>
+</div>
+<div class="g-col-6">
+<p>Label referencing in text</p>
+<pre><code>@obj-label</code></pre>
+</div>
+</div>
+<p>Remember that the cross reference label depends on the language that has been set in the YAML (<a href="#sec-lang" class="quarto-xref">Section&nbsp;1.8</a>).</p>
+<p>In <a href="#fig-cama" class="quarto-xref">Figure&nbsp;1</a> there’s a nice chameleon.</p>
+<p>In <a href="#eq-reg" class="quarto-xref">Equation&nbsp;1</a> we have an equation.</p>
+<p><span id="eq-reg"><span class="math display">\[y = \beta_0 + \beta_1X_1 + \varepsilon \tag{1}\]</span></span></p>
+<p><a href="#sec-lang" class="quarto-xref">Section&nbsp;1.8</a> present the language definition throughout a document. Sections, subsections etc. are all cross-referenced with the prefix <code>sec</code></p>
+<p>It is also possible to cross reference R code, tables, and graphical output obtained from R code. These options are presented in the Code Chunk section.</p>
 
 
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -550,25 +1395,64 @@ ul.task-list li input[type="checkbox"] {
           }
         };
       }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
+        const annoteTargets = window.document.querySelectorAll('.code-annotation-anchor');
+        for (let i=0; i<annoteTargets.length; i++) {
+          const annoteTarget = annoteTargets[i];
+          const targetCell = annoteTarget.getAttribute("data-target-cell");
+          const targetAnnotation = annoteTarget.getAttribute("data-target-annotation");
+          const contentFn = () => {
+            const content = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+            if (content) {
+              const tipContent = content.cloneNode(true);
+              tipContent.classList.add("code-annotation-tip-content");
+              return tipContent.outerHTML;
             }
-          });
+          }
+          const config = {
+            allowHTML: true,
+            content: contentFn,
+            onShow: (instance) => {
+              selectCodeLines(instance.reference);
+              instance.reference.classList.add('code-annotation-active');
+              window.tippy.hideAll();
+            },
+            onHide: (instance) => {
+              unselectCodeLines();
+              instance.reference.classList.remove('code-annotation-active');
+            },
+            maxWidth: 300,
+            delay: [50, 0],
+            duration: [200, 0],
+            offset: [5, 10],
+            arrow: true,
+            appendTo: function(el) {
+              return el.parentElement.parentElement.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'quarto',
+            placement: 'right',
+            popperOptions: {
+              modifiers: [
+              {
+                name: 'flip',
+                options: {
+                  flipVariations: false, // true by default
+                  allowedAutoPlacements: ['right'],
+                  fallbackPlacements: ['right', 'top', 'top-start', 'top-end', 'bottom', 'bottom-start', 'bottom-end', 'left'],
+                },
+              },
+              {
+                name: 'preventOverflow',
+                options: {
+                  mainAxis: false,
+                  altAxis: false
+                }
+              }
+              ]        
+            }      
+          };
+          window.tippy(annoteTarget, config); 
         }
     const findCites = (el) => {
       const parentEl = el.parentElement;

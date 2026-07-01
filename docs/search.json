@@ -4,30 +4,21 @@
     "href": "index.html",
     "title": "Shine with quarto",
     "section": "",
-    "text": "This course presents a brief introduction to quarto and shiny.\nQuarto is An open-source scientific and technical publishing system.\nShiny is an R package that allows for Easy web apps for data science without the compromises - No web development skills required",
-    "crumbs": [
-      "Shine with quarto"
-    ]
+    "text": "This course presents a brief introduction to quarto and shiny.\nQuarto is An open-source scientific and technical publishing system.\nShiny is an R package that allows for Easy web apps for data science without the compromises - No web development skills required"
   },
   {
     "objectID": "index.html#locations",
     "href": "index.html#locations",
     "title": "Shine with quarto",
-    "section": "Locations",
-    "text": "Locations\nLectures will be at the Department of Statistical Sciences in via Cesare Battisti 241 Padova, (https://maps.app.goo.gl/JMCthS2eZqWJEnmx8), in room SC20.\n\n\n\n\n\n\nLunch will be served at the University Mensa RistorEsu Nord Piovego in Viale Giuseppe Colombo 1, Padova https://maps.app.goo.gl/Y8ta2wHzbsdn2cMF8",
-    "crumbs": [
-      "Shine with quarto"
-    ]
+    "section": "1 Locations",
+    "text": "1 Locations\nLectures will be at the Department of Statistical Sciences in via Cesare Battisti 241 Padova, (https://maps.app.goo.gl/JMCthS2eZqWJEnmx8), in room SC20.\n\n\n\n\n\n\nLunch will be served at the University Mensa RistorEsu Nord Piovego in Viale Giuseppe Colombo 1, Padova https://maps.app.goo.gl/Y8ta2wHzbsdn2cMF8"
   },
   {
     "objectID": "index.html#time-schedule",
     "href": "index.html#time-schedule",
     "title": "Shine with quarto",
-    "section": "Time schedule",
-    "text": "Time schedule",
-    "crumbs": [
-      "Shine with quarto"
-    ]
+    "section": "2 Time schedule",
+    "text": "2 Time schedule"
   },
   {
     "objectID": "about.html",
@@ -41,33 +32,21 @@
     "href": "R-Project.html",
     "title": "R-Project",
     "section": "",
-    "text": "R Markdown, next generation\nAll based on knitr to execute R code\n\nAnalyze. Share. Reproduce. You have a story to tell with data—tell it with Quarto.\n\nThis course presents the integration between RStudio and quarto. All the code in the executable code chunks are hence based in R:\n\nDownload R: https://cran.r-project.org/bin/windows/base/\nDownload RStudio: https://posit.co/download/rstudio-desktop/\n\nRMarkdown is the integrated markup language integrated within RStudio is the “predecessor” of quarto.\nMarkup languages such as quarto, markdown, html, latex, are programming languages where formatting is handled by chunk codes, named tags.\n\n\n\nFormat\nExtension\n\n\n\n\nMarkdown\n.md\n\n\nR Markdown\n.Rmd\n\n\nQuarto\n.qmd\n\n\n\n\nHTMLLaTeX\n\n\n\n\n\n\n\nHTML editor\n\n\n\n\n\n\n\n\n\n\n\nLaTex Editor\n\n\n\n\n\n\n\n\n\n\nWhat You See Is What You Get\nThe text is modified with built-in command, you can see immediately the changes:\n\n\n\n\n\nWord\n\n\n\n\n\n\n\nUsing knitr, it allows for integrating analyses, text, and graphs in a single document:\n\nReplicability\nTydiness\nConvenience\n\nCreate dynamic content with Python, R, Julia, and Observable",
-    "crumbs": [
-      "Getting Started",
-      "R project and basic settings"
-    ]
+    "text": "R Markdown, next generation\nAll based on knitr to execute R code\n\nAnalyze. Share. Reproduce. You have a story to tell with data—tell it with Quarto.\n\nThis course presents the integration between RStudio and quarto. All the code in the executable code chunks are hence based in R:\n\nDownload R: https://cran.r-project.org/bin/windows/base/\nDownload RStudio: https://posit.co/download/rstudio-desktop/\n\nRMarkdown is the integrated markup language integrated within RStudio is the “predecessor” of quarto.\nMarkup languages such as quarto, markdown, html, latex, are programming languages where formatting is handled by chunk codes, named tags.\n\n\n\nFormat\nExtension\n\n\n\n\nMarkdown\n.md\n\n\nR Markdown\n.Rmd\n\n\nQuarto\n.qmd\n\n\n\n\nHTMLLaTeX\n\n\n\n\n\n\n\nHTML editor\n\n\n\n\n\n\n\n\n\n\n\nLaTex Editor\n\n\n\n\n\n\n\n\n\n\nWhat You See Is What You Get\nThe text is modified with built-in command, you can see immediately the changes:\n\n\n\n\n\nWord\n\n\n\n\n\n\n\nUsing knitr, it allows for integrating analyses, text, and graphs in a single document:\n\nReplicability\nTydiness\nConvenience\n\nCreate dynamic content with Python, R, Julia, and Observable"
   },
   {
     "objectID": "R-Project.html#quarto",
     "href": "R-Project.html#quarto",
     "title": "R-Project",
     "section": "",
-    "text": "R Markdown, next generation\nAll based on knitr to execute R code\n\nAnalyze. Share. Reproduce. You have a story to tell with data—tell it with Quarto.\n\nThis course presents the integration between RStudio and quarto. All the code in the executable code chunks are hence based in R:\n\nDownload R: https://cran.r-project.org/bin/windows/base/\nDownload RStudio: https://posit.co/download/rstudio-desktop/\n\nRMarkdown is the integrated markup language integrated within RStudio is the “predecessor” of quarto.\nMarkup languages such as quarto, markdown, html, latex, are programming languages where formatting is handled by chunk codes, named tags.\n\n\n\nFormat\nExtension\n\n\n\n\nMarkdown\n.md\n\n\nR Markdown\n.Rmd\n\n\nQuarto\n.qmd\n\n\n\n\nHTMLLaTeX\n\n\n\n\n\n\n\nHTML editor\n\n\n\n\n\n\n\n\n\n\n\nLaTex Editor",
-    "crumbs": [
-      "Getting Started",
-      "R project and basic settings"
-    ]
+    "text": "R Markdown, next generation\nAll based on knitr to execute R code\n\nAnalyze. Share. Reproduce. You have a story to tell with data—tell it with Quarto.\n\nThis course presents the integration between RStudio and quarto. All the code in the executable code chunks are hence based in R:\n\nDownload R: https://cran.r-project.org/bin/windows/base/\nDownload RStudio: https://posit.co/download/rstudio-desktop/\n\nRMarkdown is the integrated markup language integrated within RStudio is the “predecessor” of quarto.\nMarkup languages such as quarto, markdown, html, latex, are programming languages where formatting is handled by chunk codes, named tags.\n\n\n\nFormat\nExtension\n\n\n\n\nMarkdown\n.md\n\n\nR Markdown\n.Rmd\n\n\nQuarto\n.qmd\n\n\n\n\nHTMLLaTeX\n\n\n\n\n\n\n\nHTML editor\n\n\n\n\n\n\n\n\n\n\n\nLaTex Editor"
   },
   {
     "objectID": "R-Project.html#markup-langues-vs.-wysiwyg-languages",
     "href": "R-Project.html#markup-langues-vs.-wysiwyg-languages",
     "title": "R-Project",
     "section": "",
-    "text": "What You See Is What You Get\nThe text is modified with built-in command, you can see immediately the changes:\n\n\n\n\n\nWord",
-    "crumbs": [
-      "Getting Started",
-      "R project and basic settings"
-    ]
+    "text": "What You See Is What You Get\nThe text is modified with built-in command, you can see immediately the changes:\n\n\n\n\n\nWord"
   },
   {
     "objectID": "R-Project.html#why",
@@ -85,33 +64,21 @@
     "href": "R-Project.html#little-effort-great-consequences",
     "title": "R-Project",
     "section": "",
-    "text": "Using knitr, it allows for integrating analyses, text, and graphs in a single document:\n\nReplicability\nTydiness\nConvenience\n\nCreate dynamic content with Python, R, Julia, and Observable",
-    "crumbs": [
-      "Getting Started",
-      "R project and basic settings"
-    ]
+    "text": "Using knitr, it allows for integrating analyses, text, and graphs in a single document:\n\nReplicability\nTydiness\nConvenience\n\nCreate dynamic content with Python, R, Julia, and Observable"
   },
   {
     "objectID": "R-Project.html#create-an-r-project",
     "href": "R-Project.html#create-an-r-project",
     "title": "R-Project",
-    "section": "Create an R Project",
-    "text": "Create an R Project\nFrom File \\(\\rightarrow\\) New Project:\n\n\n\n\n\n\n\n\n\n\n\n(a) Step 1\n\n\n\n\n\n\n\n\n\n\n\n(b) Step 2\n\n\n\n\n\n\n\n\n\n\n\n(c) Step 3\n\n\n\n\n\n\n\nFigure 1: Create a new R Project in 3 steps\n\n\n\nFirst (Figure 1 (a)), declare whether a new folder should be created (New directory) or not (Existing Directory). Then (Figure 1 (b)), the type of project must be selected – for the time being, please stick with the basic project New Project. Finally (Figure 1 (c)), give a name to your project and make sure to tick the Open in new session option.\n\n\n\n\n\n\nDon’t worry\n\n\n\nThe project is completely empty – there are no subfolders nor files\n\n\nThe working directory has been automatically set to be within the R project:\n\ngetwd()\n\n[1] \"C:/Users/Ottavia/Documents/GitHub/shine-with-quarto\"\n\n\nIf you run the dir() function from your console (within the project), the resulting string would be empty.\n\n\n\n\n\n\n\n\nFigure 2: Project folder at the very beginning",
-    "crumbs": [
-      "Getting Started",
-      "R project and basic settings"
-    ]
+    "section": "2.1 Create an R Project",
+    "text": "2.1 Create an R Project\nFrom File \\(\\rightarrow\\) New Project:\n\n\n\n\n\n\n\n\n\n\n\n(a) Step 1\n\n\n\n\n\n\n\n\n\n\n\n(b) Step 2\n\n\n\n\n\n\n\n\n\n\n\n(c) Step 3\n\n\n\n\n\n\n\nFigure 1: Create a new R Project in 3 steps\n\n\n\nFirst (Figure 1 (a)), declare whether a new folder should be created (New directory) or not (Existing Directory). Then (Figure 1 (b)), the type of project must be selected – for the time being, please stick with the basic project New Project. Finally (Figure 1 (c)), give a name to your project and make sure to tick the Open in new session option.\n\n\n\n\n\n\nDon’t worry\n\n\n\nThe project is completely empty – there are no subfolders nor files\n\n\nThe working directory has been automatically set to be within the R project:\n\ngetwd()\n\n[1] \"C:/Users/Ottavia/Documents/GitHub/shine-with-quarto\"\n\n\nIf you run the dir() function from your console (within the project), the resulting string would be empty.\n\n\n\n\n\n\n\n\nFigure 2: Project folder at the very beginning"
   },
   {
     "objectID": "R-Project.html#populate-the-project",
     "href": "R-Project.html#populate-the-project",
     "title": "R-Project",
-    "section": "Populate the project",
-    "text": "Populate the project\nCreate the sub-folders by using the New folder button\n\n\n\n\n\nCreate New Folder\n\n\n\n\nThe location of the project folder on your computer can be easily found by using the More button and selecting the Show folder in New Window option:\n\n\n\n\n\nOpen Folder on your computer\n\n\n\n\n\nCreate the very first quarto document\n\n\n\n\n\n\n\n\n\n\n\n(a) Inizitialize the document\n\n\n\n\n\n\n\n\n\n\n\n(b) Speicify the type of document and some data\n\n\n\n\n\n\n\nFigure 3: Create a new quarto document\n\n\n\nFigure 3 (a) initializes the creation of a new quarto document, while in Figure 3 (b) format of the document, as well as some of the elements that will populate the YAML (e.g., author and title) are defined. The default characteristics are the html document. Make sure to remove the tick from the Use visual markdown editor option.\n\nCompile quarto document\nThe source file can be compiled and rendered in the desired format:\n\n\n\n\n\n\n\n\n\nThe file can be compiled also using the key combination\nctrl + shift + k \nLeaving the default, the document will be compiled in HTML. Make sure to save the file as index (it will become clear later on)",
-    "crumbs": [
-      "Getting Started",
-      "R project and basic settings"
-    ]
+    "section": "2.2 Populate the project",
+    "text": "2.2 Populate the project\nCreate the sub-folders by using the New folder button\n\n\n\n\n\nCreate New Folder\n\n\n\n\nThe location of the project folder on your computer can be easily found by using the More button and selecting the Show folder in New Window option:\n\n\n\n\n\nOpen Folder on your computer\n\n\n\n\n\n2.2.1 Create the very first quarto document\n\n\n\n\n\n\n\n\n\n\n\n(a) Inizitialize the document\n\n\n\n\n\n\n\n\n\n\n\n(b) Speicify the type of document and some data\n\n\n\n\n\n\n\nFigure 3: Create a new quarto document\n\n\n\nFigure 3 (a) initializes the creation of a new quarto document, while in Figure 3 (b) format of the document, as well as some of the elements that will populate the YAML (e.g., author and title) are defined. The default characteristics are the html document. Make sure to remove the tick from the Use visual markdown editor option.\n\n2.2.1.1 Compile quarto document\nThe source file can be compiled and rendered in the desired format:\n\n\n\n\n\n\n\n\n\nThe file can be compiled also using the key combination\nctrl + shift + k \nLeaving the default, the document will be compiled in HTML. Make sure to save the file as index (it will become clear later on)"
   },
   {
     "objectID": "R-Project.html#warning",
@@ -127,13 +94,9 @@
   {
     "objectID": "git-hub.html",
     "href": "git-hub.html",
-    "title": "Git Hub",
+    "title": "GitHub",
     "section": "",
-    "text": "https://github.com/",
-    "crumbs": [
-      "Getting Started",
-      "Git Hub"
-    ]
+    "text": "Go to the GitHub website, available at https://github.com/\n\n\n\n\n\nGitHub landing page\n\n\n\n\n\n\n\n\n\nEnter your email\n\n\n\n\n\n\n\n\n\nSet your username and password (Please choose something that you can remember)\n\n\n\n\nSolve the CAPTCHA and submit"
   },
   {
     "objectID": "git-hub.html#clone-an-existing-repository-i",
@@ -160,23 +123,342 @@
   {
     "objectID": "git-hub.html#did-it-work",
     "href": "git-hub.html#did-it-work",
-    "title": "Git Hub",
+    "title": "GitHub",
     "section": "Did it work?",
     "text": "Did it work?\nNavigate to you GitHub profile on https://github.com/ and to your repositories:",
     "crumbs": [
       "Getting Started",
-      "Git Hub"
+      "GitHub"
     ]
   },
   {
     "objectID": "git-hub.html#the-repository-must-be-public",
     "href": "git-hub.html#the-repository-must-be-public",
-    "title": "Git Hub",
+    "title": "GitHub",
     "section": "The repository must be public",
     "text": "The repository must be public",
     "crumbs": [
       "Getting Started",
-      "Git Hub"
+      "GitHub"
     ]
+  },
+  {
+    "objectID": "git-hub.html#create-new-repository",
+    "href": "git-hub.html#create-new-repository",
+    "title": "GitHub",
+    "section": "3.1 Create new repository",
+    "text": "3.1 Create new repository\n\n\n\n\n\nCreate a new repository that does exist yet\n\n\n\n\nThis initializes a new GitHub repository, where you can provide different information concerning its characteristics\n\n\n\n\n\nCreate a new repository that does exist yet"
+  },
+  {
+    "objectID": "git-hub.html#add-existing-repository",
+    "href": "git-hub.html#add-existing-repository",
+    "title": "GitHub",
+    "section": "3.2 Add existing repository",
+    "text": "3.2 Add existing repository\n\n\n\n\n\nAdd an existing repository that does exist yet"
+  },
+  {
+    "objectID": "git-hub.html#publish-the-repositories",
+    "href": "git-hub.html#publish-the-repositories",
+    "title": "GitHub",
+    "section": "3.3 Publish the repositories",
+    "text": "3.3 Publish the repositories\nOnce a repository is added (either by adding an existing or creating a new one), it can be published and made available online for other people:\n\n\n\n\n\nPublish button\n\n\n\n\nIf you want your repository to be found by other users, remove the flag from the “Keep this code private”:\n\n\n\n\n\nDefine the publication policies\n\n\n\n\n\n3.3.1 commit + push\nEverything is ready for the commitment.\n\nSelect specific files and commit them. The commit message is mandatory! It is useful for your future self, just to remember the changes you made, when and possibly why.\n\n\n\n\n\n\nSelect & Commit\n\n\n\n\n\nThe changes must be pushed to GitHub:\n\n\n\n\n\n\nSelect & Commit\n\n\n\n\n\nCheck whether the changes are live on GitHub:\n\n\n\n\n\n\nCheck Commit\n\n\n\n\n\n\n3.3.2 Licenses\n\n\n\n\n\n\nMIT\n\n\n\n\n\nAnyone can use, modify, distribute, and commercialize the software, provided that the original copyright notice and license text are included\n\n\n\n\n\n\n\n\n\nGNU\n\n\n\n\n\nAnyone can use, modify, and distribute the software. Any derivative work or redistributed version must be released under the same GPL license and with source code available.\n\n\n\nSummarizing the differences between the types of licences:\n\n\n\n\n\n\n\nMIT\nGNU GPL\n\n\n\n\nCan be used in proprietary software\nDerivative works must remain open source\n\n\nMinimal restrictions\nRequires source code disclosure upon redistribution\n\n\nMaximizes flexibility and adoption\nEnsures openness is preserved"
+  },
+  {
+    "objectID": "html-layout.html",
+    "href": "html-layout.html",
+    "title": "HTML document: Layout",
+    "section": "",
+    "text": "The overall appearance and behavior of the document is specified in the YAML.\nImportantly the YAML defines the extension of the file rendering:\n\n\n\n\n\n\nHTML default YAML\n\n\n\n---\ntitle: \"Untitled\"\nformat: html\neditor: visual\n---\n\n\n\n\n\n\n\n\nPDF default YAML\n\n\n\n---\ntitle: \"Untitled\"\nformat: pdf\neditor: visual\n---\n\n\n\n\nQuarto (as well as as RMarkdown) allows for visualizing the text editor as a WYSIWYG text editor:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\n\n\nAlthough at the very beginning, the use of the visual editor might be tempting, don’t indulge! Using the source editor is an investiment in your future programming skills :)\n\n\n\n\n\nTable Of Ccontents: Defines the index of your document and its associated characteristics (e.g., where it is located):\n\n---\ntitle: \"My quarto file\"\nauthor: \"Jane Doe\"\ndate: today\nformat: \n  html:\n    toc: true                \n    toc-title: My contents   \n    toc-location: left       \n---\n\nBe mindful of the indentation!! With the wrong indentation, the YAML breaks down and the document will not compile.\n\ntoc: true: Set the table of contents\n\ntoc-title: My contents: Define the title of the toc\ntoc-location: left: Define the position of the toc (options: left, right, body)\n\n\n\n\nThe default theme of the document can be modified with the predefined themes\n\n---\ntitle: \"My quarto file\"\nauthor: \"Jane Doe\"\ndate: today\nformat: \n  html:\n    toc: true                   \n    toc-title: My contents   \n    toc-location: left\n    theme: superhero  \n    fontsize: 32px    \nlang: it                     \n---\n\nThe theme can be defined with the theme: specific_theme in the YAML. Further customization can be brought with other YAML arguments (e.g.,fontsize) or with specific css settings\nThe theme can adapt to specific settings, such as whether you want both ligth and dark theme:\n\n---\nformat: \n  html:\n    theme:\n     light: minty\n     dark: superhero\n---\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSet the language for your document. This is not the autocorrect!\nIt sets the language to be used in the cross-referencing of your document (see Section 4).\n\n\n\n\n\nLanguage\nCode\n\n\n\n\nEnglish\nen\n\n\nChinese\nzh\n\n\nSpanish\nes\n\n\nFrench\nfr\n\n\nJapanese\nja\n\n\nGerman\nde\n\n\n\n\n\n\n\n\nLanguage\nCode\n\n\n\n\nPortuguese\npt\n\n\nRussian\nru\n\n\nCzech\ncs\n\n\nFinnish\nfi\n\n\nDutch\nnl\n\n\nItalian\nit\n\n\nPolish\npl\n\n\nKorean\nko",
+    "crumbs": [
+      "Basic documents",
+      "HTML document: Layout"
+    ]
+  },
+  {
+    "objectID": "html-layout.html#source-vs.-visual",
+    "href": "html-layout.html#source-vs.-visual",
+    "title": "HTML document: Layout",
+    "section": "",
+    "text": "Quarto (as well as as RMarkdown) allows for visualizing the text editor as a WYSIWYG text editor:",
+    "crumbs": [
+      "Basic documents",
+      "HTML document: Layout"
+    ]
+  },
+  {
+    "objectID": "html-layout.html#yaml-table-of-contents-toc",
+    "href": "html-layout.html#yaml-table-of-contents-toc",
+    "title": "HTML document: Layout",
+    "section": "",
+    "text": "---\ntitle: \"My quarto file\"\nauthor: \"Jane Doe\"\ndate: today\nformat: \n  html:\n    self-contained: true     # 1\n    toc: true                # 2   \n    toc-title: My contents   # 3\n    toc-location: left       # 4\nlang: it                     # 5\n---\n\n\nAllows for the sharing of the hmtl file without requiring for external files\nPut Table of Contents\nDefine the title of the ToC\nLocation of the ToC (left, right, body)\nDefine the language of the documents",
+    "crumbs": [
+      "Basic documents",
+      "HTML document: Layout"
+    ]
+  },
+  {
+    "objectID": "html-layout.html#editor",
+    "href": "html-layout.html#editor",
+    "title": "HTML document: Layout",
+    "section": "",
+    "text": "Quarto (as well as as RMarkdown) allows for visualizing the text editor as a WYSIWYG text editor:",
+    "crumbs": [
+      "Basic documents",
+      "HTML document: Layout"
+    ]
+  },
+  {
+    "objectID": "html-layout.html#toc",
+    "href": "html-layout.html#toc",
+    "title": "HTML document: Layout",
+    "section": "",
+    "text": "Table Of Ccontents: Defines the index of your document and its associated characteristics (e.g., where it is located):\n\n---\ntitle: \"My quarto file\"\nauthor: \"Jane Doe\"\ndate: today\nformat: \n  html:\n    toc: true                \n    toc-title: My contents   \n    toc-location: left       \n---\n\nBe mindful of the indentation!! With the wrong indentation, the YAML breaks down and the document will not compile.\n\ntoc: true: Set the table of contents\n\ntoc-title: My contents: Define the title of the toc\ntoc-location: left: Define the position of the toc (options: left, right, body)",
+    "crumbs": [
+      "Basic documents",
+      "HTML document: Layout"
+    ]
+  },
+  {
+    "objectID": "html-layout.html#themes",
+    "href": "html-layout.html#themes",
+    "title": "HTML document: Layout",
+    "section": "",
+    "text": "The default theme of the document can be modified with the predefined themes\n\n---\ntitle: \"My quarto file\"\nauthor: \"Jane Doe\"\ndate: today\nformat: \n  html:\n    toc: true                   \n    toc-title: My contents   \n    toc-location: left\n    theme: superhero  \n    fontsize: 32px    \nlang: it                     \n---\n\nThe theme can be defined with the theme: specific_theme in the YAML. Further customization can be brought with other YAML arguments (e.g.,fontsize) or with specific css settings\nThe theme can adapt to specific settings, such as whether you want both ligth and dark theme:\n\n---\nformat: \n  html:\n    theme:\n     light: minty\n     dark: superhero\n---",
+    "crumbs": [
+      "Basic documents",
+      "HTML document: Layout"
+    ]
+  },
+  {
+    "objectID": "html-layout.html#headings",
+    "href": "html-layout.html#headings",
+    "title": "HTML document: Layout",
+    "section": "2.1 Headings",
+    "text": "2.1 Headings\nThe number of # defines the level of the headings (the lower the number of #, the higher the level)\n\n# First level (H1)\n\nSection\n\n## Second level (H2)\n\nSubsection\n\n### Third level (H3)\n\nSub-subsection\n\n#### Fourth level (H4)\n\nParagraph\n\n##### Fifth level (H5)\n\nI frankly have never used that\n\n##### Sixth level (H6)\n\nI have no idea",
+    "crumbs": [
+      "Basic documents",
+      "HTML document: Layout"
+    ]
+  },
+  {
+    "objectID": "html-layout.html#text-formatting",
+    "href": "html-layout.html#text-formatting",
+    "title": "HTML document: Layout",
+    "section": "2.2 Text Formatting",
+    "text": "2.2 Text Formatting\nThe text formatting is defined through specific tags:\n\n2.2.1 Formatting\n\n*italics*, **bold**, ***bold italics*** \n\nitalics, bold, bold italics\n\n\n2.2.2 Super/sub script\n\ntextsuperscirpt^2^, textunderscript~2~\n\ntextsuperscirpt2, textunderscript2\n\n\n2.2.3 In line code\n\n`this is myinline code`\n\nthis is myinline code\n\n\n\n\n\n\nCode chunk\n\n\n\n\n\nThere will be a specific lesson on the code chunks",
+    "crumbs": [
+      "Basic documents",
+      "HTML document: Layout"
+    ]
+  },
+  {
+    "objectID": "html-layout.html#links-and-images",
+    "href": "html-layout.html#links-and-images",
+    "title": "HTML document: Layout",
+    "section": "2.3 Links and images",
+    "text": "2.3 Links and images\n\n&lt;https://github.com/&gt;\n\nhttps://github.com/\n\nMy link is [here](https://github.com/)\n\nMy link is here\n\n![This is an image](img/picture.jpg)\n\n\n\n\n\n\n\nFigure 1: This is an image",
+    "crumbs": [
+      "Basic documents",
+      "HTML document: Layout"
+    ]
+  },
+  {
+    "objectID": "html-layout.html#lists",
+    "href": "html-layout.html#lists",
+    "title": "HTML document: Layout",
+    "section": "2.4 Lists",
+    "text": "2.4 Lists\n\n* Main Unordered List\n  + First sub-item\n  + Second sub-item \n    - It's getting weird\n\n\nMain Unordered List\n\nFirst sub-item\nSecond sub-item\n\nIt’s getting weird\n\n\n\n\n1. Main ordered list\n2. Second item\n   i) First sub-item 1\n      A.  First sub-sub-item 1\n\n\nMain ordered list\nSecond item\n\nFirst sub-item 1\n\nFirst sub-sub-item 1\n\n\n\n\n- [ ] First things first 1\n- [ ] Second things second 2\n\n\nFirst things first 1\nSecond things second 2",
+    "crumbs": [
+      "Basic documents",
+      "HTML document: Layout"
+    ]
+  },
+  {
+    "objectID": "html-layout.html#math",
+    "href": "html-layout.html#math",
+    "title": "HTML document: Layout",
+    "section": "2.5 Math",
+    "text": "2.5 Math\nIn-line math:\n\nThis is an in-line equation $y = \\beta_0 + \\beta_1 X + \\varepsilon$\n\nThis is an in-line equation \\(y = \\beta_0 + \\beta_1 X + \\varepsilon\\)\nMath math:\n\nThis is an  equation $$z = \\dfrac{\\bar{x} -\\mu}{\\sigma}$$\n\nThis is an equation \\[z = \\dfrac{\\bar{x} -\\mu}{\\sigma}\\]",
+    "crumbs": [
+      "Basic documents",
+      "HTML document: Layout"
+    ]
+  },
+  {
+    "objectID": "html-layout.html#references",
+    "href": "html-layout.html#references",
+    "title": "HTML document: Layout",
+    "section": "2.6 References",
+    "text": "2.6 References\nDefine the path of the bib file in the YAML\n\n[...]\nbibliography: bib/references.bib\n\nThen set your file with .bib extension. This file can be created with any text editor, including RStudio.\nTo use RStudio as a text editor&gt;\n\nOpen a new script:\nshift + ctrl + n\nSet it to be a text file:\n\n\n\n\n\n\n\n\n\n\n\nPrepare bigliography\n\n\n@Manual{rsoft,\n    title = {R: A Language and Environment for Statistical Computing},\n    author = {{R Core Team}},\n    organization = {R Foundation for Statistical Computing},\n    address = {Vienna, Austria},\n    year = {2025},\n    url = {https://www.R-project.org/}\n}\n@Book{ggplot,\n    author = {Hadley Wickham},\n    title = {ggplot2: Elegant Graphics for Data Analysis},\n    publisher = {Springer-Verlag New York},\n    year = {2016},\n    isbn = {978-3-319-24277-4},\n    url = {https://ggplot2.tidyverse.org}\n}\n@article{epifania2024,\n  title={A guided tutorial on linear mixed-effects models for the analysis of accuracies and response times in experiments with fully crossed design.},\n  author={Epifania, Ottavia M and Anselmi, Pasquale and Robusto, Egidio},\n  journal={Psychological Methods},\n  year={2024},\n  publisher={American Psychological Association}, \n  doi={https://doi.org/10.1037/met0000708}\n}\n\nMendeley, Zotero and similar software have built-in function for exporting the bib file. Read the related documentation\nTo call a reference:\n\n@citaton-key",
+    "crumbs": [
+      "Basic documents",
+      "HTML document: Layout"
+    ]
+  },
+  {
+    "objectID": "html-layout.html#citation-keys",
+    "href": "html-layout.html#citation-keys",
+    "title": "HTML document: Layout",
+    "section": "2.7 Citation keys",
+    "text": "2.7 Citation keys\n\n\n\n\n\n\n\nKey\nOutput\n\n\n\n\n@ggplot does this\nWickman (2016) does this\n\n\nggplot2 is an interesting package [@ggplot2]\nggplot2 is an interesting package (Wickman, 2016)\n\n\nbla bla bla [@epifania2024; @ggplot2]\nbla bla bla (Epifania et al., 2024; Wickman, 2016)",
+    "crumbs": [
+      "Basic documents",
+      "HTML document: Layout"
+    ]
+  },
+  {
+    "objectID": "html-layout.html#lang",
+    "href": "html-layout.html#lang",
+    "title": "HTML document: Layout",
+    "section": "",
+    "text": "Set the language for your document. This is not the autocorrect!\nIt sets the language to be used in the cross-referencing of your document (see Section 4).\n\n\n\n\n\nLanguage\nCode\n\n\n\n\nEnglish\nen\n\n\nChinese\nzh\n\n\nSpanish\nes\n\n\nFrench\nfr\n\n\nJapanese\nja\n\n\nGerman\nde\n\n\n\n\n\n\n\n\nLanguage\nCode\n\n\n\n\nPortuguese\npt\n\n\nRussian\nru\n\n\nCzech\ncs\n\n\nFinnish\nfi\n\n\nDutch\nnl\n\n\nItalian\nit\n\n\nPolish\npl\n\n\nKorean\nko",
+    "crumbs": [
+      "Basic documents",
+      "HTML document: Layout"
+    ]
+  },
+  {
+    "objectID": "html-layout.html#margins",
+    "href": "html-layout.html#margins",
+    "title": "HTML document: Layout",
+    "section": "3.4 Margins",
+    "text": "3.4 Margins\nAllows for placing images, code, references or equations in the margin of a document\n\nFor instance, I'm writing a document about peacocks, and I want a picture of a peacock and a little bit of text in the margin of the document, aligned with this text.\n\n::: {.column-margin}\nI want this picture displayed in the margin \n\n\n![](img/peacock.png)\n\n:::\n\nFor instance, I’m writing a document about peacocks, and I want a picture of a peacock and a little bit of text in the margin of the document, aligned with this text.\n\n\nI want this picture displayed in the margin\n\nEven references can be placed in the margin, such that they appear alongside the text where they are cited.\nStarting with the right settings in the YAML:\n\nbibliography: biblio.bib\nreference-location: margin\ncitation-location: margin\n\nThese lines of code force the citations to appear in the right margin. The citation key can happen as usual.\n\nI want to cite the `ggplot2` package because it is the best package ever [@ggplot2]\n\nI want to cite the ggplot2 package because it is the best package ever (Wickham 2016)\n\nWickham, Hadley. 2016. Ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York. https://ggplot2.tidyverse.org.",
+    "crumbs": [
+      "Basic documents",
+      "HTML document: Layout"
+    ]
+  },
+  {
+    "objectID": "html-layout.html#columns",
+    "href": "html-layout.html#columns",
+    "title": "HTML document: Layout",
+    "section": "3.1 Columns",
+    "text": "3.1 Columns\n\n:::: {.columns}\n\n::: {.column width=\"40%\"}\nI want some text in the left column\n:::\n\n::: {.column width=\"60%\"}\nAnd a picture in the right one \n\n\n:::\n\n::::\n\n\n\nI want some text in the left column\n\nAnd a picture in the right one\n\n\nThe columns are most convenient in presentation files, while the grid (see Section 3.2) is the besty option for changing the layout of a text document",
+    "crumbs": [
+      "Basic documents",
+      "HTML document: Layout"
+    ]
+  },
+  {
+    "objectID": "html-layout.html#sec-grid",
+    "href": "html-layout.html#sec-grid",
+    "title": "HTML document: Layout",
+    "section": "3.2 Grid",
+    "text": "3.2 Grid\nThe document length is organized in 12 columns of equal width. This allows for a convenient and flexible environment for aligning the content.\nThe margins (left and right) are not counted within the 12-column space:\n\n::: {.grid}\n\n::: {.g-col-3}\nEverything is fine\n:::\n  \n::: {.g-col-2}\nuntil\n::: \n  \n::: {.g-col-5}\nthe sum of the grid length is equal (or inferior) to 12\n::: \n:::\n\n\n\nEverything is fine\n\n\nuntil\n\n\nthe sum of the grid length is equal (or inferior) to 12",
+    "crumbs": [
+      "Basic documents",
+      "HTML document: Layout"
+    ]
+  },
+  {
+    "objectID": "html-layout.html#tabset-panel",
+    "href": "html-layout.html#tabset-panel",
+    "title": "HTML document: Layout",
+    "section": "3.3 Tabset panel",
+    "text": "3.3 Tabset panel\n\n::: {.panel-tabset}\n\n## Aim\n\nHere I present the aim of the study \n\n## Methods\n\nHere I present the methods used to pursue the aim\n\n## Results\n\nAnd here I present the results\n\n:::\n\n\nAimMethodsResults\n\n\nHere I present the aim of the study\n\n\nHere I present the methods used to pursue the aim\n\n\nAnd here I present the results",
+    "crumbs": [
+      "Basic documents",
+      "HTML document: Layout"
+    ]
+  },
+  {
+    "objectID": "html-layout.html#callout-blocks",
+    "href": "html-layout.html#callout-blocks",
+    "title": "HTML document: Layout",
+    "section": "3.5 Callout blocks",
+    "text": "3.5 Callout blocks\n\n:::{.callout-tip}\n## Title of the tip\n\nThese are my two cents for you\n:::\n\n:::{.callout-note collapse=true}\n## Two cents\n\nThese are my two cents for you\n:::\n  \n:::{.callout-warning icon=false}\n## Pay attention\n\nPlease mind the gap\n:::\n\n:::{.callout-caution}\n## Danger!\n\nThis is dangerous!\n:::  \n  \n\n\n\n\n\n\n\nTitle of the tip\n\n\n\nThese are my two cents for you\n\n\n\n\n\n\n\n\nTwo cents\n\n\n\n\n\nThese are my two cents for you\n\n\n\n\n\n\n\n\n\nPay attention\n\n\n\nPlease mind the gap\n\n\n\n\n\n\n\n\nDanger!\n\n\n\nThis is dangerous!",
+    "crumbs": [
+      "Basic documents",
+      "HTML document: Layout"
+    ]
+  },
+  {
+    "objectID": "html-layout.html#sec-lang",
+    "href": "html-layout.html#sec-lang",
+    "title": "HTML document: Layout",
+    "section": "",
+    "text": "Set the language for your document. This is not the autocorrect!\nIt sets the language to be used in the cross-referencing of your document (see Section 4).\n\n\n\n\n\nLanguage\nCode\n\n\n\n\nEnglish\nen\n\n\nChinese\nzh\n\n\nSpanish\nes\n\n\nFrench\nfr\n\n\nJapanese\nja\n\n\nGerman\nde\n\n\n\n\n\n\n\n\nLanguage\nCode\n\n\n\n\nPortuguese\npt\n\n\nRussian\nru\n\n\nCzech\ncs\n\n\nFinnish\nfi\n\n\nDutch\nnl\n\n\nItalian\nit\n\n\nPolish\npl\n\n\nKorean\nko",
+    "crumbs": [
+      "Basic documents",
+      "HTML document: Layout"
+    ]
+  },
+  {
+    "objectID": "code-chunk.html",
+    "href": "code-chunk.html",
+    "title": "Code integration",
+    "section": "",
+    "text": "The code chunks are the most brilliant thing about quarto (and RMarkdown): they allow for including actual code within a docuemnt and to carry out the specified analysis while the document is compiled. Long story short: This feature allows for having the report/article, table, graphs, data, and th code used to obtain all the above mentioned elements in one unique document.\nThe code chunk support different languages (Figure 1):\n\n```{r}\n#| label: fig-newChunk\n#| fig-align: center\n#| fig-cap: Open new code chunk and specifiy the language\n\ninclude_graphics(\"img/newChunk.png\")\n```\n\n\n\n\n\n\n\nFigure 1: Open new code chunk and specifiy the language\n\n\n\n\n\nA new code code chunk can be opened with the key combination:\nshift + ctrl + i\n\n\nEach chunk obeys to specific settings, which define the behavior of the code and of the output.\n```{r}\n#| option1: true\n#| option2: false\n```\n\n\nControls the behavior of the code (whether it is shown and how it is shown):\n\n\nShow code and results\n```{r}\n#| echo: true\n\nhead(cars)\n```\n\nhead(cars)\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10\n\n\n\n\nShow only the results\n```{r}\n#| echo: false\n\nhead(cars)\n```\n\n```{r}\nhead(cars)\n```\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10\n\n\n\n\nShow the code, the chunk, and the results\n```{r}\n#| echo: fenced\n\nhead(cars)\n```\n\n```{r}\nhead(cars)\n```\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10\n\n\n\n\n\necho does not control the code execution, which is controlled by eval\n\n\nThe code is executed\n\n```{r}\n#| eval: true\n\nhead(cars)\n```\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10\n\n\n\n\nThe code is not executed\n\n```{r}\n#| eval: false\n\nhead(cars)\n```\n\n\n\n\n\n\nThis argument controls the way in which the results are displayed and whether they are displayed or not.\nDifferently from eval: false (i.e., the code is not executed, if there are errors in the code you will not notice it), results does not prevent the execution of the code but only the display of the code:\n\n```{r}\n#| results: hide\n\nhead(cars)\n```\n\nThe code is executed! This ensures that there are no mistakes in the code.\n\n\n\nControls whether the warnings associated to a code are displayed (true) or not (false):\n\n\n\n```{r}\n#| warning: true\n\nmatrix(1:10, nrow = 3, ncol = 3)\n```\n\nWarning in matrix(1:10, nrow = 3, ncol = 3): data length [10] is not a\nsub-multiple or multiple of the number of rows [3]\n\n\n     [,1] [,2] [,3]\n[1,]    1    4    7\n[2,]    2    5    8\n[3,]    3    6    9\n\n\n\n\n\n```{r}\n#| warning: false\n\nmatrix(1:10, nrow = 3, ncol = 3)\n```\n\n     [,1] [,2] [,3]\n[1,]    1    4    7\n[2,]    2    5    8\n[3,]    3    6    9\n\n\n\n\n\n\n\nThis argument is particularly useful when teaching, because it allows for ignoring the errors in a code and display the error message. If this argument is set to false (default) the rendering of the document is stopped when the error in the code occurs. If the error is not solved, the document cannot be compiled.\nOtherwise, if error: true, the error message is shown and the rendering of the document continues, regardless of the error:\n\n```{r}\n#| error: true\nx &lt;- c(1, 2, 3)\nmean(y)\n```\n\nError: oggetto 'y' non trovato\n\n\n\n\n\nSuper convenient as first code chunk to load all the packages, data, preprocessing. The code is executed but no messages, warnings or results are shown"
+  },
+  {
+    "objectID": "code-chunk.html#chunk-option",
+    "href": "code-chunk.html#chunk-option",
+    "title": "Code integration",
+    "section": "",
+    "text": "Each chunk obeys to specific settings, which define the behavior of the code and of the output.\n```{r}\n#| option1: true\n#| option2: false\n```\n\n\nControls the behavior of the code (whether it is shown and how it is shown):\n\n\nShow code and results\n```{r}\n#| echo: true\n\nhead(cars)\n```\n\nhead(cars)\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10\n\n\n\n\nShow only the results\n```{r}\n#| echo: false\n\nhead(cars)\n```\n\n```{r}\nhead(cars)\n```\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10\n\n\n\n\nShow the code, the chunk, and the results\n```{r}\n#| echo: fenced\n\nhead(cars)\n```\n\n```{r}\nhead(cars)\n```\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10\n\n\n\n\n\necho does not control the code execution, which is controlled by eval\n\n\nThe code is executed\n\n```{r}\n#| eval: true\n\nhead(cars)\n```\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10\n\n\n\n\nThe code is not executed\n\n```{r}\n#| eval: false\n\nhead(cars)\n```\n\n\n\n\n\n\nThis argument controls the way in which the results are displayed and whether they are displayed or not.\nDifferently from eval: false (i.e., the code is not executed, if there are errors in the code you will not notice it), results does not prevent the execution of the code but only the display of the code:\n\n```{r}\n#| results: hide\n\nhead(cars)\n```\n\nThe code is executed! This ensures that there are no mistakes in the code.\n\n\n\nControls whether the warnings associated to a code are displayed (true) or not (false):\n\n\n\n```{r}\n#| warning: true\n\nmatrix(1:10, nrow = 3, ncol = 3)\n```\n\nWarning in matrix(1:10, nrow = 3, ncol = 3): data length [10] is not a\nsub-multiple or multiple of the number of rows [3]\n\n\n     [,1] [,2] [,3]\n[1,]    1    4    7\n[2,]    2    5    8\n[3,]    3    6    9\n\n\n\n\n\n```{r}\n#| warning: false\n\nmatrix(1:10, nrow = 3, ncol = 3)\n```\n\n     [,1] [,2] [,3]\n[1,]    1    4    7\n[2,]    2    5    8\n[3,]    3    6    9\n\n\n\n\n\n\n\nThis argument is particularly useful when teaching, because it allows for ignoring the errors in a code and display the error message. If this argument is set to true (default) the rendering of the document is stopped when the error in the code occurs. If the error is not solved, the document cannot be compiled.\nOtherwise, if error: false, the error message is shown and the rendering of the document continues, regardless of the error:\n\n```{r}\n#| error: true\nx &lt;- c(1, 2, 3)\nmean(y)\n```\n\nError: oggetto 'y' non trovato",
+    "crumbs": [
+      "Basic documents",
+      "Code integration"
+    ]
+  },
+  {
+    "objectID": "code-chunk.html#sec-options",
+    "href": "code-chunk.html#sec-options",
+    "title": "Code integration",
+    "section": "",
+    "text": "Each chunk obeys to specific settings, which define the behavior of the code and of the output.\n```{r}\n#| option1: true\n#| option2: false\n```\n\n\nControls the behavior of the code (whether it is shown and how it is shown):\n\n\nShow code and results\n```{r}\n#| echo: true\n\nhead(cars)\n```\n\nhead(cars)\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10\n\n\n\n\nShow only the results\n```{r}\n#| echo: false\n\nhead(cars)\n```\n\n```{r}\nhead(cars)\n```\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10\n\n\n\n\nShow the code, the chunk, and the results\n```{r}\n#| echo: fenced\n\nhead(cars)\n```\n\n```{r}\nhead(cars)\n```\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10\n\n\n\n\n\necho does not control the code execution, which is controlled by eval\n\n\nThe code is executed\n\n```{r}\n#| eval: true\n\nhead(cars)\n```\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10\n\n\n\n\nThe code is not executed\n\n```{r}\n#| eval: false\n\nhead(cars)\n```\n\n\n\n\n\n\nThis argument controls the way in which the results are displayed and whether they are displayed or not.\nDifferently from eval: false (i.e., the code is not executed, if there are errors in the code you will not notice it), results does not prevent the execution of the code but only the display of the code:\n\n```{r}\n#| results: hide\n\nhead(cars)\n```\n\nThe code is executed! This ensures that there are no mistakes in the code.\n\n\n\nControls whether the warnings associated to a code are displayed (true) or not (false):\n\n\n\n```{r}\n#| warning: true\n\nmatrix(1:10, nrow = 3, ncol = 3)\n```\n\nWarning in matrix(1:10, nrow = 3, ncol = 3): data length [10] is not a\nsub-multiple or multiple of the number of rows [3]\n\n\n     [,1] [,2] [,3]\n[1,]    1    4    7\n[2,]    2    5    8\n[3,]    3    6    9\n\n\n\n\n\n```{r}\n#| warning: false\n\nmatrix(1:10, nrow = 3, ncol = 3)\n```\n\n     [,1] [,2] [,3]\n[1,]    1    4    7\n[2,]    2    5    8\n[3,]    3    6    9\n\n\n\n\n\n\n\nThis argument is particularly useful when teaching, because it allows for ignoring the errors in a code and display the error message. If this argument is set to false (default) the rendering of the document is stopped when the error in the code occurs. If the error is not solved, the document cannot be compiled.\nOtherwise, if error: true, the error message is shown and the rendering of the document continues, regardless of the error:\n\n```{r}\n#| error: true\nx &lt;- c(1, 2, 3)\nmean(y)\n```\n\nError: oggetto 'y' non trovato\n\n\n\n\n\nSuper convenient as first code chunk to load all the packages, data, preprocessing. The code is executed but no messages, warnings or results are shown"
+  },
+  {
+    "objectID": "code-chunk.html#show-all-code",
+    "href": "code-chunk.html#show-all-code",
+    "title": "Code integration",
+    "section": "2.1 Show all code",
+    "text": "2.1 Show all code\nThis shows the code for the entire document:\n\n[...]\nformat: \n  html:\n    code-tools: \n     source: true\n     toggle: false\n     caption: This is my code\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2.2 Code fold\nThe code can also be folded. Differently, only the code in the chunks is displayed.\nThis can be done via the YAML (and hence is applied to ALL the code chunks in a document):\n\n[...]\nexecute: \n  echo: fenced\n  message: true\n  error: true\ncode-fold: true\ncode-summary: See this specific code\n\nor for a specific code chunk\n\n\nShow this code\n```{r}\n#| code-fold: true\n#| code-summary: Show this code\n#| column: margin\nggplot(mtcars, aes(hp, mpg, color = factor(am))) + geom_point()\n```"
+  },
+  {
+    "objectID": "code-chunk.html#code-fold",
+    "href": "code-chunk.html#code-fold",
+    "title": "Code integration",
+    "section": "2.2 Code fold",
+    "text": "2.2 Code fold\nThe code can also be folded. Differently, only the code in the chunks is displayed.\nThis can be done via the YAML (and hence is applied to ALL the code chunks in a document):\n\n[...]\nexecute: \n  echo: fenced\n  message: true\n  error: true\ncode-fold: true\ncode-summary: See this specific code\n\nor for a specific code chunk\n\n\nShow this code\n```{r}\n#| code-fold: true\n#| code-summary: Show this code\n#| column: margin\nggplot(mtcars, aes(hp, mpg, color = factor(am))) + geom_point()\n```"
+  },
+  {
+    "objectID": "code-chunk.html#code-annotation",
+    "href": "code-chunk.html#code-annotation",
+    "title": "Code integration",
+    "section": "2.3 Code annotation",
+    "text": "2.3 Code annotation\nInstead of commenting the code, you can use the code annotations to make it understandable to people:\n\n```{r}\nlibrary(ggplot2)\n1ggplot(mtcars,\n2       aes(hp, mpg,\n           color = factor(am))) +\n3  geom_point()\n```\n\n\n1\n\nDefine the dataset to be used in ggplot\n\n2\n\nDefine the x, y variables and the the details for the color\n\n3\n\nDefine the type of graphical representation\n\n\n\n\n\n\n\n\n\n\n\n\n[...]\ncode-annotations: below\n\n\nbelow: The annotation appears below the code\nhover: The annotation appears when the mouse hovers over the annotation marker\nselect: The annotation appears when the annotation marker is clicked"
+  },
+  {
+    "objectID": "code-chunk.html#external-images-.png-and-.jpg",
+    "href": "code-chunk.html#external-images-.png-and-.jpg",
+    "title": "Code integration",
+    "section": "3.1 External images: .png and .jpg",
+    "text": "3.1 External images: .png and .jpg\nInstead of importing the images with the typical Markdown code (![caption](path-to-picture/picture.png)), they can b@figported with the include_graphics() function from the knitr package (Xie 2014).\n\nXie, Yihui. 2014. “Knitr: A Comprehensive Tool for Reproducible Research in R.” In Implementing Reproducible Computational Research, edited by Victoria Stodden, Friedrich Leisch, and Roger D. Peng. Chapman; Hall/CRC.\nThe settings for the picture can be defined by using the settings of the code chunk (these settings can also be used for the defintion of the graphic settigns, see Section 3.2)\n\n```{r}\n#| out-width: 100%  \n#| fig-align: center\n#| fig-cap: A peacock living the life \n#| fig-cap-location: bottom  \n#| label: fig-peacock       \n#| column: margin\n\nknitr::include_graphics(\"img/peacock.png\")\n```\n\n\n\n\n\n\n\n\nFigure 2: A peacock living the life\n\n\n\n\n\n\n\n\n\n\n\n\nOption\nValue\nDescription\n\n\n\n\nlabel\nfig-peacock\nThe label to be used in the cross referencing of the picture.\n\n\nout-width\n100%\nThe width of the picture with respect to the width of the column where the image is located.\n\n\nfig-align\ncenter\nFigure alignment (left, center, or right).\n\n\nfig-cap\nA peacock living the life\nThe caption.\n\n\nfig-cap-location\nbottom\nThe location of the caption with respect to the picture (top or margin).\n\n\ncolumn\nmargin\nThe location of the picture.\n\n\n\nTo cross reference the peacock picture in text (Figure 2), the usal cross referencing applies @fig-peacock."
+  },
+  {
+    "objectID": "code-chunk.html#code",
+    "href": "code-chunk.html#code",
+    "title": "Code integration",
+    "section": "3.2 Code",
+    "text": "3.2 Code\n@fig-peacock1 illustrates a peacock\n```{r}\n#| out-width: 50%\n#| fig-align: center\n#| fig-cap: A peacock living the life\n#| fig-cap-location: bottom\n#| label: fig-peacock1\nknitr::include_graphics(\"img/peacock.png\")\n```",
+    "crumbs": [
+      "Basic documents",
+      "Code integration"
+    ]
+  },
+  {
+    "objectID": "code-chunk.html#sec-graphs",
+    "href": "code-chunk.html#sec-graphs",
+    "title": "Code integration",
+    "section": "3.2 Graphics",
+    "text": "3.2 Graphics\nThe same principles apply, but this time the picture is not imported from an external file but results from the graphs resulting from the analysis. Again the cross-referencing can be obtained as usual using the label defined for the graph. For cross-referencing the plot in Figure 3, fig-mtcars.\n\n```{r}\n#| label: fig-mtcars\n#| out-width: 80%\n#| fig-align: center\n#| fig-cap: A graph from `mtcars`\n#| fig-cap-location: margin\nggplot(mtcars,\n       aes(hp, mpg, color = factor(am))) +\n  geom_point() +\n  geom_smooth(formula = y ~ x, method = \"loess\") +\n  theme(legend.position = 'bottom')\n```\n\n\n\n\n\n\n\nFigure 3: A graph from mtcars"
+  },
+  {
+    "objectID": "code-chunk.html#multiple-plots-with-subcaption",
+    "href": "code-chunk.html#multiple-plots-with-subcaption",
+    "title": "Code integration",
+    "section": "3.3 Multiple plots with subcaption",
+    "text": "3.3 Multiple plots with subcaption\nIn this case, it is fundamental to define the label, otherwise the subcaption will not appear.\nThe subplots can be organized in either columns or rows (or a combination fo the two):\n\n\n\n\n\n\n\n\nOption\nValue\nDescription\n\n\n\n\nlayout-ncol:\n3\nThe space is divided into columns (3, in this case)\n\n\nlayout-nrow\n\nThe space is divided into rows (not used in this example)\n\n\n\nThe cross referencing of the picture (Figure 4) works as usual (@fig-distribution). Also the sub picture can be cross referenced, so that we can say what is depicted specifically Figure 4 (a), Figure 4 (b), Figure 4 (c) (@fig-distribution-1, @fig-distribution-2, @fig-distribution-3).\n```{r}\n#| label: fig-distribution\n#| layout-ncol: 3\n#| fig-cap: Standarzied Normal Distribution\n#| fig-subcap: \n#|   - \"Density\"\n#|   - \"Cumulative\"\n#|   - \"Quantile\"\nx = seq(-3,3, length.out= 1000)\nd = data.frame(x = x, \n               dx = dnorm(x), \n               px = pnorm(x), \n               qx = qnorm(pnorm(x)))\nplot(d$x, d$dx, type = \"l\", lwd = 2, cex = 2, xlab = \"x\", ylab = \"dx\")\nplot(d$x, d$px, type = \"l\", lwd = 2, cex = 2, xlab = \"x\", ylab = \"px\")\nplot(d$px, d$qx, type = \"l\", lwd = 2, cex = 2, xlab = \"px\", ylab = \"qx\")\n```\n\n\n\n\n\n\n\n\n\n\n\n(a) Density\n\n\n\n\n\n\n\n\n\n\n\n(b) Cumulative\n\n\n\n\n\n\n\n\n\n\n\n(c) Quantile\n\n\n\n\n\n\n\nFigure 4: Standarzied Normal Distribution"
   }
 ]

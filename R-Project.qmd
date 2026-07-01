@@ -116,8 +116,7 @@ From `File` $\rightarrow$ New Project:
 
 ```{r}
 #| label: fig-project
-#| column: screen-inset-shaded
-#| out-width: 50%
+#| out-width: 70%
 #| fig-align: center
 #| layout-ncol: 3
 #| fig-cap: Create a new R Project in 3 steps

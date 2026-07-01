@@ -3,26 +3,27 @@ project:
   output-dir: docs
 
 website:
-  sidebar:
-    style: "docked"
+  navbar:
     search: true
     background: primary
-    contents:
+    left:
       - text: "Shine with quarto"
         href: index.qmd
-      - section: "Getting Started"
-        contents: 
-        - text: R project and basic settings
-          href: R-Project.qmd
-        - git-hub.qmd
-      - text: "Basic documents"
-        contents: 
-        - html-layout.qmd
-        - code-chunk.qmd
-      - text: "Presentation documents"
-        contents: 
-        - html-presentation.qmd
-        - shiny-integration.qmd
+      - text: "Getting Started"
+        menu:
+         - text: "R project and basic settings"
+           href: R-Project.qmd
+         - text: "Deploy on GitHub"
+           href: git-hub.qmd
+      - text: "Basics"
+        menu: 
+         - text: "Layout"
+           href: html-layout.qmd
+         - text: "Code chunk" 
+           href: code-chunk.qmd
+         - text: "Presentation documents"
+           href:  html-presentation.qmd
+      - text: "Shiny"
         
 
 format:
@@ -31,6 +32,7 @@ format:
       - minty
     css: styles.css
     toc: true
+    number-sections: true
 
 
 
