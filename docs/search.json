@@ -497,5 +497,54 @@
     "title": "Shiny",
     "section": "5.3 All together",
     "text": "5.3 All together\n\nui = fluidPage(\nselectInput(inputId = \"mySelection\", \n            label = h3(\"Select box\"),\n    choices = list(\"Choice 1\" = 1, \"Choice 2\" = 2, \"Choice 3\" = 3),\n    selected = 1), \n  \n  verbatimTextOutput(\n  outputId = \"myOutput\"\n)\n  \n)\n\nserver = function(input, output) {\n  output$myOutput = renderText({\n    paste(paste(\"This is my choice\"), input$mySelection)\n  })\n}\n\nshinyApp(ui, server)"
+  },
+  {
+    "objectID": "html-presentation.html#section",
+    "href": "html-presentation.html#section",
+    "title": "Presentation and Interactivity",
+    "section": "",
+    "text": "The format must be changed in revealjs\n\nYAML definitionArguments\n\n\n\ntitle: \"Presentation and Interactivity\"\nauthor:\n  name: \"Ottavia M. Epifania, Ph.D.\"\n  email: ottavia.epifania@unitn.it\naffiliation: \"ARCA summer school\"\nformat: \n  revealjs: \n    self-contained: true\n    theme: [simple, custom.scss]\n    logo: \"img/peacock.png\"\n    footer: \"Presentation\"\n    scrollable: true\n    transition: none\n    transition-speed: slow\n    background-transition: fade\n    slide-number:  c/t\n    show-slide-number: all\n[...]\n\n\n\n\n\n\n\n\n\n\n\nOption\nValue\nDescription\n\n\n\n\nself-contained\ntrue\nEmbeds all dependencies (CSS, JS, images) into a single HTML file\n\n\ntheme\n[simple, custom.scss]\nBase theme plus custom SCSS styling\n\n\nlogo\nimg/peacock.png\nLogo displayed in the presentation header/interface\n\n\nfooter\n\"Presentation\"\nFooter text shown on each slide\n\n\nscrollable\ntrue\nAllows scrolling inside slides when content overflows\n\n\ntransition\nnone\nDisables slide transition animations\n\n\ntransition-speed\nslow\nControls transition speed (default, fast, slow)\n\n\nbackground-transition\nfade\nControls background transition effect between slides\n\n\nslide-number\nc/t, c, true, false, h/v\nControls slide numbering format: current/total (c/t), current only (c), hierarchical (h/v), enabled (true), or disabled (false)\n\n\nshow-slide-number\nall, speaker, print, false\nControls where slide numbers appear: all slides, speaker view only, print/PDF only, or disabled"
+  },
+  {
+    "objectID": "html-presentation.html#section-1",
+    "href": "html-presentation.html#section-1",
+    "title": "Presentation and Interactivity",
+    "section": "",
+    "text": "Create a Section (Header 1 #):\n\n# Introduction\n\nCreate a Slide (Header 2 ##):\n\n## This is a slide \n\nHere I write something concerning my topic"
+  },
+  {
+    "objectID": "html-presentation.html#section-2",
+    "href": "html-presentation.html#section-2",
+    "title": "Presentation and Interactivity",
+    "section": "",
+    "text": "What does incremental means?\nIt means each element of a list is shown incrementally instead of showing all text from the beginning\nHere’s a new line! Shown incrementally\n\n\nYAML:\n\ntitle: \"03-Presentations\"\nauthor: \"Ottavia M. Epifania\"\nformat:\n  revealjs:\n    incremental: true   \n\n\n\n\n\n\n\n\n\nWarning\n\n\nAll contents in all slides are displayed incrementally!"
+  },
+  {
+    "objectID": "html-presentation.html#control-incremental-contents",
+    "href": "html-presentation.html#control-incremental-contents",
+    "title": "Presentation and Interactivity",
+    "section": "Control incremental contents",
+    "text": "Control incremental contents\n\nPrevent incrementForce increment\n\n\nWhen:\n\nformat:\n  revealjs:\n    incremental: true    \n\nThis prevents incremental lists:\n\n::: {.nonincremental}\n\n- I'm a list\n\n- But I'm not incremental \n\n- Even though I'm supposed to be \n\n:::\n\n\n\nWhen (default):\n\nformat:\n  revealjs:\n    incremental: false  \n\nThis allows for incremental lists:\n\n::: {.incremental}\n\n- I'm a list\n\n- and I'm incremental! \n\n- Even though I ain't supposed to be \n\n:::"
+  },
+  {
+    "objectID": "html-presentation.html#simple-pause",
+    "href": "html-presentation.html#simple-pause",
+    "title": "Presentation and Interactivity",
+    "section": "Simple pause",
+    "text": "Simple pause\nYou can force incremental contents\n\nBy pausing the contents\n\n\nThis is how you do it:\n\nYou can force incremental contents \n\n. . . \n\nBy pausing the contents\n\n. . . \n\nThis is how you do it: \n\nCreate a Slide (Header 2 ##):\n\n## This is a slide \n\nHere I write something concerning my topic"
+  },
+  {
+    "objectID": "html-presentation.html#define-slide-specific-behavior",
+    "href": "html-presentation.html#define-slide-specific-behavior",
+    "title": "Presentation and Interactivity",
+    "section": "Define slide-specific behavior",
+    "text": "Define slide-specific behavior\nTo delete the footer\n\n## My slide with no footer {footer=\"false\"}\n\nTo make the content scrollable\n\n## My specific scrollable slide {.scrollable}\n\nTo make the content smaller\n\n## The text in this slide is smaller {.smaller}\n\nTo combine them together\n\n## Together {.smaller footer=\"false\"}"
+  },
+  {
+    "objectID": "html-presentation.html#available-themes",
+    "href": "html-presentation.html#available-themes",
+    "title": "Presentation and Interactivity",
+    "section": "Available themes",
+    "text": "Available themes\nA lot of predefined themes!\n\n\n\n\n---\ntitle: \"My presentation\"\nauthor: \"Ted Bundy\"\nformat:\n  revealjs: \n    theme: dark\n---\n\n\nbeige\nblood\ndark\ndefault\ndracula\nleague\nmoon\nbeige\nblood\ndark\n\ndefault\ndracula\nleague\nmoon\nnight\nserif\nsimple\nsky\nsolarized"
   }
 ]
