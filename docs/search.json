@@ -460,5 +460,110 @@
     "title": "Code integration",
     "section": "3.3 Multiple plots with subcaption",
     "text": "3.3 Multiple plots with subcaption\nIn this case, it is fundamental to define the label, otherwise the subcaption will not appear.\nThe subplots can be organized in either columns or rows (or a combination fo the two):\n\n\n\n\n\n\n\n\nOption\nValue\nDescription\n\n\n\n\nlayout-ncol:\n3\nThe space is divided into columns (3, in this case)\n\n\nlayout-nrow\n\nThe space is divided into rows (not used in this example)\n\n\n\nThe cross referencing of the picture (Figure 4) works as usual (@fig-distribution). Also the sub picture can be cross referenced, so that we can say what is depicted specifically Figure 4 (a), Figure 4 (b), Figure 4 (c) (@fig-distribution-1, @fig-distribution-2, @fig-distribution-3).\n```{r}\n#| label: fig-distribution\n#| layout-ncol: 3\n#| fig-cap: Standarzied Normal Distribution\n#| fig-subcap: \n#|   - \"Density\"\n#|   - \"Cumulative\"\n#|   - \"Quantile\"\nx = seq(-3,3, length.out= 1000)\nd = data.frame(x = x, \n               dx = dnorm(x), \n               px = pnorm(x), \n               qx = qnorm(pnorm(x)))\nplot(d$x, d$dx, type = \"l\", lwd = 2, cex = 2, xlab = \"x\", ylab = \"dx\")\nplot(d$x, d$px, type = \"l\", lwd = 2, cex = 2, xlab = \"x\", ylab = \"px\")\nplot(d$px, d$qx, type = \"l\", lwd = 2, cex = 2, xlab = \"px\", ylab = \"qx\")\n```\n\n\n\n\n\n\n\n\n\n\n\n(a) Density\n\n\n\n\n\n\n\n\n\n\n\n(b) Cumulative\n\n\n\n\n\n\n\n\n\n\n\n(c) Quantile\n\n\n\n\n\n\n\nFigure 4: Standarzied Normal Distribution"
+  },
+  {
+    "objectID": "shiny-integration.html",
+    "href": "shiny-integration.html",
+    "title": "Shiny",
+    "section": "",
+    "text": "ui (User Interface)\nThe container, whatever sees the user\nUsed for setting the desired configurations of options that will be elaborated in the server\nUsed for displaying the results of the computations that took place in the server\n\nserver\nIt gets the work done, according to the configuration set in the UI\nReplaces the results into the allocated spaces\n\n\nUI and Server work in a flow, communicating to each other (Figure 1).\n\n\n\n\n\n\n\n\n\nflowchart LR\n\n    UI[\"**UI**&lt;br/&gt;&lt;br/&gt;Set the options&lt;br/&gt;Displays the results\"]\n    SERVER[\"**SERVER**&lt;br/&gt;&lt;br/&gt;Elaborates the options&lt;br/&gt;Sends back the results\"]\n\n    UI --&gt;|\"Input\"| SERVER\n    SERVER --&gt;|\"Output\"| UI\n\n    style UI fill:#2b6c8e,stroke:#1b4258,stroke-width:2px,color:#ffffff\n    style SERVER fill:#8fd36f,stroke:#4c8b3a,stroke-width:2px,color:#ffffff\n\n    linkStyle default stroke:#FFD700,stroke-width:5px\n\n\n\n\n\n\n\n\n\nFigure 1: Interaction between the user interface (UI) and the server.\n\n\n\n\nDefine something in the ui and not using in the server: nothing happens, it just doesn’t exist\nCalling something in the server that has not been defined in the ui: errors everywhere"
+  },
+  {
+    "objectID": "html-presentation.html#a-new-slide",
+    "href": "html-presentation.html#a-new-slide",
+    "title": "Presentation and Interactivity",
+    "section": "A new slide",
+    "text": "A new slide"
+  },
+  {
+    "objectID": "shiny-integration.html#to-each-its-own-input-in-ui",
+    "href": "shiny-integration.html#to-each-its-own-input-in-ui",
+    "title": "Shiny",
+    "section": "2.1 To each its own: Input in UI",
+    "text": "2.1 To each its own: Input in UI\n\nsliderInput()     # Slider input widget\nnumericInput()    # Numeric input control\nselectInput()     # Select list input control\ncheckboxInput()   # Checkbox input control\ncheckboxGroupInput()\ndateInput()       # Date input\nfileInput()       # File upload control\nradioButtons()    # Radio buttons\ntextInput()       # Text input control\npasswordInput()   # Password input control\nactionButton()    # Action button\ndateInput()       # Date input\ndateRangeInput()  # Input a data range\n\nComplete list (with code)"
+  },
+  {
+    "objectID": "shiny-integration.html#to-each-its-own-output-in-ui",
+    "href": "shiny-integration.html#to-each-its-own-output-in-ui",
+    "title": "Shiny",
+    "section": "2.2 To each its own: Output in UI",
+    "text": "2.2 To each its own: Output in UI\n\nplotOutput()          # Plot output element\ntextOutput()          # Text output element\nverbatimTextOutput()  # Verbatim text output element\ntableOutput()         # Table output element\ndataTableOutput()     # Data table output element\nhtmlOutput()          # HTML output element\nuiOutput()            # user interface element\ndownloadButton()      # Download button\nProgress()            # Reporting progress (object oriented)\nwithProgress()        # Reporting progress (functional)\noutputOptions()       # Set options for an output object"
+  },
+  {
+    "objectID": "shiny-integration.html#to-each-its-own-output-containers-in-server",
+    "href": "shiny-integration.html#to-each-its-own-output-containers-in-server",
+    "title": "Shiny",
+    "section": "2.3 To each its own: Output containers in server",
+    "text": "2.3 To each its own: Output containers in server\n\nrenderPlot()        # Plot output\nrenderText()        # Text output\nrenderPrint()       # Printable output\nrenderTable()       # Table output\nrenderDataTable()   # Data table output\nrenderImage()       # Image file output\nrenderUI()          # UI output\ndownloadHandler()   # File downloads"
+  },
+  {
+    "objectID": "shiny-integration.html#input",
+    "href": "shiny-integration.html#input",
+    "title": "Shiny",
+    "section": "3.1 Input",
+    "text": "3.1 Input\n\nsliderInput()     # Slider input widget\nnumericInput()    # Numeric input control\nselectInput()     # Select list input control\ncheckboxInput()   # Checkbox input control\ncheckboxGroupInput()\ndateInput()       # Date input\nfileInput()       # File upload control\nradioButtons()    # Radio buttons\ntextInput()       # Text input control\npasswordInput()   # Password input control\nactionButton()    # Action button\ndateInput()       # Date input\ndateRangeInput()  # Input a data range\n\nComplete list (with code)"
+  },
+  {
+    "objectID": "shiny-integration.html#output",
+    "href": "shiny-integration.html#output",
+    "title": "Shiny",
+    "section": "3.2 Output",
+    "text": "3.2 Output\n\nplotOutput()          # Plot output element\ntextOutput()          # Text output element\nverbatimTextOutput()  # Verbatim text output element\ntableOutput()         # Table output element\ndataTableOutput()     # Data table output element\nhtmlOutput()          # HTML output element\nuiOutput()            # user interface element\ndownloadButton()      # Download button\nProgress()            # Reporting progress (object oriented)\nwithProgress()        # Reporting progress (functional)\noutputOptions()       # Set options for an output object"
+  },
+  {
+    "objectID": "shiny-integration.html#section",
+    "href": "shiny-integration.html#section",
+    "title": "Shiny",
+    "section": "4.1 ",
+    "text": "4.1 \n\nui = fluidPage(\n\n)"
+  },
+  {
+    "objectID": "shiny-integration.html#section-1",
+    "href": "shiny-integration.html#section-1",
+    "title": "Shiny",
+    "section": "4.2 ",
+    "text": "4.2 \n\nui = fluidPage(\nselectInput(inputId = \"mySelection\", \n            label = h3(\"Select box\"),\n    choices = list(\"Choice 1\" = 1, \"Choice 2\" = 2, \"Choice 3\" = 3),\n    selected = 1)\n)"
+  },
+  {
+    "objectID": "shiny-integration.html#section-2",
+    "href": "shiny-integration.html#section-2",
+    "title": "Shiny",
+    "section": "4.3 ",
+    "text": "4.3 \n\nui = fluidPage(\nselectInput(inputId = \"mySelection\", \n            label = h3(\"Select box\"),\n    choices = list(\"Choice 1\" = 1, \"Choice 2\" = 2, \"Choice 3\" = 3),\n    selected = 1), \n  \n  verbatimTextOutput(\n  outputId = \"myOutput\"\n)\n  \n)"
+  },
+  {
+    "objectID": "shiny-integration.html#section-3",
+    "href": "shiny-integration.html#section-3",
+    "title": "Shiny",
+    "section": "4.4 ",
+    "text": "4.4 \n\nui = fluidPage(\nselectInput(inputId = \"mySelection\", \n            label = h3(\"Select box\"),\n    choices = list(\"Choice 1\" = 1, \"Choice 2\" = 2, \"Choice 3\" = 3),\n    selected = 1), \n  \n  verbatimTextOutput(\n  outputId = \"myOutput\"\n)\n  \n)\n\nserver = function(input, output) {\n  output$myOutput = renderText({\n    paste(paste(\"This is my choice\"), input$mySelection)\n  })\n}"
+  },
+  {
+    "objectID": "shiny-integration.html#section-4",
+    "href": "shiny-integration.html#section-4",
+    "title": "Shiny",
+    "section": "5.1 ",
+    "text": "5.1 \n\nui = fluidPage(\nselectInput(inputId = \"mySelection\", \n            label = h3(\"Select box\"),\n    choices = list(\"Choice 1\" = 1, \"Choice 2\" = 2, \"Choice 3\" = 3),\n    selected = 1), \n  \n  verbatimTextOutput(\n  outputId = \"myOutput\"\n)\n  \n)\n\nserver = function(input, output) {\n  output$myOutput = renderText({\n    paste(paste(\"This is my choice\"), input$mySelection)\n  })\n}\n\nshinyApp(ui, server)"
+  },
+  {
+    "objectID": "shiny-integration.html#ui-1",
+    "href": "shiny-integration.html#ui-1",
+    "title": "Shiny",
+    "section": "5.1 UI",
+    "text": "5.1 UI\n\n5.1.1 Input definition\n\nui = fluidPage(\nselectInput(inputId = \"mySelection\", \n            label = h3(\"Select box\"),\n    choices = list(\"Choice 1\" = 1, \"Choice 2\" = 2, \"Choice 3\" = 3),\n    selected = 1)\n)\n\n\n\n5.1.2 Output definition\n\nui = fluidPage(\nselectInput(inputId = \"mySelection\", \n            label = h3(\"Select box\"),\n    choices = list(\"Choice 1\" = 1, \"Choice 2\" = 2, \"Choice 3\" = 3),\n    selected = 1), \n  \n  verbatimTextOutput(\n  outputId = \"myOutput\"\n)\n  \n)"
+  },
+  {
+    "objectID": "shiny-integration.html#server-1",
+    "href": "shiny-integration.html#server-1",
+    "title": "Shiny",
+    "section": "5.2 Server",
+    "text": "5.2 Server\n\nui = fluidPage(\nselectInput(inputId = \"mySelection\", \n            label = h3(\"Select box\"),\n    choices = list(\"Choice 1\" = 1, \"Choice 2\" = 2, \"Choice 3\" = 3),\n    selected = 1), \n  \n  verbatimTextOutput(\n  outputId = \"myOutput\"\n)\n  \n)\n\nserver = function(input, output) {\n  output$myOutput = renderText({\n    paste(paste(\"This is my choice\"), input$mySelection)\n  })\n}"
+  },
+  {
+    "objectID": "shiny-integration.html#all-together",
+    "href": "shiny-integration.html#all-together",
+    "title": "Shiny",
+    "section": "5.3 All together",
+    "text": "5.3 All together\n\nui = fluidPage(\nselectInput(inputId = \"mySelection\", \n            label = h3(\"Select box\"),\n    choices = list(\"Choice 1\" = 1, \"Choice 2\" = 2, \"Choice 3\" = 3),\n    selected = 1), \n  \n  verbatimTextOutput(\n  outputId = \"myOutput\"\n)\n  \n)\n\nserver = function(input, output) {\n  output$myOutput = renderText({\n    paste(paste(\"This is my choice\"), input$mySelection)\n  })\n}\n\nshinyApp(ui, server)"
   }
 ]

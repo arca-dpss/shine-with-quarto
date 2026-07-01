@@ -24,6 +24,9 @@ website:
          - text: "Presentation documents"
            href:  html-presentation.qmd
       - text: "Shiny"
+        menu: 
+          - text: "Shiny logic"
+            href: shiny-integration.qmd
         
 
 format:

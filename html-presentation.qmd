@@ -1,5 +1,44 @@
 ---
-title: "html-presentation"
-format: revealjs
+title: "Presentation and Interactivity"
+author:
+  name: "Ottavia M. Epifania, Ph.D."
+  email: ottavia.epifania@unitn.it
+affiliation: "ARCA summer school"
+format: 
+  revealjs: 
+    self-contained: true
+    theme: [simple, custom.scss]
+    logo: "img/peacock.jpg"
+    footer: "[Presentations](https://quarto.org/docs/presentations/revealjs/)"
+    scrollable: true
+    transition: none
+    transition-speed: slow
+    background-transition: fade
+    slide-number:  c/t
+    show-slide-number: all
+editor_options: 
+  chunk_output_type: console
+execute: 
+  fig-align: center
+  out-width: 80%
+  echo: false
+code-annotations: select
 ---
 
+
+```{r}
+#| include: false
+#| label: setup
+
+library(emoji)
+library(ggplot2)
+library(knitr)
+library(kableExtra)
+library(DT)
+```
+
+
+
+# Creating slides show 
+
+## A new slide
