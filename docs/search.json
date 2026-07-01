@@ -168,11 +168,7 @@
     "href": "html-layout.html",
     "title": "HTML document: Layout",
     "section": "",
-    "text": "The overall appearance and behavior of the document is specified in the YAML.\nImportantly the YAML defines the extension of the file rendering:\n\n\n\n\n\n\nHTML default YAML\n\n\n\n---\ntitle: \"Untitled\"\nformat: html\neditor: visual\n---\n\n\n\n\n\n\n\n\nPDF default YAML\n\n\n\n---\ntitle: \"Untitled\"\nformat: pdf\neditor: visual\n---\n\n\n\n\nQuarto (as well as as RMarkdown) allows for visualizing the text editor as a WYSIWYG text editor:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\n\n\nAlthough at the very beginning, the use of the visual editor might be tempting, don’t indulge! Using the source editor is an investiment in your future programming skills :)\n\n\n\n\n\nTable Of Ccontents: Defines the index of your document and its associated characteristics (e.g., where it is located):\n\n---\ntitle: \"My quarto file\"\nauthor: \"Jane Doe\"\ndate: today\nformat: \n  html:\n    toc: true                \n    toc-title: My contents   \n    toc-location: left       \n---\n\nBe mindful of the indentation!! With the wrong indentation, the YAML breaks down and the document will not compile.\n\ntoc: true: Set the table of contents\n\ntoc-title: My contents: Define the title of the toc\ntoc-location: left: Define the position of the toc (options: left, right, body)\n\n\n\n\nThe default theme of the document can be modified with the predefined themes\n\n---\ntitle: \"My quarto file\"\nauthor: \"Jane Doe\"\ndate: today\nformat: \n  html:\n    toc: true                   \n    toc-title: My contents   \n    toc-location: left\n    theme: superhero  \n    fontsize: 32px    \nlang: it                     \n---\n\nThe theme can be defined with the theme: specific_theme in the YAML. Further customization can be brought with other YAML arguments (e.g.,fontsize) or with specific css settings\nThe theme can adapt to specific settings, such as whether you want both ligth and dark theme:\n\n---\nformat: \n  html:\n    theme:\n     light: minty\n     dark: superhero\n---\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSet the language for your document. This is not the autocorrect!\nIt sets the language to be used in the cross-referencing of your document (see Section 4).\n\n\n\n\n\nLanguage\nCode\n\n\n\n\nEnglish\nen\n\n\nChinese\nzh\n\n\nSpanish\nes\n\n\nFrench\nfr\n\n\nJapanese\nja\n\n\nGerman\nde\n\n\n\n\n\n\n\n\nLanguage\nCode\n\n\n\n\nPortuguese\npt\n\n\nRussian\nru\n\n\nCzech\ncs\n\n\nFinnish\nfi\n\n\nDutch\nnl\n\n\nItalian\nit\n\n\nPolish\npl\n\n\nKorean\nko",
-    "crumbs": [
-      "Basic documents",
-      "HTML document: Layout"
-    ]
+    "text": "The overall appearance and behavior of the document is specified in the YAML.\nImportantly the YAML defines the extension of the file rendering:\n\n\n\n\n\n\nHTML default YAML\n\n\n\n---\ntitle: \"Untitled\"\nformat: html\neditor: visual\n---\n\n\n\n\n\n\n\n\nPDF default YAML\n\n\n\n---\ntitle: \"Untitled\"\nformat: pdf\neditor: visual\n---\n\n\n\n\nQuarto (as well as as RMarkdown) allows for visualizing the text editor as a WYSIWYG text editor:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\n\n\nAlthough at the very beginning, the use of the visual editor might be tempting, don’t indulge! Using the source editor is an investiment in your future programming skills :)\n\n\n\n\n\nTable Of Ccontents: Defines the index of your document and its associated characteristics (e.g., where it is located):\n\n---\ntitle: \"My quarto file\"\nauthor: \"Jane Doe\"\ndate: today\nformat: \n  html:\n    toc: true                \n    toc-title: My contents   \n    toc-location: left       \n---\n\nBe mindful of the indentation!! With the wrong indentation, the YAML breaks down and the document will not compile.\n\ntoc: true: Set the table of contents\n\ntoc-title: My contents: Define the title of the toc\ntoc-location: left: Define the position of the toc (options: left, right, body)\n\n\n\n\nThe default theme of the document can be modified with the predefined themes\n\n---\ntitle: \"My quarto file\"\nauthor: \"Jane Doe\"\ndate: today\nformat: \n  html:\n    toc: true                   \n    toc-title: My contents   \n    toc-location: left\n    theme: superhero  \n    fontsize: 32px    \nlang: it                     \n---\n\nThe theme can be defined with the theme: specific_theme in the YAML. Further customization can be brought with other YAML arguments (e.g.,fontsize) or with specific css settings\nThe theme can adapt to specific settings, such as whether you want both ligth and dark theme:\n\n---\nformat: \n  html:\n    theme:\n     light: minty\n     dark: superhero\n---\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSet the language for your document. This is not the autocorrect!\nIt sets the language to be used in the cross-referencing of your document (see Section 4).\n\n\n\n\n\nLanguage\nCode\n\n\n\n\nEnglish\nen\n\n\nChinese\nzh\n\n\nSpanish\nes\n\n\nFrench\nfr\n\n\nJapanese\nja\n\n\nGerman\nde\n\n\n\n\n\n\n\n\nLanguage\nCode\n\n\n\n\nPortuguese\npt\n\n\nRussian\nru\n\n\nCzech\ncs\n\n\nFinnish\nfi\n\n\nDutch\nnl\n\n\nItalian\nit\n\n\nPolish\npl\n\n\nKorean\nko"
   },
   {
     "objectID": "html-layout.html#source-vs.-visual",
@@ -201,110 +197,70 @@
     "href": "html-layout.html#editor",
     "title": "HTML document: Layout",
     "section": "",
-    "text": "Quarto (as well as as RMarkdown) allows for visualizing the text editor as a WYSIWYG text editor:",
-    "crumbs": [
-      "Basic documents",
-      "HTML document: Layout"
-    ]
+    "text": "Quarto (as well as as RMarkdown) allows for visualizing the text editor as a WYSIWYG text editor:"
   },
   {
     "objectID": "html-layout.html#toc",
     "href": "html-layout.html#toc",
     "title": "HTML document: Layout",
     "section": "",
-    "text": "Table Of Ccontents: Defines the index of your document and its associated characteristics (e.g., where it is located):\n\n---\ntitle: \"My quarto file\"\nauthor: \"Jane Doe\"\ndate: today\nformat: \n  html:\n    toc: true                \n    toc-title: My contents   \n    toc-location: left       \n---\n\nBe mindful of the indentation!! With the wrong indentation, the YAML breaks down and the document will not compile.\n\ntoc: true: Set the table of contents\n\ntoc-title: My contents: Define the title of the toc\ntoc-location: left: Define the position of the toc (options: left, right, body)",
-    "crumbs": [
-      "Basic documents",
-      "HTML document: Layout"
-    ]
+    "text": "Table Of Ccontents: Defines the index of your document and its associated characteristics (e.g., where it is located):\n\n---\ntitle: \"My quarto file\"\nauthor: \"Jane Doe\"\ndate: today\nformat: \n  html:\n    toc: true                \n    toc-title: My contents   \n    toc-location: left       \n---\n\nBe mindful of the indentation!! With the wrong indentation, the YAML breaks down and the document will not compile.\n\ntoc: true: Set the table of contents\n\ntoc-title: My contents: Define the title of the toc\ntoc-location: left: Define the position of the toc (options: left, right, body)"
   },
   {
     "objectID": "html-layout.html#themes",
     "href": "html-layout.html#themes",
     "title": "HTML document: Layout",
     "section": "",
-    "text": "The default theme of the document can be modified with the predefined themes\n\n---\ntitle: \"My quarto file\"\nauthor: \"Jane Doe\"\ndate: today\nformat: \n  html:\n    toc: true                   \n    toc-title: My contents   \n    toc-location: left\n    theme: superhero  \n    fontsize: 32px    \nlang: it                     \n---\n\nThe theme can be defined with the theme: specific_theme in the YAML. Further customization can be brought with other YAML arguments (e.g.,fontsize) or with specific css settings\nThe theme can adapt to specific settings, such as whether you want both ligth and dark theme:\n\n---\nformat: \n  html:\n    theme:\n     light: minty\n     dark: superhero\n---",
-    "crumbs": [
-      "Basic documents",
-      "HTML document: Layout"
-    ]
+    "text": "The default theme of the document can be modified with the predefined themes\n\n---\ntitle: \"My quarto file\"\nauthor: \"Jane Doe\"\ndate: today\nformat: \n  html:\n    toc: true                   \n    toc-title: My contents   \n    toc-location: left\n    theme: superhero  \n    fontsize: 32px    \nlang: it                     \n---\n\nThe theme can be defined with the theme: specific_theme in the YAML. Further customization can be brought with other YAML arguments (e.g.,fontsize) or with specific css settings\nThe theme can adapt to specific settings, such as whether you want both ligth and dark theme:\n\n---\nformat: \n  html:\n    theme:\n     light: minty\n     dark: superhero\n---"
   },
   {
     "objectID": "html-layout.html#headings",
     "href": "html-layout.html#headings",
     "title": "HTML document: Layout",
     "section": "2.1 Headings",
-    "text": "2.1 Headings\nThe number of # defines the level of the headings (the lower the number of #, the higher the level)\n\n# First level (H1)\n\nSection\n\n## Second level (H2)\n\nSubsection\n\n### Third level (H3)\n\nSub-subsection\n\n#### Fourth level (H4)\n\nParagraph\n\n##### Fifth level (H5)\n\nI frankly have never used that\n\n##### Sixth level (H6)\n\nI have no idea",
-    "crumbs": [
-      "Basic documents",
-      "HTML document: Layout"
-    ]
+    "text": "2.1 Headings\nThe number of # defines the level of the headings (the lower the number of #, the higher the level)\n\n# First level (H1)\n\nSection\n\n## Second level (H2)\n\nSubsection\n\n### Third level (H3)\n\nSub-subsection\n\n#### Fourth level (H4)\n\nParagraph\n\n##### Fifth level (H5)\n\nI frankly have never used that\n\n##### Sixth level (H6)\n\nI have no idea"
   },
   {
     "objectID": "html-layout.html#text-formatting",
     "href": "html-layout.html#text-formatting",
     "title": "HTML document: Layout",
     "section": "2.2 Text Formatting",
-    "text": "2.2 Text Formatting\nThe text formatting is defined through specific tags:\n\n2.2.1 Formatting\n\n*italics*, **bold**, ***bold italics*** \n\nitalics, bold, bold italics\n\n\n2.2.2 Super/sub script\n\ntextsuperscirpt^2^, textunderscript~2~\n\ntextsuperscirpt2, textunderscript2\n\n\n2.2.3 In line code\n\n`this is myinline code`\n\nthis is myinline code\n\n\n\n\n\n\nCode chunk\n\n\n\n\n\nThere will be a specific lesson on the code chunks",
-    "crumbs": [
-      "Basic documents",
-      "HTML document: Layout"
-    ]
+    "text": "2.2 Text Formatting\nThe text formatting is defined through specific tags:\n\n2.2.1 Formatting\n\n*italics*, **bold**, ***bold italics*** \n\nitalics, bold, bold italics\n\n\n2.2.2 Super/sub script\n\ntextsuperscirpt^2^, textunderscript~2~\n\ntextsuperscirpt2, textunderscript2\n\n\n2.2.3 In line code\n\n`this is myinline code`\n\nthis is myinline code\n\n\n\n\n\n\nCode chunk\n\n\n\n\n\nThere will be a specific lesson on the code chunks"
   },
   {
     "objectID": "html-layout.html#links-and-images",
     "href": "html-layout.html#links-and-images",
     "title": "HTML document: Layout",
     "section": "2.3 Links and images",
-    "text": "2.3 Links and images\n\n&lt;https://github.com/&gt;\n\nhttps://github.com/\n\nMy link is [here](https://github.com/)\n\nMy link is here\n\n![This is an image](img/picture.jpg)\n\n\n\n\n\n\n\nFigure 1: This is an image",
-    "crumbs": [
-      "Basic documents",
-      "HTML document: Layout"
-    ]
+    "text": "2.3 Links and images\n\n&lt;https://github.com/&gt;\n\nhttps://github.com/\n\nMy link is [here](https://github.com/)\n\nMy link is here\n\n![This is an image](img/picture.jpg)\n\n\n\n\n\n\n\nFigure 1: This is an image"
   },
   {
     "objectID": "html-layout.html#lists",
     "href": "html-layout.html#lists",
     "title": "HTML document: Layout",
     "section": "2.4 Lists",
-    "text": "2.4 Lists\n\n* Main Unordered List\n  + First sub-item\n  + Second sub-item \n    - It's getting weird\n\n\nMain Unordered List\n\nFirst sub-item\nSecond sub-item\n\nIt’s getting weird\n\n\n\n\n1. Main ordered list\n2. Second item\n   i) First sub-item 1\n      A.  First sub-sub-item 1\n\n\nMain ordered list\nSecond item\n\nFirst sub-item 1\n\nFirst sub-sub-item 1\n\n\n\n\n- [ ] First things first 1\n- [ ] Second things second 2\n\n\nFirst things first 1\nSecond things second 2",
-    "crumbs": [
-      "Basic documents",
-      "HTML document: Layout"
-    ]
+    "text": "2.4 Lists\n\n* Main Unordered List\n  + First sub-item\n  + Second sub-item \n    - It's getting weird\n\n\nMain Unordered List\n\nFirst sub-item\nSecond sub-item\n\nIt’s getting weird\n\n\n\n\n1. Main ordered list\n2. Second item\n   i) First sub-item 1\n      A.  First sub-sub-item 1\n\n\nMain ordered list\nSecond item\n\nFirst sub-item 1\n\nFirst sub-sub-item 1\n\n\n\n\n- [ ] First things first 1\n- [ ] Second things second 2\n\n\nFirst things first 1\nSecond things second 2"
   },
   {
     "objectID": "html-layout.html#math",
     "href": "html-layout.html#math",
     "title": "HTML document: Layout",
     "section": "2.5 Math",
-    "text": "2.5 Math\nIn-line math:\n\nThis is an in-line equation $y = \\beta_0 + \\beta_1 X + \\varepsilon$\n\nThis is an in-line equation \\(y = \\beta_0 + \\beta_1 X + \\varepsilon\\)\nMath math:\n\nThis is an  equation $$z = \\dfrac{\\bar{x} -\\mu}{\\sigma}$$\n\nThis is an equation \\[z = \\dfrac{\\bar{x} -\\mu}{\\sigma}\\]",
-    "crumbs": [
-      "Basic documents",
-      "HTML document: Layout"
-    ]
+    "text": "2.5 Math\nIn-line math:\n\nThis is an in-line equation $y = \\beta_0 + \\beta_1 X + \\varepsilon$\n\nThis is an in-line equation \\(y = \\beta_0 + \\beta_1 X + \\varepsilon\\)\nMath math:\n\nThis is an  equation $$z = \\dfrac{\\bar{x} -\\mu}{\\sigma}$$\n\nThis is an equation \\[z = \\dfrac{\\bar{x} -\\mu}{\\sigma}\\]"
   },
   {
     "objectID": "html-layout.html#references",
     "href": "html-layout.html#references",
     "title": "HTML document: Layout",
     "section": "2.6 References",
-    "text": "2.6 References\nDefine the path of the bib file in the YAML\n\n[...]\nbibliography: bib/references.bib\n\nThen set your file with .bib extension. This file can be created with any text editor, including RStudio.\nTo use RStudio as a text editor&gt;\n\nOpen a new script:\nshift + ctrl + n\nSet it to be a text file:\n\n\n\n\n\n\n\n\n\n\n\nPrepare bigliography\n\n\n@Manual{rsoft,\n    title = {R: A Language and Environment for Statistical Computing},\n    author = {{R Core Team}},\n    organization = {R Foundation for Statistical Computing},\n    address = {Vienna, Austria},\n    year = {2025},\n    url = {https://www.R-project.org/}\n}\n@Book{ggplot,\n    author = {Hadley Wickham},\n    title = {ggplot2: Elegant Graphics for Data Analysis},\n    publisher = {Springer-Verlag New York},\n    year = {2016},\n    isbn = {978-3-319-24277-4},\n    url = {https://ggplot2.tidyverse.org}\n}\n@article{epifania2024,\n  title={A guided tutorial on linear mixed-effects models for the analysis of accuracies and response times in experiments with fully crossed design.},\n  author={Epifania, Ottavia M and Anselmi, Pasquale and Robusto, Egidio},\n  journal={Psychological Methods},\n  year={2024},\n  publisher={American Psychological Association}, \n  doi={https://doi.org/10.1037/met0000708}\n}\n\nMendeley, Zotero and similar software have built-in function for exporting the bib file. Read the related documentation\nTo call a reference:\n\n@citaton-key",
-    "crumbs": [
-      "Basic documents",
-      "HTML document: Layout"
-    ]
+    "text": "2.6 References\nDefine the path of the bib file in the YAML\n\n[...]\nbibliography: bib/references.bib\n\nThen set your file with .bib extension. This file can be created with any text editor, including RStudio.\nTo use RStudio as a text editor&gt;\n\nOpen a new script:\nshift + ctrl + n\nSet it to be a text file:\n\n\n\n\n\n\n\n\n\n\n\nPrepare bigliography\n\n\n@Manual{rsoft,\n    title = {R: A Language and Environment for Statistical Computing},\n    author = {{R Core Team}},\n    organization = {R Foundation for Statistical Computing},\n    address = {Vienna, Austria},\n    year = {2025},\n    url = {https://www.R-project.org/}\n}\n@Book{ggplot,\n    author = {Hadley Wickham},\n    title = {ggplot2: Elegant Graphics for Data Analysis},\n    publisher = {Springer-Verlag New York},\n    year = {2016},\n    isbn = {978-3-319-24277-4},\n    url = {https://ggplot2.tidyverse.org}\n}\n@article{epifania2024,\n  title={A guided tutorial on linear mixed-effects models for the analysis of accuracies and response times in experiments with fully crossed design.},\n  author={Epifania, Ottavia M and Anselmi, Pasquale and Robusto, Egidio},\n  journal={Psychological Methods},\n  year={2024},\n  publisher={American Psychological Association}, \n  doi={https://doi.org/10.1037/met0000708}\n}\n\nMendeley, Zotero and similar software have built-in function for exporting the bib file. Read the related documentation\nTo call a reference:\n\n@citaton-key"
   },
   {
     "objectID": "html-layout.html#citation-keys",
     "href": "html-layout.html#citation-keys",
     "title": "HTML document: Layout",
     "section": "2.7 Citation keys",
-    "text": "2.7 Citation keys\n\n\n\n\n\n\n\nKey\nOutput\n\n\n\n\n@ggplot does this\nWickman (2016) does this\n\n\nggplot2 is an interesting package [@ggplot2]\nggplot2 is an interesting package (Wickman, 2016)\n\n\nbla bla bla [@epifania2024; @ggplot2]\nbla bla bla (Epifania et al., 2024; Wickman, 2016)",
-    "crumbs": [
-      "Basic documents",
-      "HTML document: Layout"
-    ]
+    "text": "2.7 Citation keys\n\n\n\n\n\n\n\nKey\nOutput\n\n\n\n\n@ggplot does this\nWickman (2016) does this\n\n\nggplot2 is an interesting package [@ggplot2]\nggplot2 is an interesting package (Wickman, 2016)\n\n\nbla bla bla [@epifania2024; @ggplot2]\nbla bla bla (Epifania et al., 2024; Wickman, 2016)"
   },
   {
     "objectID": "html-layout.html#lang",
@@ -322,66 +278,42 @@
     "href": "html-layout.html#margins",
     "title": "HTML document: Layout",
     "section": "3.4 Margins",
-    "text": "3.4 Margins\nAllows for placing images, code, references or equations in the margin of a document\n\nFor instance, I'm writing a document about peacocks, and I want a picture of a peacock and a little bit of text in the margin of the document, aligned with this text.\n\n::: {.column-margin}\nI want this picture displayed in the margin \n\n\n![](img/peacock.png)\n\n:::\n\nFor instance, I’m writing a document about peacocks, and I want a picture of a peacock and a little bit of text in the margin of the document, aligned with this text.\n\n\nI want this picture displayed in the margin\n\nEven references can be placed in the margin, such that they appear alongside the text where they are cited.\nStarting with the right settings in the YAML:\n\nbibliography: biblio.bib\nreference-location: margin\ncitation-location: margin\n\nThese lines of code force the citations to appear in the right margin. The citation key can happen as usual.\n\nI want to cite the `ggplot2` package because it is the best package ever [@ggplot2]\n\nI want to cite the ggplot2 package because it is the best package ever (Wickham 2016)\n\nWickham, Hadley. 2016. Ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York. https://ggplot2.tidyverse.org.",
-    "crumbs": [
-      "Basic documents",
-      "HTML document: Layout"
-    ]
+    "text": "3.4 Margins\nAllows for placing images, code, references or equations in the margin of a document\n\nFor instance, I'm writing a document about peacocks, and I want a picture of a peacock and a little bit of text in the margin of the document, aligned with this text.\n\n::: {.column-margin}\nI want this picture displayed in the margin \n\n\n![](img/peacock.png)\n\n:::\n\nFor instance, I’m writing a document about peacocks, and I want a picture of a peacock and a little bit of text in the margin of the document, aligned with this text.\n\n\nI want this picture displayed in the margin\n\nEven references can be placed in the margin, such that they appear alongside the text where they are cited.\nStarting with the right settings in the YAML:\n\nbibliography: biblio.bib\nreference-location: margin\ncitation-location: margin\n\nThese lines of code force the citations to appear in the right margin. The citation key can happen as usual.\n\nI want to cite the `ggplot2` package because it is the best package ever [@ggplot2]\n\nI want to cite the ggplot2 package because it is the best package ever (Wickham 2016)\n\nWickham, Hadley. 2016. Ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York. https://ggplot2.tidyverse.org."
   },
   {
     "objectID": "html-layout.html#columns",
     "href": "html-layout.html#columns",
     "title": "HTML document: Layout",
     "section": "3.1 Columns",
-    "text": "3.1 Columns\n\n:::: {.columns}\n\n::: {.column width=\"40%\"}\nI want some text in the left column\n:::\n\n::: {.column width=\"60%\"}\nAnd a picture in the right one \n\n\n:::\n\n::::\n\n\n\nI want some text in the left column\n\nAnd a picture in the right one\n\n\nThe columns are most convenient in presentation files, while the grid (see Section 3.2) is the besty option for changing the layout of a text document",
-    "crumbs": [
-      "Basic documents",
-      "HTML document: Layout"
-    ]
+    "text": "3.1 Columns\n\n:::: {.columns}\n\n::: {.column width=\"40%\"}\nI want some text in the left column\n:::\n\n::: {.column width=\"60%\"}\nAnd a picture in the right one \n\n\n:::\n\n::::\n\n\n\nI want some text in the left column\n\nAnd a picture in the right one\n\n\nThe columns are most convenient in presentation files, while the grid (see Section 3.2) is the besty option for changing the layout of a text document"
   },
   {
     "objectID": "html-layout.html#sec-grid",
     "href": "html-layout.html#sec-grid",
     "title": "HTML document: Layout",
     "section": "3.2 Grid",
-    "text": "3.2 Grid\nThe document length is organized in 12 columns of equal width. This allows for a convenient and flexible environment for aligning the content.\nThe margins (left and right) are not counted within the 12-column space:\n\n::: {.grid}\n\n::: {.g-col-3}\nEverything is fine\n:::\n  \n::: {.g-col-2}\nuntil\n::: \n  \n::: {.g-col-5}\nthe sum of the grid length is equal (or inferior) to 12\n::: \n:::\n\n\n\nEverything is fine\n\n\nuntil\n\n\nthe sum of the grid length is equal (or inferior) to 12",
-    "crumbs": [
-      "Basic documents",
-      "HTML document: Layout"
-    ]
+    "text": "3.2 Grid\nThe document length is organized in 12 columns of equal width. This allows for a convenient and flexible environment for aligning the content.\nThe margins (left and right) are not counted within the 12-column space:\n\n::: {.grid}\n\n::: {.g-col-3}\nEverything is fine\n:::\n  \n::: {.g-col-2}\nuntil\n::: \n  \n::: {.g-col-5}\nthe sum of the grid length is equal (or inferior) to 12\n::: \n:::\n\n\n\nEverything is fine\n\n\nuntil\n\n\nthe sum of the grid length is equal (or inferior) to 12"
   },
   {
     "objectID": "html-layout.html#tabset-panel",
     "href": "html-layout.html#tabset-panel",
     "title": "HTML document: Layout",
     "section": "3.3 Tabset panel",
-    "text": "3.3 Tabset panel\n\n::: {.panel-tabset}\n\n## Aim\n\nHere I present the aim of the study \n\n## Methods\n\nHere I present the methods used to pursue the aim\n\n## Results\n\nAnd here I present the results\n\n:::\n\n\nAimMethodsResults\n\n\nHere I present the aim of the study\n\n\nHere I present the methods used to pursue the aim\n\n\nAnd here I present the results",
-    "crumbs": [
-      "Basic documents",
-      "HTML document: Layout"
-    ]
+    "text": "3.3 Tabset panel\n\n::: {.panel-tabset}\n\n## Aim\n\nHere I present the aim of the study \n\n## Methods\n\nHere I present the methods used to pursue the aim\n\n## Results\n\nAnd here I present the results\n\n:::\n\n\nAimMethodsResults\n\n\nHere I present the aim of the study\n\n\nHere I present the methods used to pursue the aim\n\n\nAnd here I present the results"
   },
   {
     "objectID": "html-layout.html#callout-blocks",
     "href": "html-layout.html#callout-blocks",
     "title": "HTML document: Layout",
     "section": "3.5 Callout blocks",
-    "text": "3.5 Callout blocks\n\n:::{.callout-tip}\n## Title of the tip\n\nThese are my two cents for you\n:::\n\n:::{.callout-note collapse=true}\n## Two cents\n\nThese are my two cents for you\n:::\n  \n:::{.callout-warning icon=false}\n## Pay attention\n\nPlease mind the gap\n:::\n\n:::{.callout-caution}\n## Danger!\n\nThis is dangerous!\n:::  \n  \n\n\n\n\n\n\n\nTitle of the tip\n\n\n\nThese are my two cents for you\n\n\n\n\n\n\n\n\nTwo cents\n\n\n\n\n\nThese are my two cents for you\n\n\n\n\n\n\n\n\n\nPay attention\n\n\n\nPlease mind the gap\n\n\n\n\n\n\n\n\nDanger!\n\n\n\nThis is dangerous!",
-    "crumbs": [
-      "Basic documents",
-      "HTML document: Layout"
-    ]
+    "text": "3.5 Callout blocks\n\n:::{.callout-tip}\n## Title of the tip\n\nThese are my two cents for you\n:::\n\n:::{.callout-note collapse=true}\n## Two cents\n\nThese are my two cents for you\n:::\n  \n:::{.callout-warning icon=false}\n## Pay attention\n\nPlease mind the gap\n:::\n\n:::{.callout-caution}\n## Danger!\n\nThis is dangerous!\n:::  \n  \n\n\n\n\n\n\n\nTitle of the tip\n\n\n\nThese are my two cents for you\n\n\n\n\n\n\n\n\nTwo cents\n\n\n\n\n\nThese are my two cents for you\n\n\n\n\n\n\n\n\n\nPay attention\n\n\n\nPlease mind the gap\n\n\n\n\n\n\n\n\nDanger!\n\n\n\nThis is dangerous!"
   },
   {
     "objectID": "html-layout.html#sec-lang",
     "href": "html-layout.html#sec-lang",
     "title": "HTML document: Layout",
     "section": "",
-    "text": "Set the language for your document. This is not the autocorrect!\nIt sets the language to be used in the cross-referencing of your document (see Section 4).\n\n\n\n\n\nLanguage\nCode\n\n\n\n\nEnglish\nen\n\n\nChinese\nzh\n\n\nSpanish\nes\n\n\nFrench\nfr\n\n\nJapanese\nja\n\n\nGerman\nde\n\n\n\n\n\n\n\n\nLanguage\nCode\n\n\n\n\nPortuguese\npt\n\n\nRussian\nru\n\n\nCzech\ncs\n\n\nFinnish\nfi\n\n\nDutch\nnl\n\n\nItalian\nit\n\n\nPolish\npl\n\n\nKorean\nko",
-    "crumbs": [
-      "Basic documents",
-      "HTML document: Layout"
-    ]
+    "text": "Set the language for your document. This is not the autocorrect!\nIt sets the language to be used in the cross-referencing of your document (see Section 4).\n\n\n\n\n\nLanguage\nCode\n\n\n\n\nEnglish\nen\n\n\nChinese\nzh\n\n\nSpanish\nes\n\n\nFrench\nfr\n\n\nJapanese\nja\n\n\nGerman\nde\n\n\n\n\n\n\n\n\nLanguage\nCode\n\n\n\n\nPortuguese\npt\n\n\nRussian\nru\n\n\nCzech\ncs\n\n\nFinnish\nfi\n\n\nDutch\nnl\n\n\nItalian\nit\n\n\nPolish\npl\n\n\nKorean\nko"
   },
   {
     "objectID": "code-chunk.html",
