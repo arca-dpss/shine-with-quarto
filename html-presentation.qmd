@@ -370,3 +370,286 @@ solarized
 
 
 ::::
+
+
+# Figures
+
+
+## Absolute positions
+
+![](img/punkreas.jpg){.absolute top=200 left=0 width="350" height="300"}
+
+![](img/persiana.jpg){.absolute top=5 right=25 width="450" height="250"}
+
+![](img/posse.jpg){.absolute bottom=0 right=100 width="500" height="400"}
+
+## Stack content
+
+:::{.r-stack}
+![](img/punkreas.jpg){.fragment width="350" height="300"}
+
+![](img/persiana.jpg){.fragment width="450" height="250"}
+
+![](img/posse.jpg){.fragment width="500" height="400"}
+
+:::
+
+## Stack content: Code
+
+```{markdown}
+#| echo: true
+#| eval: false
+
+:::{.r-stack}
+![](img/punkreas.jpg){.fragment width="350" height="300"}
+
+![](img/persiana.jpg){.fragment width="450" height="250"}
+
+![](img/posse.jpg){.fragment width="500" height="400"}
+
+:::
+
+```
+
+
+## Pro Stacking
+
+
+:::{.r-stack}
+::: {.fragment}
+![](img/punkreas.jpg){width="350" height="300"}
+:::
+
+::: {.fragment .fade-in-then-out}
+![](img/persiana.jpg){width="450" height="250"}
+:::
+
+
+::: {.fragment .fade-out}
+![](img/peacock.png){width="350" height="300"}
+:::
+:::
+
+
+## Pro stacking: Code I
+
+```{markdown}
+#| echo: true
+#| eval: false 
+
+:::{.r-stack}
+::: {.fragment}
+![](img/punkreas.jpg){width="350" height="300"}
+:::
+
+::: {.fragment .fade-in-then-out}
+![](img/persiana.jpg){width="450" height="250"}
+:::
+
+
+::: {.fragment .fade-out}
+![](img/peacock.png){width="350" height="300"}
+:::
+:::
+
+```
+
+
+## Other options
+
+::: {.fragment .highlight-red}
+This text will turn red
+:::
+
+
+::: {.fragment .fade-up}
+![](img/posse.jpg){width="500" height="400"}
+:::
+
+
+## Pro stacking: Code II
+
+```{markdown}
+#| echo: true
+#| eval: false 
+
+::: {.fragment .highlight-red}
+This text will turn red
+:::
+
+
+::: {.fragment .fade-up}
+![](img/posse.jpg){width="500" height="400"}
+:::
+```
+
+
+# Notes 
+
+## Speaker notes 
+
+
+Let's say you are presenting something that is really complicated and you need some boost of confidence
+
+::: {.notes}
+You can use the speaker notes to help you "survive" the presentation!
+:::
+
+
+## View the speaker notes
+
+When you are in presentation mode, just press `S`: 
+
+:::{.panel-tabset}
+
+## View 
+
+```{r}
+#| fig-align: center
+#| out-width: 100%
+knitr::include_graphics("img/speaker-notes.png")
+```
+
+
+## Write
+
+
+```{markdown}
+#| echo: true
+
+Let's say you are presenting something that is really complicated and you need some boost of confidence
+
+::: {.notes}
+You can use the speaker notes to help you "survive" the presentation!
+:::
+
+```
+
+:::
+
+# Code 
+
+
+## Code highlight 
+
+```{r}
+#| echo: fenced
+#| fig-align: center
+#| code-line-numbers: "|3|6-8|6,7|"
+
+mtcars %>%                               
+  ggplot( aes(mpg, hp, size = gear)) +   
+  geom_point() +                             
+  geom_smooth(method = "lm")             
+
+```
+
+## {auto-animate="true"}
+
+```{r}
+#| echo: true
+# Create a scatterplot with a smoothing function
+ggplot(mtcars,
+       aes(mpg, hp, size = gear)) +
+  geom_point() 
+```
+
+
+
+## {auto-animate="true"}
+
+```{r}
+#| echo: true
+# Create a scatterplot with a smoothing function
+ggplot(mtcars,
+       aes(mpg, hp, size = gear)) +
+  geom_point() + 
+  geom_smooth()
+```
+
+## Code animation
+
+````
+## {auto-animate="true"}
+
+```{r}`r ''`
+#| echo: true
+# Create a scatterplot with a smoothing function
+ggplot(mtcars,
+       aes(mpg, hp, size = gear)) +
+  geom_point() 
+```
+
+## {auto-animate="true"}
+
+```{r}`r ''`
+#| echo: true
+# Create a scatterplot with a smoothing function
+ggplot(mtcars,
+       aes(mpg, hp, size = gear)) +
+  geom_point() + 
+  geom_smooth()
+```
+
+````
+
+
+## Output location: Delayed `fragment`
+
+```{r}
+#| echo: fenced
+#| fig-align: center
+#| output-location: fragment
+#| code-line-numbers: "|3|"
+
+mtcars %>%                               
+  ggplot( aes(mpg, hp, size = gear)) +   
+  geom_point() +                             
+  geom_smooth(method = "lm")        
+```
+
+## Output location: Dealyed along the code `column-fragment`
+
+```{r}
+#| echo: fenced
+#| fig-align: center
+#| output-location: column-fragment
+#| code-line-numbers: "|3|"
+
+mtcars %>%                               
+  ggplot( aes(mpg, hp, size = gear)) +   
+  geom_point() +                             
+  geom_smooth(method = "lm")        
+```
+
+## Output location: Next slide `slide`
+
+```{r}
+#| echo: fenced
+#| fig-align: center
+#| output-location: slide
+#| code-line-numbers: "|3|"
+
+mtcars %>%                               
+  ggplot( aes(mpg, hp, size = gear)) +   
+  geom_point() +                             
+  geom_smooth(method = "lm")        
+```
+
+
+## Output location: Along the code `column`
+
+```{r}
+#| echo: fenced
+#| fig-align: center
+#| output-location: column
+#| code-line-numbers: "|3|"
+
+mtcars %>%                               
+  ggplot( aes(mpg, hp, size = gear)) +   
+  geom_point() +                             
+  geom_smooth(method = "lm")        
+```
+
+
+

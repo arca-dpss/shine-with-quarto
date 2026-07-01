@@ -546,5 +546,131 @@
     "title": "Presentation and Interactivity",
     "section": "Available themes",
     "text": "Available themes\nA lot of predefined themes!\n\n\n\n\n---\ntitle: \"My presentation\"\nauthor: \"Ted Bundy\"\nformat:\n  revealjs: \n    theme: dark\n---\n\n\nbeige\nblood\ndark\ndefault\ndracula\nleague\nmoon\nbeige\nblood\ndark\n\ndefault\ndracula\nleague\nmoon\nnight\nserif\nsimple\nsky\nsolarized"
+  },
+  {
+    "objectID": "html-presentation.html#absolute-positions",
+    "href": "html-presentation.html#absolute-positions",
+    "title": "Presentation and Interactivity",
+    "section": "Absolute positions",
+    "text": "Absolute positions"
+  },
+  {
+    "objectID": "html-presentation.html#stack-content",
+    "href": "html-presentation.html#stack-content",
+    "title": "Presentation and Interactivity",
+    "section": "Stack content",
+    "text": "Stack content"
+  },
+  {
+    "objectID": "html-presentation.html#stack-content-code",
+    "href": "html-presentation.html#stack-content-code",
+    "title": "Presentation and Interactivity",
+    "section": "Stack content: Code",
+    "text": "Stack content: Code\n\n:::{.r-stack}\n![](img/punkreas.jpg){.fragment width=\"350\" height=\"300\"}\n\n![](img/persiana.jpg){.fragment width=\"450\" height=\"250\"}\n\n![](img/posse.jpg){.fragment width=\"500\" height=\"400\"}\n\n:::"
+  },
+  {
+    "objectID": "html-presentation.html#pro-stacking",
+    "href": "html-presentation.html#pro-stacking",
+    "title": "Presentation and Interactivity",
+    "section": "Pro Stacking",
+    "text": "Pro Stacking"
+  },
+  {
+    "objectID": "html-presentation.html#pro-stacking-code-i",
+    "href": "html-presentation.html#pro-stacking-code-i",
+    "title": "Presentation and Interactivity",
+    "section": "Pro stacking: Code I",
+    "text": "Pro stacking: Code I\n\n:::{.r-stack}\n::: {.fragment}\n![](img/punkreas.jpg){width=\"350\" height=\"300\"}\n:::\n\n::: {.fragment .fade-in-then-out}\n![](img/persiana.jpg){width=\"450\" height=\"250\"}\n:::\n\n\n::: {.fragment .fade-out}\n![](img/peacock.png){width=\"350\" height=\"300\"}\n:::\n:::"
+  },
+  {
+    "objectID": "html-presentation.html#other-options",
+    "href": "html-presentation.html#other-options",
+    "title": "Presentation and Interactivity",
+    "section": "Other options",
+    "text": "Other options\n\nThis text will turn red"
+  },
+  {
+    "objectID": "html-presentation.html#pro-stacking-code-ii",
+    "href": "html-presentation.html#pro-stacking-code-ii",
+    "title": "Presentation and Interactivity",
+    "section": "Pro stacking: Code II",
+    "text": "Pro stacking: Code II\n\n::: {.fragment .highlight-red}\nThis text will turn red\n:::\n\n\n::: {.fragment .fade-up}\n![](img/posse.jpg){width=\"500\" height=\"400\"}\n:::"
+  },
+  {
+    "objectID": "html-presentation.html#speaker-notes",
+    "href": "html-presentation.html#speaker-notes",
+    "title": "Presentation and Interactivity",
+    "section": "Speaker notes",
+    "text": "Speaker notes\nLet’s say you are presenting something that is really complicated and you need some boost of confidence\n\nYou can use the speaker notes to help you “survive” the presentation!"
+  },
+  {
+    "objectID": "html-presentation.html#view-the-speaker-notes",
+    "href": "html-presentation.html#view-the-speaker-notes",
+    "title": "Presentation and Interactivity",
+    "section": "View the speaker notes",
+    "text": "View the speaker notes\nWhen you are in presentation mode, just press S:\n\nViewWrite\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLet's say you are presenting something that is really complicated and you need some boost of confidence\n\n::: {.notes}\nYou can use the speaker notes to help you \"survive\" the presentation!\n:::"
+  },
+  {
+    "objectID": "html-presentation.html#code-highlight",
+    "href": "html-presentation.html#code-highlight",
+    "title": "Presentation and Interactivity",
+    "section": "Code highlight",
+    "text": "Code highlight\n\n```{r}\n#| fig-align: center\n#| code-line-numbers: \"|3|6-8|6,7|\"\n\nmtcars %&gt;%                               \n  ggplot( aes(mpg, hp, size = gear)) +   \n  geom_point() +                             \n  geom_smooth(method = \"lm\")             \n```"
+  },
+  {
+    "objectID": "html-presentation.html#section-3",
+    "href": "html-presentation.html#section-3",
+    "title": "Presentation and Interactivity",
+    "section": "",
+    "text": "# Create a scatterplot with a smoothing function\nggplot(mtcars,\n       aes(mpg, hp, size = gear)) +\n  geom_point()"
+  },
+  {
+    "objectID": "html-presentation.html#section-4",
+    "href": "html-presentation.html#section-4",
+    "title": "Presentation and Interactivity",
+    "section": "",
+    "text": "# Create a scatterplot with a smoothing function\nggplot(mtcars,\n       aes(mpg, hp, size = gear)) +\n  geom_point() + \n  geom_smooth()"
+  },
+  {
+    "objectID": "html-presentation.html#code-animation",
+    "href": "html-presentation.html#code-animation",
+    "title": "Presentation and Interactivity",
+    "section": "Code animation",
+    "text": "Code animation\n## {auto-animate=\"true\"}\n\n```{r}\n#| echo: true\n# Create a scatterplot with a smoothing function\nggplot(mtcars,\n       aes(mpg, hp, size = gear)) +\n  geom_point() \n```\n\n## {auto-animate=\"true\"}\n\n```{r}\n#| echo: true\n# Create a scatterplot with a smoothing function\nggplot(mtcars,\n       aes(mpg, hp, size = gear)) +\n  geom_point() + \n  geom_smooth()\n```"
+  },
+  {
+    "objectID": "html-presentation.html#output-location-delayed-fragment",
+    "href": "html-presentation.html#output-location-delayed-fragment",
+    "title": "Presentation and Interactivity",
+    "section": "Output location: Delayed fragment",
+    "text": "Output location: Delayed fragment\n\n```{r}\n#| fig-align: center\n#| output-location: fragment\n#| code-line-numbers: \"|3|\"\n\nmtcars %&gt;%                               \n  ggplot( aes(mpg, hp, size = gear)) +   \n  geom_point() +                             \n  geom_smooth(method = \"lm\")        \n```"
+  },
+  {
+    "objectID": "html-presentation.html#output-location-dealyed-along-the-code-column-fragment",
+    "href": "html-presentation.html#output-location-dealyed-along-the-code-column-fragment",
+    "title": "Presentation and Interactivity",
+    "section": "Output location: Dealyed along the code column-fragment",
+    "text": "Output location: Dealyed along the code column-fragment\n\n\n```{r}\n#| fig-align: center\n#| output-location: column-fragment\n#| code-line-numbers: \"|3|\"\n\nmtcars %&gt;%                               \n  ggplot( aes(mpg, hp, size = gear)) +   \n  geom_point() +                             \n  geom_smooth(method = \"lm\")        \n```"
+  },
+  {
+    "objectID": "html-presentation.html#output-location-next-slide-slide",
+    "href": "html-presentation.html#output-location-next-slide-slide",
+    "title": "Presentation and Interactivity",
+    "section": "Output location: Next slide slide",
+    "text": "Output location: Next slide slide\n\n```{r}\n#| fig-align: center\n#| output-location: slide\n#| code-line-numbers: \"|3|\"\n\nmtcars %&gt;%                               \n  ggplot( aes(mpg, hp, size = gear)) +   \n  geom_point() +                             \n  geom_smooth(method = \"lm\")        \n```"
+  },
+  {
+    "objectID": "html-presentation.html#output-location-next-slide-slide-output",
+    "href": "html-presentation.html#output-location-next-slide-slide-output",
+    "title": "Presentation and Interactivity",
+    "section": "Output location: Next slide slide",
+    "text": "Output location: Next slide slide"
+  },
+  {
+    "objectID": "html-presentation.html#output-location-along-the-code-column",
+    "href": "html-presentation.html#output-location-along-the-code-column",
+    "title": "Presentation and Interactivity",
+    "section": "Output location: Along the code column",
+    "text": "Output location: Along the code column\n\n\n```{r}\n#| fig-align: center\n#| output-location: column\n#| code-line-numbers: \"|3|\"\n\nmtcars %&gt;%                               \n  ggplot( aes(mpg, hp, size = gear)) +   \n  geom_point() +                             \n  geom_smooth(method = \"lm\")        \n```"
   }
 ]
