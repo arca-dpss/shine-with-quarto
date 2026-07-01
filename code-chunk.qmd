@@ -4,6 +4,7 @@ execute:
   echo: fenced
 format: 
   html:
+    self-contained: true
     code-tools: 
      source: true
      toggle: false
