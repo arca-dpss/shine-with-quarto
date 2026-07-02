@@ -679,5 +679,19 @@
     "title": "shiny",
     "section": "",
     "text": "library(shiny)\nui = fluidPage(\nselectInput(inputId = \"mySelection\", \n            label = h3(\"Select box\"),\n    choices = list(\"Choice 1\" = 1, \"Choice 2\" = 2, \"Choice 3\" = 3),\n    selected = 1), \n  \n  verbatimTextOutput(\n  outputId = \"myOutput\"\n)\n  \n)\nserver = function(input, output) {\n  output$myOutput = renderText({\n    paste(paste(\"This is my choice\"), input$mySelection)\n  })\n}\n\nshinyApp(ui, server)"
+  },
+  {
+    "objectID": "shine-bright/slides/shiny.html",
+    "href": "shine-bright/slides/shiny.html",
+    "title": "Shine bright like an open source app",
+    "section": "",
+    "text": "appExamples/basic-App.R\n\nThe code\n\n\n\nui = fluidPage(selectInput(inputId = \"mySelection\", \n                          label = h3(\"Select box\"),\n                          choices = list(\"Choice 1\" = 1, \"Choice 2\" = 2, \"Choice 3\" = 3),\n                          selected = 1),\n         verbatimTextOutput(\n           outputId = \"myOutput\"\n         ))\nserver = function(input, output) {\n           output$myOutput = renderPrint({\n             paste(paste(\"This is my choice\"), input$mySelection)\n           })\n}\nshinyApp(ui, server)"
+  },
+  {
+    "objectID": "shine-bright/slides/shiny.html#an-astonishing-result",
+    "href": "shine-bright/slides/shiny.html#an-astonishing-result",
+    "title": "Shine bright like an open source app",
+    "section": "",
+    "text": "appExamples/basic-App.R\n\nThe code\n\n\n\nui = fluidPage(selectInput(inputId = \"mySelection\", \n                          label = h3(\"Select box\"),\n                          choices = list(\"Choice 1\" = 1, \"Choice 2\" = 2, \"Choice 3\" = 3),\n                          selected = 1),\n         verbatimTextOutput(\n           outputId = \"myOutput\"\n         ))\nserver = function(input, output) {\n           output$myOutput = renderPrint({\n             paste(paste(\"This is my choice\"), input$mySelection)\n           })\n}\nshinyApp(ui, server)"
   }
 ]
