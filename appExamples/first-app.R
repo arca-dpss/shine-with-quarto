@@ -19,23 +19,17 @@ ui <- fluidPage(
 
 server <- function(input, output){
   output$graph <- renderPlot({
-    if(input$dataset == "rock"){ # call the input and its options with their label
-      data <- rock
-    } else if (input$dataset == "pressure" ){
-      data <- pressure
-    } else if (input$dataset == "cars") {
-      data <- cars
-    }
+    data = switch(input$dataset,
+           rock = rock,
+           pressure = pressure,
+           cars = cars)
     plot(data[, c(1:2)])
   })
   output$summary <- renderPrint({
-    if(input$dataset == "rock"){
-      data <- rock
-    } else if (input$dataset == "pressure" ){
-      data <- pressure
-    } else if (input$dataset == "cars") {
-      data <- cars
-    }
+    data = switch(input$dataset,
+                  rock = rock,
+                  pressure = pressure,
+                  cars = cars)
     summary(data[, c(1:2)])
   })
 }

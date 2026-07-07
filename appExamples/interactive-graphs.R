@@ -1,26 +1,15 @@
 library(shiny)
-library(shinyjs)
 ui = fluidPage(
-    useShinyjs(),  # Set up shinyjs (this is just for nice visual effects)
     sidebarLayout(
-      sidebarPanel(style = "background-color: 		#e1e9f9;",
-                   a(id = "imp_det", 
+      sidebarPanel(style = "background-color: 	#e1e9f9;",
                      h3("Choose a dataset", 
-                        style = "font-style: normal; font-size: 14pt;"), 
-                     href = "#"),
-                   shinyjs::hidden(div(
-                     id = "details_import",
-                     helpText(
-                       h5("You can also upload your data!")
-                     )
-                   )),
+                        style = "font-style: normal; font-size: 14pt;"),
                    selectInput(inputId = "dataset",
                                label = "",
                                choices = list("rock" = 1,
                                               "pressure" = 2,
                                               "cars" = 3,
                                               "I want to use my data!!" =4)),
-                   
                    conditionalPanel(
                      condition = "input.dataset == '4'",
                      fileInput("example",
@@ -33,7 +22,6 @@ ui = fluidPage(
                      uiOutput("var2"),                 
                      actionButton("select", "Select & Display") 
                    ),                              
-                   
       ),
       
       mainPanel(
@@ -57,8 +45,7 @@ ui = fluidPage(
                    "brush"
                  ))
         )
-        
-      ) # display output
+      ) 
     )
   )
   
@@ -84,8 +71,6 @@ server = function(input, output){
         values$data = values$data
       }
     })
-    shinyjs::onclick("imp_det",  # here the nice visual effect
-                     shinyjs::toggle(id = "details_import", anim = TRUE))
     output$var1 <- renderUI({    
       nam <- colnames(values$data) 
       selectInput("var1", label = "Select x:", 
