@@ -235,3 +235,10 @@ shinyApp(ui, server)
 # Next episode 
 
 [Here](appExamples.zip) you can download a zip folder containing basic code apps.  
+
+The sniny lessons are availables at the following links: 
+
+1. [Basics](https://ottaviae.github.io/slides-shiny/00-shiny.html#/title-slide)
+2. [Reactive events](https://ottaviae.github.io/slides-shiny/01-eventReactive.html#/title-slide)
+3. [Data upload](https://ottaviae.github.io/slides-shiny/02-uploadData.html#/title-slide)
+4. [Download](https://ottaviae.github.io/slides-shiny/03-download.html#/title-slide)

@@ -8,7 +8,7 @@ format:
   revealjs: 
     self-contained: true
     theme: [simple, custom.scss]
-    logo: "img/peacock.jpg"
+    logo: "img/peacock.png"
     footer: "[Presentations](https://quarto.org/docs/presentations/revealjs/)"
     scrollable: true
     transition: none
