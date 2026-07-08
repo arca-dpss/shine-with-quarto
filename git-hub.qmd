@@ -53,7 +53,7 @@ Solve the CAPTCHA and submit
 knitr::include_graphics("img/ghDesk.png")
 ```
 
-Once the installer is download, follow the installation instruction. 
+Once the installer is downloaded, follow the installation instruction. 
 Sign in to your GitHub account
 
 # Repositories managment
@@ -65,7 +65,7 @@ The GitHub repositories are the folders containing the R Project:
 
 ```{r}
 #| fig-align: center
-#| fig-cap: Create a new repository that does exist yet
+#| fig-cap: Create a new repository that does not exist 
 #| fig-cap-location: top
 include_graphics("img/createNew.png")
 ```
@@ -74,7 +74,7 @@ This initializes a new GitHub repository, where you can provide different inform
 
 ```{r}
 #| fig-align: center
-#| fig-cap: Create a new repository that does exist yet
+#| fig-cap: Create a new repository that does exist 
 #| fig-cap-location: top
 include_graphics("img/repoDefinition.png")
 ```
@@ -86,14 +86,14 @@ include_graphics("img/repoDefinition.png")
 
 ```{r}
 #| fig-align: center
-#| fig-cap: Add an existing repository that does exist yet
+#| fig-cap: Add an existing repository that does exist
 #| fig-cap-location: top
 knitr::include_graphics("img/addRepository.png")
 ```
 
 ## Publish the repositories
 
-Once a repository is added (either by adding an existing or creating a new one), it can be published and made available online for other people: 
+Once a repository is added (either by adding an existing one or creating a new one), it can be published and made available online for other people: 
 
 ```{r}
 #| fig-align: center
@@ -130,7 +130,7 @@ knitr::include_graphics("img/commit1.png")
 #| fig-align: center
 #| fig-cap: Select & Commit
 #| fig-cap-location: top
-knitr::include_graphics("img/commit1.png")
+knitr::include_graphics("img/commit2.png")
 ```
 
 3. Check whether the changes are live on GitHub: 
@@ -228,12 +228,13 @@ include_graphics("img/setWebsite1.png")
 
 Now you have a working website! 
 
-As you can see, the `index` file has been taken as the default landing page of your website. 
+As you can see, the `index` file has been taken as the default landing page of your website (@fig-index). 
 
 ```{r}
 #| fig-align: center
 #| fig-cap: Running website with default index page
 #| fig-cap-location: top
+#| label: fig-index
 include_graphics("img/runningWebsite.png")
 ```
 
@@ -269,6 +270,6 @@ flowchart TD
     J --> K
 ```
 
-This flow applies to any document you modify locally.
+This flow applies to any document you modify locally. In other words, to see the changes that you do locally online, you have to commit them and push them through GitHub Desktop.
 
 

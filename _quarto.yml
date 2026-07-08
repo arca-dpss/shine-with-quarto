@@ -6,7 +6,7 @@ website:
   navbar:
     search: true
     background: primary
-    left:
+    right:
       - text: "Shine with quarto"
         href: index.qmd
       - text: "Getting Started"

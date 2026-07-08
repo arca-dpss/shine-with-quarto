@@ -332,7 +332,7 @@ window.Quarto = {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Shine with quarto</span></a>
@@ -341,7 +341,7 @@ window.Quarto = {
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-getting-started" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Getting Started</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-getting-started">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-getting-started">    
         <li>
     <a class="dropdown-item" href="./R-Project.html">
  <span class="dropdown-text">R project and basic settings</span></a>
@@ -356,7 +356,7 @@ window.Quarto = {
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-basics" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Basics</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-basics">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-basics">    
         <li>
     <a class="dropdown-item" href="./html-layout.html">
  <span class="dropdown-text">Layout</span></a>
@@ -375,7 +375,7 @@ window.Quarto = {
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-shiny" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Shiny</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-shiny">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-shiny">    
         <li>
     <a class="dropdown-item" href="./shiny-integration.html">
  <span class="dropdown-text">Shiny logic</span></a>
@@ -405,6 +405,7 @@ window.Quarto = {
   <li><a href="#toc" id="toc-toc" class="nav-link" data-scroll-target="#toc"><span class="header-section-number">1.4</span> <code>toc</code></a></li>
   <li><a href="#themes" id="toc-themes" class="nav-link" data-scroll-target="#themes"><span class="header-section-number">1.5</span> Themes</a></li>
   <li><a href="#sec-lang" id="toc-sec-lang" class="nav-link" data-scroll-target="#sec-lang"><span class="header-section-number">1.8</span> <code>lang</code></a></li>
+  <li><a href="#general-layout" id="toc-general-layout" class="nav-link" data-scroll-target="#general-layout"><span class="header-section-number">1.9</span> General Layout</a></li>
   </ul></li>
   <li><a href="#markdown-formatting" id="toc-markdown-formatting" class="nav-link" data-scroll-target="#markdown-formatting"><span class="header-section-number">2</span> Markdown formatting</a>
   <ul class="collapse">
@@ -418,18 +419,19 @@ window.Quarto = {
   <li><a href="#links-and-images" id="toc-links-and-images" class="nav-link" data-scroll-target="#links-and-images"><span class="header-section-number">2.3</span> Links and images</a></li>
   <li><a href="#lists" id="toc-lists" class="nav-link" data-scroll-target="#lists"><span class="header-section-number">2.4</span> Lists</a></li>
   <li><a href="#math" id="toc-math" class="nav-link" data-scroll-target="#math"><span class="header-section-number">2.5</span> Math</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">2.6</span> References</a></li>
+  <li><a href="#sec-biblio" id="toc-sec-biblio" class="nav-link" data-scroll-target="#sec-biblio"><span class="header-section-number">2.6</span> References</a></li>
   <li><a href="#citation-keys" id="toc-citation-keys" class="nav-link" data-scroll-target="#citation-keys"><span class="header-section-number">2.7</span> Citation keys</a></li>
   </ul></li>
-  <li><a href="#document-layout" id="toc-document-layout" class="nav-link" data-scroll-target="#document-layout"><span class="header-section-number">3</span> Document layout</a>
+  <li><a href="#sec-layout" id="toc-sec-layout" class="nav-link" data-scroll-target="#sec-layout"><span class="header-section-number">3</span> Document layout</a>
   <ul class="collapse">
   <li><a href="#columns" id="toc-columns" class="nav-link" data-scroll-target="#columns"><span class="header-section-number">3.1</span> Columns</a></li>
   <li><a href="#sec-grid" id="toc-sec-grid" class="nav-link" data-scroll-target="#sec-grid"><span class="header-section-number">3.2</span> Grid</a></li>
-  <li><a href="#tabset-panel" id="toc-tabset-panel" class="nav-link" data-scroll-target="#tabset-panel"><span class="header-section-number">3.3</span> Tabset panel</a></li>
-  <li><a href="#margins" id="toc-margins" class="nav-link" data-scroll-target="#margins"><span class="header-section-number">3.4</span> Margins</a></li>
+  <li><a href="#panel-tabset" id="toc-panel-tabset" class="nav-link" data-scroll-target="#panel-tabset"><span class="header-section-number">3.3</span> Panel Tabset</a></li>
+  <li><a href="#sec-margins" id="toc-sec-margins" class="nav-link" data-scroll-target="#sec-margins"><span class="header-section-number">3.4</span> Margins</a></li>
   <li><a href="#callout-blocks" id="toc-callout-blocks" class="nav-link" data-scroll-target="#callout-blocks"><span class="header-section-number">3.5</span> Callout blocks</a></li>
   </ul></li>
   <li><a href="#sec-cross" id="toc-sec-cross" class="nav-link" data-scroll-target="#sec-cross"><span class="header-section-number">4</span> Cross referencing</a></li>
+  <li><a href="#sec-index" id="toc-sec-index" class="nav-link" data-scroll-target="#sec-index"><span class="header-section-number">5</span> <code>index.qmd</code></a></li>
   </ul>
 </nav>
     </div>
@@ -536,13 +538,13 @@ Warning
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Although at the very beginning, the use of the visual editor might be tempting, don’t indulge! Using the source editor is an investiment in your future programming skills :)</p>
+<p>Although at the very beginning, the use of the visual editor might be tempting, don’t indulge! Using the source editor is an investment in your future programming skills :)</p>
 </div>
 </div>
 </div>
 <section id="toc" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="toc"><span class="header-section-number">1.4</span> <code>toc</code></h2>
-<p><strong>T</strong>able <strong>O</strong>f <strong>C</strong>contents: Defines the index of your document and its associated characteristics (e.g., where it is located):</p>
+<p><strong>T</strong>able <strong>O</strong>f <strong>C</strong>ontents: Defines the index of your document and its associated characteristics (e.g., where it is located):</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "My quarto file"</span></span>
@@ -705,6 +707,42 @@ Warning
 </table>
 </div>
 </div>
+<p>The YAML is also used to define the references for a document (e.g., the bibliography external file, the references style and so on). See <a href="#sec-biblio" class="quarto-xref">Section&nbsp;2.6</a>.</p>
+</section>
+<section id="general-layout" class="level2" data-number="1.9">
+<h2 data-number="1.9" class="anchored" data-anchor-id="general-layout"><span class="header-section-number">1.9</span> General Layout</h2>
+<p><a href="#fig-gutter" class="quarto-xref">Figure&nbsp;1</a> illustrates the default setting of an HTML page.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-gutter" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gutter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/gutter.png" class="img-fluid figure-img" width="944">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gutter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Default layout of an HTML document
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The layout is divided into three main parts:</p>
+<ul>
+<li>the <code>sidebar</code> on the left side (red rectangle in <a href="#fig-gutter" class="quarto-xref">Figure&nbsp;1</a>)</li>
+<li>the <code>body</code> in the center (green rectangle in <a href="#fig-gutter" class="quarto-xref">Figure&nbsp;1</a>)</li>
+<li>the <code>margin</code> on the right side (yellow rectangle in <a href="#fig-gutter" class="quarto-xref">Figure&nbsp;1</a>)</li>
+</ul>
+<p>Between each of these parts, there is the so-called <code>gutter</code> (i.e., the empty space between the main parts). Its width can be modified as well in the YAML, with default values as follows:</p>
+<div class="cell">
+<pre class="markdwon cell-code"><code>format:
+  html: 
+    grid:
+      sidebar-width: 300px
+      body-width: 900px
+      margin-width: 300px
+      gutter-width: 1.5rem</code></pre>
+</div>
+<p>These settings will affect the entire document. <a href="#sec-layout" class="quarto-xref">Section&nbsp;3</a> presents the layout settings for specific part of the document.</p>
 </section>
 </section>
 <section id="markdown-formatting" class="level1" data-number="2">
@@ -713,27 +751,27 @@ Warning
 <h2 data-number="2.1" class="anchored" data-anchor-id="headings"><span class="header-section-number">2.1</span> Headings</h2>
 <p>The number of <code>#</code> defines the level of the headings (the lower the number of <code>#</code>, the higher the level)</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># First level (H1)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># First level (H1)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Section</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Second level (H2)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Second level (H2)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Subsection</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">### Third level (H3)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">### Third level (H3)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Sub-subsection</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Fourth level (H4)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Fourth level (H4)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Paragraph</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">##### Fifth level (H5)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">##### Fifth level (H5)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>I frankly have never used that</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">##### Sixth level (H6)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">##### Sixth level (H6)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>I have no idea</p>
 </section>
@@ -743,21 +781,21 @@ Warning
 <section id="formatting" class="level3" data-number="2.2.1">
 <h3 data-number="2.2.1" class="anchored" data-anchor-id="formatting"><span class="header-section-number">2.2.1</span> Formatting</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>*italics*, **bold**, ***bold italics*** </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>*italics*, **bold**, ***bold italics*** </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><em>italics</em>, <strong>bold</strong>, <strong><em>bold italics</em></strong></p>
 </section>
 <section id="supersub-script" class="level3" data-number="2.2.2">
 <h3 data-number="2.2.2" class="anchored" data-anchor-id="supersub-script"><span class="header-section-number">2.2.2</span> Super/sub script</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>textsuperscirpt^2^, textunderscript~2~</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>textsuperscript^2^, textunderscript~2~</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>textsuperscirpt<sup>2</sup>, textunderscript<sub>2</sub></p>
+<p>textsuperscript<sup>2</sup>, textunderscript<sub>2</sub></p>
 </section>
 <section id="in-line-code" class="level3" data-number="2.2.3">
 <h3 data-number="2.2.3" class="anchored" data-anchor-id="in-line-code"><span class="header-section-number">2.2.3</span> In line code</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="in">`this is myinline code`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="in">`this is myinline code`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><code>this is myinline code</code></p>
 <div class="callout callout-style-default callout-warning callout-titled">
@@ -772,7 +810,7 @@ Code chunk
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>There will be a specific lesson on the code chunks</p>
+<p>There will be a specific <a href="https://arca-dpss.github.io/shine-with-quarto/code-chunk.html">lesson</a> on the code chunks</p>
 </div>
 </div>
 </div>
@@ -781,15 +819,15 @@ Code chunk
 <section id="links-and-images" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="links-and-images"><span class="header-section-number">2.3</span> Links and images</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ot">&lt;https://github.com/&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ot">&lt;https://github.com/&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><a href="https://github.com/" class="uri">https://github.com/</a></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>My link is <span class="co">[</span><span class="ot">here</span><span class="co">](https://github.com/)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>My link is <span class="co">[</span><span class="ot">here</span><span class="co">](https://github.com/)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>My link is <a href="https://github.com/">here</a></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="al">![This is an image](img/picture.jpg)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="al">![This is an image](img/picture.jpg)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="fig-cama" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -797,18 +835,34 @@ Code chunk
 <img src="img/picture.jpg" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cama-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: This is an image
+Figure&nbsp;2: This is an image
 </figcaption>
 </figure>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Links &amp; <code>index.qmd</code>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>As seen in the <a href="https://arca-dpss.github.io/shine-with-quarto/git-hub.html">GitHub lesson</a>, the <code>index.qmd</code> works as the landing page of a potential website. To include other documents and hyperlink them in the main landing page, we use the syntax for the links (see <a href="#sec-index" class="quarto-xref">Section&nbsp;5</a>).</p>
+</div>
+</div>
 </div>
 </section>
 <section id="lists" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="lists"><span class="header-section-number">2.4</span> Lists</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Main Unordered List</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="ss">  + </span>First sub-item</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="ss">  + </span>Second sub-item </span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>It's getting weird</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Main Unordered List</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="ss">  + </span>First sub-item</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="ss">  + </span>Second sub-item </span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>It's getting weird</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Main Unordered List
@@ -821,10 +875,10 @@ Figure&nbsp;1: This is an image
 </ul></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Main ordered list</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Second item</span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>   i) First sub-item 1</span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>      A.  First sub-sub-item 1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Main ordered list</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Second item</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>   i) First sub-item 1</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>      A.  First sub-sub-item 1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol type="1">
 <li>Main ordered list</li>
@@ -837,8 +891,8 @@ Figure&nbsp;1: This is an image
 </ol></li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> First things first 1</span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Second things second 2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> First things first 1</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Second things second 2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul class="task-list">
 <li><label><input type="checkbox">First things first 1</label></li>
@@ -849,28 +903,32 @@ Figure&nbsp;1: This is an image
 <h2 data-number="2.5" class="anchored" data-anchor-id="math"><span class="header-section-number">2.5</span> Math</h2>
 <p>In-line math:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>This is an in-line equation $y = \beta_0 + \beta_1 X + \varepsilon$</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>This is an in-line equation $y = \beta_0 + \beta_1 X + \varepsilon$</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>This is an in-line equation <span class="math inline">\(y = \beta_0 + \beta_1 X + \varepsilon\)</span></p>
 <p>Math math:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>This is an  equation $$z = \dfrac{\bar{x} -\mu}{\sigma}$$</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>This is an  equation $$z = \dfrac{\bar{x} -\mu}{\sigma}$$</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>This is an equation <span class="math display">\[z = \dfrac{\bar{x} -\mu}{\sigma}\]</span></p>
+<p><a href="https://artofproblemsolving.com/wiki/index.php/LaTeX:Symbols">Here</a> you can find an exahustive list of the math symbols available in LaTeX.</p>
 </section>
-<section id="references" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="references"><span class="header-section-number">2.6</span> References</h2>
-<p>Define the path of the bib file in the YAML</p>
+<section id="sec-biblio" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="sec-biblio"><span class="header-section-number">2.6</span> References</h2>
+<p>Define the path of the bib file in the YAML, on a new line, with no indentation:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">...</span><span class="co">]</span></span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>bibliography: bib/references.bib</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">...</span><span class="co">]</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>bibliography: bib/references.bib</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Then set your file with <code>.bib</code> extension. This file can be created with any text editor, including <code>RStudio</code>.</p>
-<p>To use RStudio as a text editor&gt;</p>
+<p>Then set the path to your file with <code>.bib</code> extension. In the presented example, the <code>references.bib</code> file is within the subfolder <code>bib</code>.</p>
+<p>If you don’t have LaTeX, don’t worry, because the bib file with extension <code>.bib</code> can be created with any text editor, including <code>RStudio</code>.</p>
+<p>To use RStudio as a text editor:</p>
 <ol type="1">
-<li><p>Open a new script:</p>
-<p>shift + ctrl + n</p></li>
-<li><p>Set it to be a text file:</p></li>
+<li>Open a new script:</li>
+</ol>
+<p><code>shift + ctrl + n</code></p>
+<ol start="2" type="1">
+<li>Set it to be a text file:</li>
 </ol>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
@@ -882,38 +940,63 @@ Figure&nbsp;1: This is an image
 </div>
 </div>
 <ol start="3" type="1">
-<li>Prepare bigliography</li>
+<li>Prepare the bigliography</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a><span class="sc">@</span>Manual{rsoft,</span>
-<span id="cb24-2"><a href="#cb24-2"></a>    title <span class="ot">=</span> {R<span class="sc">:</span> A Language and Environment <span class="cf">for</span> Statistical Computing},</span>
-<span id="cb24-3"><a href="#cb24-3"></a>    author <span class="ot">=</span> {{R Core Team}},</span>
-<span id="cb24-4"><a href="#cb24-4"></a>    organization <span class="ot">=</span> {R Foundation <span class="cf">for</span> Statistical Computing},</span>
-<span id="cb24-5"><a href="#cb24-5"></a>    address <span class="ot">=</span> {Vienna, Austria},</span>
-<span id="cb24-6"><a href="#cb24-6"></a>    year <span class="ot">=</span> {<span class="dv">2025</span>},</span>
-<span id="cb24-7"><a href="#cb24-7"></a>    url <span class="ot">=</span> {https<span class="sc">:</span><span class="er">//</span>www.R<span class="sc">-</span>project.org<span class="sc">/</span>}</span>
-<span id="cb24-8"><a href="#cb24-8"></a>}</span>
-<span id="cb24-9"><a href="#cb24-9"></a><span class="sc">@</span>Book{ggplot,</span>
-<span id="cb24-10"><a href="#cb24-10"></a>    author <span class="ot">=</span> {Hadley Wickham},</span>
-<span id="cb24-11"><a href="#cb24-11"></a>    title <span class="ot">=</span> {ggplot2<span class="sc">:</span> Elegant Graphics <span class="cf">for</span> Data Analysis},</span>
-<span id="cb24-12"><a href="#cb24-12"></a>    publisher <span class="ot">=</span> {Springer<span class="sc">-</span>Verlag New York},</span>
-<span id="cb24-13"><a href="#cb24-13"></a>    year <span class="ot">=</span> {<span class="dv">2016</span>},</span>
-<span id="cb24-14"><a href="#cb24-14"></a>    isbn <span class="ot">=</span> {<span class="dv">978-3-319-24277-4</span>},</span>
-<span id="cb24-15"><a href="#cb24-15"></a>    url <span class="ot">=</span> {https<span class="sc">:</span><span class="er">//</span>ggplot2.tidyverse.org}</span>
-<span id="cb24-16"><a href="#cb24-16"></a>}</span>
-<span id="cb24-17"><a href="#cb24-17"></a><span class="sc">@</span>article{epifania2024,</span>
-<span id="cb24-18"><a href="#cb24-18"></a>  title<span class="ot">=</span>{A guided tutorial on linear mixed<span class="sc">-</span>effects models <span class="cf">for</span> the analysis of accuracies and response times <span class="cf">in</span> experiments with fully crossed design.},</span>
-<span id="cb24-19"><a href="#cb24-19"></a>  author<span class="ot">=</span>{Epifania, Ottavia M and Anselmi, Pasquale and Robusto, Egidio},</span>
-<span id="cb24-20"><a href="#cb24-20"></a>  journal<span class="ot">=</span>{Psychological Methods},</span>
-<span id="cb24-21"><a href="#cb24-21"></a>  year<span class="ot">=</span>{<span class="dv">2024</span>},</span>
-<span id="cb24-22"><a href="#cb24-22"></a>  publisher<span class="ot">=</span>{American Psychological Association}, </span>
-<span id="cb24-23"><a href="#cb24-23"></a>  doi<span class="ot">=</span>{https<span class="sc">:</span><span class="er">//</span>doi.org<span class="sc">/</span><span class="fl">10.1037</span><span class="sc">/</span>met0000708}</span>
-<span id="cb24-24"><a href="#cb24-24"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a><span class="sc">@</span>Manual{rsoft,</span>
+<span id="cb25-2"><a href="#cb25-2"></a>    title <span class="ot">=</span> {R<span class="sc">:</span> A Language and Environment <span class="cf">for</span> Statistical Computing},</span>
+<span id="cb25-3"><a href="#cb25-3"></a>    author <span class="ot">=</span> {{R Core Team}},</span>
+<span id="cb25-4"><a href="#cb25-4"></a>    organization <span class="ot">=</span> {R Foundation <span class="cf">for</span> Statistical Computing},</span>
+<span id="cb25-5"><a href="#cb25-5"></a>    address <span class="ot">=</span> {Vienna, Austria},</span>
+<span id="cb25-6"><a href="#cb25-6"></a>    year <span class="ot">=</span> {<span class="dv">2025</span>},</span>
+<span id="cb25-7"><a href="#cb25-7"></a>    url <span class="ot">=</span> {https<span class="sc">:</span><span class="er">//</span>www.R<span class="sc">-</span>project.org<span class="sc">/</span>}</span>
+<span id="cb25-8"><a href="#cb25-8"></a>}</span>
+<span id="cb25-9"><a href="#cb25-9"></a><span class="sc">@</span>Book{ggplot,</span>
+<span id="cb25-10"><a href="#cb25-10"></a>    author <span class="ot">=</span> {Hadley Wickham},</span>
+<span id="cb25-11"><a href="#cb25-11"></a>    title <span class="ot">=</span> {ggplot2<span class="sc">:</span> Elegant Graphics <span class="cf">for</span> Data Analysis},</span>
+<span id="cb25-12"><a href="#cb25-12"></a>    publisher <span class="ot">=</span> {Springer<span class="sc">-</span>Verlag New York},</span>
+<span id="cb25-13"><a href="#cb25-13"></a>    year <span class="ot">=</span> {<span class="dv">2016</span>},</span>
+<span id="cb25-14"><a href="#cb25-14"></a>    isbn <span class="ot">=</span> {<span class="dv">978-3-319-24277-4</span>},</span>
+<span id="cb25-15"><a href="#cb25-15"></a>    url <span class="ot">=</span> {https<span class="sc">:</span><span class="er">//</span>ggplot2.tidyverse.org}</span>
+<span id="cb25-16"><a href="#cb25-16"></a>}</span>
+<span id="cb25-17"><a href="#cb25-17"></a><span class="sc">@</span>article{epifania2024,</span>
+<span id="cb25-18"><a href="#cb25-18"></a>  title<span class="ot">=</span>{A guided tutorial on linear mixed<span class="sc">-</span>effects models <span class="cf">for</span> the analysis of accuracies and response times <span class="cf">in</span> experiments with fully crossed design.},</span>
+<span id="cb25-19"><a href="#cb25-19"></a>  author<span class="ot">=</span>{Epifania, Ottavia M and Anselmi, Pasquale and Robusto, Egidio},</span>
+<span id="cb25-20"><a href="#cb25-20"></a>  journal<span class="ot">=</span>{Psychological Methods},</span>
+<span id="cb25-21"><a href="#cb25-21"></a>  year<span class="ot">=</span>{<span class="dv">2024</span>},</span>
+<span id="cb25-22"><a href="#cb25-22"></a>  publisher<span class="ot">=</span>{American Psychological Association}, </span>
+<span id="cb25-23"><a href="#cb25-23"></a>  doi<span class="ot">=</span>{https<span class="sc">:</span><span class="er">//</span>doi.org<span class="sc">/</span><span class="fl">10.1037</span><span class="sc">/</span>met0000708}</span>
+<span id="cb25-24"><a href="#cb25-24"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Mendeley, Zotero and similar software have built-in function for exporting the bib file. Read the related documentation</p>
+<p>Mendeley, Zotero and similar software have built-in function for exporting the bib file. Read the related documentation of these softwares. Also Google Scholar provides the bibtex for each publication:</p>
+<div class="g-grid">
+<div class="g-col-6">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="img/scholar1.png" class="img-fluid figure-img" width="464"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="g-col-6">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="img/scholar2.png" class="img-fluid figure-img" width="392"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Then, from google scholar, you can copy &amp; paste the citation on your bib file.</p>
 <p>To call a reference:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>@citaton-key</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>@citaton-key</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="citation-keys" class="level2" data-number="2.7">
@@ -944,26 +1027,27 @@ Figure&nbsp;1: This is an image
 </tr>
 </tbody>
 </table>
+<p>Further details on the citation throughout a document are provided in <a href="#sec-margins" class="quarto-xref">Section&nbsp;3.4</a>.</p>
 </section>
 </section>
-<section id="document-layout" class="level1 page-columns page-full" data-number="3">
+<section id="sec-layout" class="level1 page-columns page-full" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Document layout</h1>
 <section id="columns" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="columns"><span class="header-section-number">3.1</span> Columns</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>:::: {.columns}</span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>::: {.column width="40%"}</span>
-<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>I want some text in the left column</span>
-<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>::: {.column width="60%"}</span>
-<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>And a picture in the right one </span>
-<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>::::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>:::: {.columns}</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>::: {.column width="40%"}</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>I want some text in the left column</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>::: {.column width="60%"}</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>And a picture in the right one </span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>::::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="columns">
 <div class="column" style="width:40%;">
@@ -972,27 +1056,27 @@ Figure&nbsp;1: This is an image
 <p>And a picture in the right one</p>
 </div>
 </div>
-<p>The columns are most convenient in presentation files, while the grid (see <a href="#sec-grid" class="quarto-xref">Section&nbsp;3.2</a>) is the besty option for changing the layout of a text document</p>
+<p>The columns are most convenient in <a href="https://arca-dpss.github.io/shine-with-quarto/html-presentation.html#/title-slide">presentation files</a>, while the grid (see <a href="#sec-grid" class="quarto-xref">Section&nbsp;3.2</a>) is the best option for changing the layout of a text document.</p>
 </section>
 <section id="sec-grid" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="sec-grid"><span class="header-section-number">3.2</span> Grid</h2>
-<p>The document length is organized in 12 columns of equal width. This allows for a convenient and flexible environment for aligning the content.</p>
+<p>The document body is organized in 12 columns of equal width. This allows for a convenient and flexible environment for aligning the content.</p>
 <p>The margins (left and right) are not counted within the 12-column space:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>::: {.grid}</span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>::: {.g-col-3}</span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>Everything is fine</span>
-<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>::: {.g-col-2}</span>
-<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>until</span>
-<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>::: </span>
-<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>::: {.g-col-5}</span>
-<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>the sum of the grid length is equal (or inferior) to 12</span>
-<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>::: </span>
-<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>::: {.grid}</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>::: {.g-col-3}</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>Everything is fine</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>::: {.g-col-2}</span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>until</span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>::: </span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a>::: {.g-col-5}</span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a>the sum of the grid length is equal (or inferior) to 12</span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a>::: </span>
+<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="grid">
 <div class="g-col-3">
@@ -1006,24 +1090,24 @@ Figure&nbsp;1: This is an image
 </div>
 </div>
 </section>
-<section id="tabset-panel" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="tabset-panel"><span class="header-section-number">3.3</span> Tabset panel</h2>
+<section id="panel-tabset" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="panel-tabset"><span class="header-section-number">3.3</span> Panel Tabset</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>::: {.panel-tabset}</span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## Aim</span></span>
-<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>Here I present the aim of the study </span>
-<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Methods</span></span>
-<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>Here I present the methods used to pursue the aim</span>
-<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## Results</span></span>
-<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a>And here I present the results</span>
-<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>::: {.panel-tabset}</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## Aim</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>Here I present the aim of the study </span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Methods</span></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>Here I present the methods used to pursue the aim</span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## Results</span></span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>And here I present the results</span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Aim</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Methods</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Results</a></li></ul>
@@ -1040,19 +1124,19 @@ Figure&nbsp;1: This is an image
 </div>
 </div>
 </section>
-<section id="margins" class="level2 page-columns page-full" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="margins"><span class="header-section-number">3.4</span> Margins</h2>
-<p>Allows for placing images, code, references or equations in the margin of a document</p>
+<section id="sec-margins" class="level2 page-columns page-full" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="sec-margins"><span class="header-section-number">3.4</span> Margins</h2>
+<p>Allows for placing images, <a href="https://arca-dpss.github.io/shine-with-quarto/code-chunk.html">code</a>, references or equations in the margin of a document</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>For instance, I'm writing a document about peacocks, and I want a picture of a peacock and a little bit of text in the margin of the document, aligned with this text.</span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>::: {.column-margin}</span>
-<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>I want this picture displayed in the margin </span>
-<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a><span class="al">![](img/peacock.png)</span></span>
-<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>For instance, I'm writing a document about peacocks, and I want a picture of a peacock and a little bit of text in the margin of the document, aligned with this text.</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>::: {.column-margin}</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>I want this picture displayed in the margin </span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a><span class="al">![](img/peacock.png)</span></span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>For instance, I’m writing a document about peacocks, and I want a picture of a peacock and a little bit of text in the margin of the document, aligned with this text.</p>
 
@@ -1062,45 +1146,59 @@ Figure&nbsp;1: This is an image
 </div></div><p>Even references can be placed in the margin, such that they appear alongside the text where they are cited.</p>
 <p>Starting with the right settings in the YAML:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="an">bibliography:</span><span class="co"> biblio.bib</span></span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="an">reference-location:</span><span class="co"> margin</span></span>
-<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="an">citation-location:</span><span class="co"> margin</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="an">bibliography:</span><span class="co"> biblio.bib</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="an">reference-location:</span><span class="co"> margin</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="an">citation-location:</span><span class="co"> margin</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>These lines of code force the citations to appear in the right margin. The citation key can happen as usual.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>I want to cite the <span class="in">`ggplot2`</span> package because it is the best package ever <span class="co">[</span><span class="ot">@ggplot2</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>I want to cite the <span class="in">`ggplot2`</span> package because it is the best package ever <span class="co">[</span><span class="ot">@ggplot2</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>I want to cite the <code>ggplot2</code> package because it is the best package ever <span class="citation" data-cites="ggplot2">(<a href="#ref-ggplot2" role="doc-biblioref">Wickham 2016</a>)</span></p>
 <div class="no-row-height column-margin column-container"><div id="ref-ggplot2" class="csl-entry" role="listitem">
 Wickham, Hadley. 2016. <em>Ggplot2: Elegant Graphics for Data Analysis</em>. Springer-Verlag New York. <a href="https://ggplot2.tidyverse.org">https://ggplot2.tidyverse.org</a>.
+</div></div><p>Also equations can be put in the margins, so that they appear along with the text.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>In this equation, we show how to stanrdarzie a raw $x$ value.</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>:::{.column-margin}</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>$$z = \dfrac{x - \mu}{\sigma}$$</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>In this equation, we show how to stanrdarzie a raw <span class="math inline">\(x\)</span> value.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><span class="math display">\[z = \dfrac{x - \mu}{\sigma}\]</span></p>
 </div></div></section>
 <section id="callout-blocks" class="level2" data-number="3.5">
 <h2 data-number="3.5" class="anchored" data-anchor-id="callout-blocks"><span class="header-section-number">3.5</span> Callout blocks</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip}</span>
-<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="fu">## Title of the tip</span></span>
-<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>These are my two cents for you</span>
-<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>:::{.callout-note collapse=true}</span>
-<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## Two cents</span></span>
-<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a>These are my two cents for you</span>
-<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a>:::{.callout-warning icon=false}</span>
-<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pay attention</span></span>
-<span id="cb32-15"><a href="#cb32-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-16"><a href="#cb32-16" aria-hidden="true" tabindex="-1"></a>Please mind the gap</span>
-<span id="cb32-17"><a href="#cb32-17" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb32-18"><a href="#cb32-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-19"><a href="#cb32-19" aria-hidden="true" tabindex="-1"></a>:::{.callout-caution}</span>
-<span id="cb32-20"><a href="#cb32-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## Danger!</span></span>
-<span id="cb32-21"><a href="#cb32-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-22"><a href="#cb32-22" aria-hidden="true" tabindex="-1"></a>This is dangerous!</span>
-<span id="cb32-23"><a href="#cb32-23" aria-hidden="true" tabindex="-1"></a>:::  </span>
-<span id="cb32-24"><a href="#cb32-24" aria-hidden="true" tabindex="-1"></a>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip}</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="fu">## Title of the tip</span></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>These are my two cents for you</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>:::{.callout-note collapse=true}</span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## Two cents</span></span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a>These are my two cents for you</span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a>:::{.callout-warning icon=false}</span>
+<span id="cb34-14"><a href="#cb34-14" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pay attention</span></span>
+<span id="cb34-15"><a href="#cb34-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a>Please mind the gap</span>
+<span id="cb34-17"><a href="#cb34-17" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb34-18"><a href="#cb34-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-19"><a href="#cb34-19" aria-hidden="true" tabindex="-1"></a>:::{.callout-caution}</span>
+<span id="cb34-20"><a href="#cb34-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## Danger!</span></span>
+<span id="cb34-21"><a href="#cb34-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-22"><a href="#cb34-22" aria-hidden="true" tabindex="-1"></a>This is dangerous!</span>
+<span id="cb34-23"><a href="#cb34-23" aria-hidden="true" tabindex="-1"></a>:::  </span>
+<span id="cb34-24"><a href="#cb34-24" aria-hidden="true" tabindex="-1"></a>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1116,7 +1214,7 @@ Title of the tip
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1125,7 +1223,7 @@ Two cents
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>These are my two cents for you</p>
 </div>
@@ -1174,11 +1272,69 @@ Danger!
 </div>
 </div>
 <p>Remember that the cross reference label depends on the language that has been set in the YAML (<a href="#sec-lang" class="quarto-xref">Section&nbsp;1.8</a>).</p>
-<p>In <a href="#fig-cama" class="quarto-xref">Figure&nbsp;1</a> there’s a nice chameleon.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>In @fig-cama there's a nice chameleon.</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="al">![This is an image](img/picture.jpg)</span>{#fig-cama}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>In <a href="#fig-cama" class="quarto-xref">Figure&nbsp;2</a> there’s a nice chameleon.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>In @eq-reg we have an equation.</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>$$y = \beta_0 + \beta_1X_1 + \varepsilon$${#eq-reg}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>In <a href="#eq-reg" class="quarto-xref">Equation&nbsp;1</a> we have an equation.</p>
 <p><span id="eq-reg"><span class="math display">\[y = \beta_0 + \beta_1X_1 + \varepsilon \tag{1}\]</span></span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## lang {#sec-lang}</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>bla bla bla</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>@sec-lang present the language definition throughout a document. Sections, subsections etc. are all cross-referenced with the prefix <span class="in">`sec`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p><a href="#sec-lang" class="quarto-xref">Section&nbsp;1.8</a> present the language definition throughout a document. Sections, subsections etc. are all cross-referenced with the prefix <code>sec</code></p>
 <p>It is also possible to cross reference R code, tables, and graphical output obtained from R code. These options are presented in the Code Chunk section.</p>
+</section>
+<section id="sec-index" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> <code>index.qmd</code></h1>
+<p>As seen in the lesson on <a href="https://arca-dpss.github.io/shine-with-quarto/git-hub.html">GitHub</a>, the <code>index.qmd</code> (and specifically its rendered HTML) is used as the landing page of a document.</p>
+<p>It can be configured as you wish, all the settings that have been presented in this lesson can be applied to <code>index.qmd</code> file.</p>
+<p>Other pages can be linked to the landing page in the form of… links.</p>
+<p>For instance, consider that you have an R project organized as follows:</p>
+<pre class="text"><code>my-project/
+│
+├── index.qmd
+├── index.html
+├── data/
+│   └── mydata.csv
+├── img/
+│   ├── logo.png
+│   ├── plot.jpg
+│   └── illustration.svg
+├── bibliography/
+│   └── references.bib
+└── docs/
+    ├── about-me.qmd
+    ├── about-me.html
+    ├── cv.qmd
+    └── cv.pdf</code></pre>
+<p>As the higher level, there is the <code>index.qmd</code> file and its rendered version in HTML (that is the one actually used as the landing page).</p>
+<p>If you need to add other documents, you just need to link them in the landing page as a link, but indicating the path of the document.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Linkable page in the index
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>My cv is available at <span class="co">[</span><span class="ot">this link</span><span class="co">](docs/cv.pdf)</span>, while <span class="co">[</span><span class="ot">here</span><span class="co">](docs/about-me.html)</span> you can find a brief summary of my research activity.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
 
 
 

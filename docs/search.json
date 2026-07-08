@@ -32,14 +32,14 @@
     "href": "R-Project.html",
     "title": "R-Project",
     "section": "",
-    "text": "R Markdown, next generation\nAll based on knitr to execute R code\n\nAnalyze. Share. Reproduce. You have a story to tell with data—tell it with Quarto.\n\nThis course presents the integration between RStudio and quarto. All the code in the executable code chunks are hence based in R:\n\nDownload R: https://cran.r-project.org/bin/windows/base/\nDownload RStudio: https://posit.co/download/rstudio-desktop/\n\nRMarkdown is the integrated markup language integrated within RStudio is the “predecessor” of quarto.\nMarkup languages such as quarto, markdown, html, latex, are programming languages where formatting is handled by chunk codes, named tags.\n\n\n\nFormat\nExtension\n\n\n\n\nMarkdown\n.md\n\n\nR Markdown\n.Rmd\n\n\nQuarto\n.qmd\n\n\n\n\nHTMLLaTeX\n\n\n\n\n\n\n\nHTML editor\n\n\n\n\n\n\n\n\n\n\n\nLaTex Editor\n\n\n\n\n\n\n\n\n\n\nWhat You See Is What You Get\nThe text is modified with built-in command, you can see immediately the changes:\n\n\n\n\n\nWord\n\n\n\n\n\n\n\nUsing knitr, it allows for integrating analyses, text, and graphs in a single document:\n\nReplicability\nTydiness\nConvenience\n\nCreate dynamic content with Python, R, Julia, and Observable"
+    "text": "R Markdown, next generation\nAll based on knitr to execute R code\n\nAnalyze. Share. Reproduce. You have a story to tell with data—tell it with Quarto.\n\nThis course presents the integration between RStudio and quarto. All the code in the executable code chunks are hence based in R:\n\nDownload R: https://cran.r-project.org/bin/windows/base/\nDownload RStudio: https://posit.co/download/rstudio-desktop/\n\nRMarkdown is the integrated markup language integrated within RStudio, it is the “predecessor” of quarto.\nMarkup languages such as quarto, markdown, html, latex, are programming languages where formatting is handled by chunk codes, named tags.\n\n\n\nFormat\nExtension\n\n\n\n\nMarkdown\n.md\n\n\nR Markdown\n.Rmd\n\n\nQuarto\n.qmd\n\n\n\n\nHTMLLaTeX\n\n\n\n\n\n\n\nHTML editor\n\n\n\n\n\n\n\n\n\n\n\nLaTex Editor\n\n\n\n\n\n\n\n\n\n\nWhat You See Is What You Get\nThe text is modified with built-in command, you can see immediately the changes:\n\n\n\n\n\nWord\n\n\n\n\n\n\n\nUsing knitr, it allows for integrating analyses, text, and graphs in a single document:\n\nReplicability\nTydiness\nConvenience\n\nCreate dynamic content with Python, R, Julia, and Observable"
   },
   {
     "objectID": "R-Project.html#quarto",
     "href": "R-Project.html#quarto",
     "title": "R-Project",
     "section": "",
-    "text": "R Markdown, next generation\nAll based on knitr to execute R code\n\nAnalyze. Share. Reproduce. You have a story to tell with data—tell it with Quarto.\n\nThis course presents the integration between RStudio and quarto. All the code in the executable code chunks are hence based in R:\n\nDownload R: https://cran.r-project.org/bin/windows/base/\nDownload RStudio: https://posit.co/download/rstudio-desktop/\n\nRMarkdown is the integrated markup language integrated within RStudio is the “predecessor” of quarto.\nMarkup languages such as quarto, markdown, html, latex, are programming languages where formatting is handled by chunk codes, named tags.\n\n\n\nFormat\nExtension\n\n\n\n\nMarkdown\n.md\n\n\nR Markdown\n.Rmd\n\n\nQuarto\n.qmd\n\n\n\n\nHTMLLaTeX\n\n\n\n\n\n\n\nHTML editor\n\n\n\n\n\n\n\n\n\n\n\nLaTex Editor"
+    "text": "R Markdown, next generation\nAll based on knitr to execute R code\n\nAnalyze. Share. Reproduce. You have a story to tell with data—tell it with Quarto.\n\nThis course presents the integration between RStudio and quarto. All the code in the executable code chunks are hence based in R:\n\nDownload R: https://cran.r-project.org/bin/windows/base/\nDownload RStudio: https://posit.co/download/rstudio-desktop/\n\nRMarkdown is the integrated markup language integrated within RStudio, it is the “predecessor” of quarto.\nMarkup languages such as quarto, markdown, html, latex, are programming languages where formatting is handled by chunk codes, named tags.\n\n\n\nFormat\nExtension\n\n\n\n\nMarkdown\n.md\n\n\nR Markdown\n.Rmd\n\n\nQuarto\n.qmd\n\n\n\n\nHTMLLaTeX\n\n\n\n\n\n\n\nHTML editor\n\n\n\n\n\n\n\n\n\n\n\nLaTex Editor"
   },
   {
     "objectID": "R-Project.html#markup-langues-vs.-wysiwyg-languages",
@@ -147,28 +147,28 @@
     "href": "git-hub.html#create-new-repository",
     "title": "GitHub",
     "section": "3.1 Create new repository",
-    "text": "3.1 Create new repository\n\n\n\n\n\nCreate a new repository that does exist yet\n\n\n\n\nThis initializes a new GitHub repository, where you can provide different information concerning its characteristics\n\n\n\n\n\nCreate a new repository that does exist yet"
+    "text": "3.1 Create new repository\n\n\n\n\n\nCreate a new repository that does not exist\n\n\n\n\nThis initializes a new GitHub repository, where you can provide different information concerning its characteristics\n\n\n\n\n\nCreate a new repository that does exist"
   },
   {
     "objectID": "git-hub.html#add-existing-repository",
     "href": "git-hub.html#add-existing-repository",
     "title": "GitHub",
     "section": "3.2 Add existing repository",
-    "text": "3.2 Add existing repository\n\n\n\n\n\nAdd an existing repository that does exist yet"
+    "text": "3.2 Add existing repository\n\n\n\n\n\nAdd an existing repository that does exist"
   },
   {
     "objectID": "git-hub.html#publish-the-repositories",
     "href": "git-hub.html#publish-the-repositories",
     "title": "GitHub",
     "section": "3.3 Publish the repositories",
-    "text": "3.3 Publish the repositories\nOnce a repository is added (either by adding an existing or creating a new one), it can be published and made available online for other people:\n\n\n\n\n\nPublish button\n\n\n\n\nIf you want your repository to be found by other users, remove the flag from the “Keep this code private”:\n\n\n\n\n\nDefine the publication policies\n\n\n\n\n\n3.3.1 commit + push\nEverything is ready for the commitment.\n\nSelect specific files and commit them. The commit message is mandatory! It is useful for your future self, just to remember the changes you made, when and possibly why.\n\n\n\n\n\n\nSelect & Commit\n\n\n\n\n\nThe changes must be pushed to GitHub:\n\n\n\n\n\n\nSelect & Commit\n\n\n\n\n\nCheck whether the changes are live on GitHub:\n\n\n\n\n\n\nCheck Commit\n\n\n\n\n\n\n3.3.2 Licenses\n\n\n\n\n\n\nMIT\n\n\n\n\n\nAnyone can use, modify, distribute, and commercialize the software, provided that the original copyright notice and license text are included\n\n\n\n\n\n\n\n\n\nGNU\n\n\n\n\n\nAnyone can use, modify, and distribute the software. Any derivative work or redistributed version must be released under the same GPL license and with source code available.\n\n\n\nSummarizing the differences between the types of licences:\n\n\n\n\n\n\n\nMIT\nGNU GPL\n\n\n\n\nCan be used in proprietary software\nDerivative works must remain open source\n\n\nMinimal restrictions\nRequires source code disclosure upon redistribution\n\n\nMaximizes flexibility and adoption\nEnsures openness is preserved"
+    "text": "3.3 Publish the repositories\nOnce a repository is added (either by adding an existing one or creating a new one), it can be published and made available online for other people:\n\n\n\n\n\nPublish button\n\n\n\n\nIf you want your repository to be found by other users, remove the flag from the “Keep this code private”:\n\n\n\n\n\nDefine the publication policies\n\n\n\n\n\n3.3.1 commit + push\nEverything is ready for the commitment.\n\nSelect specific files and commit them. The commit message is mandatory! It is useful for your future self, just to remember the changes you made, when and possibly why.\n\n\n\n\n\n\nSelect & Commit\n\n\n\n\n\nThe changes must be pushed to GitHub:\n\n\n\n\n\n\nSelect & Commit\n\n\n\n\n\nCheck whether the changes are live on GitHub:\n\n\n\n\n\n\nCheck Commit\n\n\n\n\n\n\n3.3.2 Licenses\n\n\n\n\n\n\nMIT\n\n\n\n\n\nAnyone can use, modify, distribute, and commercialize the software, provided that the original copyright notice and license text are included\n\n\n\n\n\n\n\n\n\nGNU\n\n\n\n\n\nAnyone can use, modify, and distribute the software. Any derivative work or redistributed version must be released under the same GPL license and with source code available.\n\n\n\nSummarizing the differences between the types of licences:\n\n\n\n\n\n\n\nMIT\nGNU GPL\n\n\n\n\nCan be used in proprietary software\nDerivative works must remain open source\n\n\nMinimal restrictions\nRequires source code disclosure upon redistribution\n\n\nMaximizes flexibility and adoption\nEnsures openness is preserved"
   },
   {
     "objectID": "html-layout.html",
     "href": "html-layout.html",
     "title": "HTML document: Layout",
     "section": "",
-    "text": "The overall appearance and behavior of the document is specified in the YAML.\nImportantly the YAML defines the extension of the file rendering:\n\n\n\n\n\n\nHTML default YAML\n\n\n\n---\ntitle: \"Untitled\"\nformat: html\neditor: visual\n---\n\n\n\n\n\n\n\n\nPDF default YAML\n\n\n\n---\ntitle: \"Untitled\"\nformat: pdf\neditor: visual\n---\n\n\n\n\nQuarto (as well as as RMarkdown) allows for visualizing the text editor as a WYSIWYG text editor:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\n\n\nAlthough at the very beginning, the use of the visual editor might be tempting, don’t indulge! Using the source editor is an investiment in your future programming skills :)\n\n\n\n\n\nTable Of Ccontents: Defines the index of your document and its associated characteristics (e.g., where it is located):\n\n---\ntitle: \"My quarto file\"\nauthor: \"Jane Doe\"\ndate: today\nformat: \n  html:\n    toc: true                \n    toc-title: My contents   \n    toc-location: left       \n---\n\nBe mindful of the indentation!! With the wrong indentation, the YAML breaks down and the document will not compile.\n\ntoc: true: Set the table of contents\n\ntoc-title: My contents: Define the title of the toc\ntoc-location: left: Define the position of the toc (options: left, right, body)\n\n\n\n\nThe default theme of the document can be modified with the predefined themes\n\n---\ntitle: \"My quarto file\"\nauthor: \"Jane Doe\"\ndate: today\nformat: \n  html:\n    toc: true                   \n    toc-title: My contents   \n    toc-location: left\n    theme: superhero  \n    fontsize: 32px    \nlang: it                     \n---\n\nThe theme can be defined with the theme: specific_theme in the YAML. Further customization can be brought with other YAML arguments (e.g.,fontsize) or with specific css settings\nThe theme can adapt to specific settings, such as whether you want both ligth and dark theme:\n\n---\nformat: \n  html:\n    theme:\n     light: minty\n     dark: superhero\n---\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSet the language for your document. This is not the autocorrect!\nIt sets the language to be used in the cross-referencing of your document (see Section 4).\n\n\n\n\n\nLanguage\nCode\n\n\n\n\nEnglish\nen\n\n\nChinese\nzh\n\n\nSpanish\nes\n\n\nFrench\nfr\n\n\nJapanese\nja\n\n\nGerman\nde\n\n\n\n\n\n\n\n\nLanguage\nCode\n\n\n\n\nPortuguese\npt\n\n\nRussian\nru\n\n\nCzech\ncs\n\n\nFinnish\nfi\n\n\nDutch\nnl\n\n\nItalian\nit\n\n\nPolish\npl\n\n\nKorean\nko"
+    "text": "The overall appearance and behavior of the document is specified in the YAML.\nImportantly the YAML defines the extension of the file rendering:\n\n\n\n\n\n\nHTML default YAML\n\n\n\n---\ntitle: \"Untitled\"\nformat: html\neditor: visual\n---\n\n\n\n\n\n\n\n\nPDF default YAML\n\n\n\n---\ntitle: \"Untitled\"\nformat: pdf\neditor: visual\n---\n\n\n\n\nQuarto (as well as as RMarkdown) allows for visualizing the text editor as a WYSIWYG text editor:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\n\n\nAlthough at the very beginning, the use of the visual editor might be tempting, don’t indulge! Using the source editor is an investment in your future programming skills :)\n\n\n\n\n\nTable Of Contents: Defines the index of your document and its associated characteristics (e.g., where it is located):\n\n---\ntitle: \"My quarto file\"\nauthor: \"Jane Doe\"\ndate: today\nformat: \n  html:\n    toc: true                \n    toc-title: My contents   \n    toc-location: left       \n---\n\nBe mindful of the indentation!! With the wrong indentation, the YAML breaks down and the document will not compile.\n\ntoc: true: Set the table of contents\n\ntoc-title: My contents: Define the title of the toc\ntoc-location: left: Define the position of the toc (options: left, right, body)\n\n\n\n\nThe default theme of the document can be modified with the predefined themes\n\n---\ntitle: \"My quarto file\"\nauthor: \"Jane Doe\"\ndate: today\nformat: \n  html:\n    toc: true                   \n    toc-title: My contents   \n    toc-location: left\n    theme: superhero  \n    fontsize: 32px    \nlang: it                     \n---\n\nThe theme can be defined with the theme: specific_theme in the YAML. Further customization can be brought with other YAML arguments (e.g.,fontsize) or with specific css settings\nThe theme can adapt to specific settings, such as whether you want both ligth and dark theme:\n\n---\nformat: \n  html:\n    theme:\n     light: minty\n     dark: superhero\n---\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSet the language for your document. This is not the autocorrect!\nIt sets the language to be used in the cross-referencing of your document (see Section 4).\n\n\n\n\n\nLanguage\nCode\n\n\n\n\nEnglish\nen\n\n\nChinese\nzh\n\n\nSpanish\nes\n\n\nFrench\nfr\n\n\nJapanese\nja\n\n\nGerman\nde\n\n\n\n\n\n\n\n\nLanguage\nCode\n\n\n\n\nPortuguese\npt\n\n\nRussian\nru\n\n\nCzech\ncs\n\n\nFinnish\nfi\n\n\nDutch\nnl\n\n\nItalian\nit\n\n\nPolish\npl\n\n\nKorean\nko\n\n\n\n\n\nThe YAML is also used to define the references for a document (e.g., the bibliography external file, the references style and so on). See Section 2.6.\n\n\n\nFigure 1 illustrates the default setting of an HTML page.\n\n\n\n\n\n\n\n\nFigure 1: Default layout of an HTML document\n\n\n\n\n\nThe layout is divided into three main parts:\n\nthe sidebar on the left side (red rectangle in Figure 1)\nthe body in the center (green rectangle in Figure 1)\nthe margin on the right side (yellow rectangle in Figure 1)\n\nBetween each of these parts, there is the so-called gutter (i.e., the empty space between the main parts). Its width can be modified as well in the YAML, with default values as follows:\n\nformat:\n  html: \n    grid:\n      sidebar-width: 300px\n      body-width: 900px\n      margin-width: 300px\n      gutter-width: 1.5rem\n\nThese settings will affect the entire document. Section 3 presents the layout settings for specific part of the document."
   },
   {
     "objectID": "html-layout.html#source-vs.-visual",
@@ -204,7 +204,7 @@
     "href": "html-layout.html#toc",
     "title": "HTML document: Layout",
     "section": "",
-    "text": "Table Of Ccontents: Defines the index of your document and its associated characteristics (e.g., where it is located):\n\n---\ntitle: \"My quarto file\"\nauthor: \"Jane Doe\"\ndate: today\nformat: \n  html:\n    toc: true                \n    toc-title: My contents   \n    toc-location: left       \n---\n\nBe mindful of the indentation!! With the wrong indentation, the YAML breaks down and the document will not compile.\n\ntoc: true: Set the table of contents\n\ntoc-title: My contents: Define the title of the toc\ntoc-location: left: Define the position of the toc (options: left, right, body)"
+    "text": "Table Of Contents: Defines the index of your document and its associated characteristics (e.g., where it is located):\n\n---\ntitle: \"My quarto file\"\nauthor: \"Jane Doe\"\ndate: today\nformat: \n  html:\n    toc: true                \n    toc-title: My contents   \n    toc-location: left       \n---\n\nBe mindful of the indentation!! With the wrong indentation, the YAML breaks down and the document will not compile.\n\ntoc: true: Set the table of contents\n\ntoc-title: My contents: Define the title of the toc\ntoc-location: left: Define the position of the toc (options: left, right, body)"
   },
   {
     "objectID": "html-layout.html#themes",
@@ -225,14 +225,14 @@
     "href": "html-layout.html#text-formatting",
     "title": "HTML document: Layout",
     "section": "2.2 Text Formatting",
-    "text": "2.2 Text Formatting\nThe text formatting is defined through specific tags:\n\n2.2.1 Formatting\n\n*italics*, **bold**, ***bold italics*** \n\nitalics, bold, bold italics\n\n\n2.2.2 Super/sub script\n\ntextsuperscirpt^2^, textunderscript~2~\n\ntextsuperscirpt2, textunderscript2\n\n\n2.2.3 In line code\n\n`this is myinline code`\n\nthis is myinline code\n\n\n\n\n\n\nCode chunk\n\n\n\n\n\nThere will be a specific lesson on the code chunks"
+    "text": "2.2 Text Formatting\nThe text formatting is defined through specific tags:\n\n2.2.1 Formatting\n\n*italics*, **bold**, ***bold italics*** \n\nitalics, bold, bold italics\n\n\n2.2.2 Super/sub script\n\ntextsuperscript^2^, textunderscript~2~\n\ntextsuperscript2, textunderscript2\n\n\n2.2.3 In line code\n\n`this is myinline code`\n\nthis is myinline code\n\n\n\n\n\n\nCode chunk\n\n\n\n\n\nThere will be a specific lesson on the code chunks"
   },
   {
     "objectID": "html-layout.html#links-and-images",
     "href": "html-layout.html#links-and-images",
     "title": "HTML document: Layout",
     "section": "2.3 Links and images",
-    "text": "2.3 Links and images\n\n&lt;https://github.com/&gt;\n\nhttps://github.com/\n\nMy link is [here](https://github.com/)\n\nMy link is here\n\n![This is an image](img/picture.jpg)\n\n\n\n\n\n\n\nFigure 1: This is an image"
+    "text": "2.3 Links and images\n\n&lt;https://github.com/&gt;\n\nhttps://github.com/\n\nMy link is [here](https://github.com/)\n\nMy link is here\n\n![This is an image](img/picture.jpg)\n\n\n\n\n\n\n\nFigure 2: This is an image\n\n\n\n\n\n\n\n\n\nLinks & index.qmd\n\n\n\n\n\nAs seen in the GitHub lesson, the index.qmd works as the landing page of a potential website. To include other documents and hyperlink them in the main landing page, we use the syntax for the links (see Section 5)."
   },
   {
     "objectID": "html-layout.html#lists",
@@ -246,7 +246,7 @@
     "href": "html-layout.html#math",
     "title": "HTML document: Layout",
     "section": "2.5 Math",
-    "text": "2.5 Math\nIn-line math:\n\nThis is an in-line equation $y = \\beta_0 + \\beta_1 X + \\varepsilon$\n\nThis is an in-line equation \\(y = \\beta_0 + \\beta_1 X + \\varepsilon\\)\nMath math:\n\nThis is an  equation $$z = \\dfrac{\\bar{x} -\\mu}{\\sigma}$$\n\nThis is an equation \\[z = \\dfrac{\\bar{x} -\\mu}{\\sigma}\\]"
+    "text": "2.5 Math\nIn-line math:\n\nThis is an in-line equation $y = \\beta_0 + \\beta_1 X + \\varepsilon$\n\nThis is an in-line equation \\(y = \\beta_0 + \\beta_1 X + \\varepsilon\\)\nMath math:\n\nThis is an  equation $$z = \\dfrac{\\bar{x} -\\mu}{\\sigma}$$\n\nThis is an equation \\[z = \\dfrac{\\bar{x} -\\mu}{\\sigma}\\]\nHere you can find an exahustive list of the math symbols available in LaTeX."
   },
   {
     "objectID": "html-layout.html#references",
@@ -260,7 +260,7 @@
     "href": "html-layout.html#citation-keys",
     "title": "HTML document: Layout",
     "section": "2.7 Citation keys",
-    "text": "2.7 Citation keys\n\n\n\n\n\n\n\nKey\nOutput\n\n\n\n\n@ggplot does this\nWickman (2016) does this\n\n\nggplot2 is an interesting package [@ggplot2]\nggplot2 is an interesting package (Wickman, 2016)\n\n\nbla bla bla [@epifania2024; @ggplot2]\nbla bla bla (Epifania et al., 2024; Wickman, 2016)"
+    "text": "2.7 Citation keys\n\n\n\n\n\n\n\nKey\nOutput\n\n\n\n\n@ggplot does this\nWickman (2016) does this\n\n\nggplot2 is an interesting package [@ggplot2]\nggplot2 is an interesting package (Wickman, 2016)\n\n\nbla bla bla [@epifania2024; @ggplot2]\nbla bla bla (Epifania et al., 2024; Wickman, 2016)\n\n\n\nFurther details on the citation throughout a document are provided in Section 3.4."
   },
   {
     "objectID": "html-layout.html#lang",
@@ -285,14 +285,14 @@
     "href": "html-layout.html#columns",
     "title": "HTML document: Layout",
     "section": "3.1 Columns",
-    "text": "3.1 Columns\n\n:::: {.columns}\n\n::: {.column width=\"40%\"}\nI want some text in the left column\n:::\n\n::: {.column width=\"60%\"}\nAnd a picture in the right one \n\n\n:::\n\n::::\n\n\n\nI want some text in the left column\n\nAnd a picture in the right one\n\n\nThe columns are most convenient in presentation files, while the grid (see Section 3.2) is the besty option for changing the layout of a text document"
+    "text": "3.1 Columns\n\n:::: {.columns}\n\n::: {.column width=\"40%\"}\nI want some text in the left column\n:::\n\n::: {.column width=\"60%\"}\nAnd a picture in the right one \n\n\n:::\n\n::::\n\n\n\nI want some text in the left column\n\nAnd a picture in the right one\n\n\nThe columns are most convenient in presentation files, while the grid (see Section 3.2) is the best option for changing the layout of a text document."
   },
   {
     "objectID": "html-layout.html#sec-grid",
     "href": "html-layout.html#sec-grid",
     "title": "HTML document: Layout",
     "section": "3.2 Grid",
-    "text": "3.2 Grid\nThe document length is organized in 12 columns of equal width. This allows for a convenient and flexible environment for aligning the content.\nThe margins (left and right) are not counted within the 12-column space:\n\n::: {.grid}\n\n::: {.g-col-3}\nEverything is fine\n:::\n  \n::: {.g-col-2}\nuntil\n::: \n  \n::: {.g-col-5}\nthe sum of the grid length is equal (or inferior) to 12\n::: \n:::\n\n\n\nEverything is fine\n\n\nuntil\n\n\nthe sum of the grid length is equal (or inferior) to 12"
+    "text": "3.2 Grid\nThe document body is organized in 12 columns of equal width. This allows for a convenient and flexible environment for aligning the content.\nThe margins (left and right) are not counted within the 12-column space:\n\n::: {.grid}\n\n::: {.g-col-3}\nEverything is fine\n:::\n  \n::: {.g-col-2}\nuntil\n::: \n  \n::: {.g-col-5}\nthe sum of the grid length is equal (or inferior) to 12\n::: \n:::\n\n\n\nEverything is fine\n\n\nuntil\n\n\nthe sum of the grid length is equal (or inferior) to 12"
   },
   {
     "objectID": "html-layout.html#tabset-panel",
@@ -313,7 +313,7 @@
     "href": "html-layout.html#sec-lang",
     "title": "HTML document: Layout",
     "section": "",
-    "text": "Set the language for your document. This is not the autocorrect!\nIt sets the language to be used in the cross-referencing of your document (see Section 4).\n\n\n\n\n\nLanguage\nCode\n\n\n\n\nEnglish\nen\n\n\nChinese\nzh\n\n\nSpanish\nes\n\n\nFrench\nfr\n\n\nJapanese\nja\n\n\nGerman\nde\n\n\n\n\n\n\n\n\nLanguage\nCode\n\n\n\n\nPortuguese\npt\n\n\nRussian\nru\n\n\nCzech\ncs\n\n\nFinnish\nfi\n\n\nDutch\nnl\n\n\nItalian\nit\n\n\nPolish\npl\n\n\nKorean\nko"
+    "text": "Set the language for your document. This is not the autocorrect!\nIt sets the language to be used in the cross-referencing of your document (see Section 4).\n\n\n\n\n\nLanguage\nCode\n\n\n\n\nEnglish\nen\n\n\nChinese\nzh\n\n\nSpanish\nes\n\n\nFrench\nfr\n\n\nJapanese\nja\n\n\nGerman\nde\n\n\n\n\n\n\n\n\nLanguage\nCode\n\n\n\n\nPortuguese\npt\n\n\nRussian\nru\n\n\nCzech\ncs\n\n\nFinnish\nfi\n\n\nDutch\nnl\n\n\nItalian\nit\n\n\nPolish\npl\n\n\nKorean\nko\n\n\n\n\n\nThe YAML is also used to define the references for a document (e.g., the bibliography external file, the references style and so on). See Section 2.6."
   },
   {
     "objectID": "code-chunk.html",
@@ -763,5 +763,33 @@
     "title": "Spread the shine",
     "section": "",
     "text": "Everything is ready for the actual deployment of the app from Connect Cloud.\nFrom the Home of your profile, search for the Publish button.\nSelect the repository, the folder, and the specific file of the app (Figure 1)\n\n\n\n\n\n\n\n\nFigure 1: Deploy app and publish it"
+  },
+  {
+    "objectID": "html-layout.html#sec-biblio",
+    "href": "html-layout.html#sec-biblio",
+    "title": "HTML document: Layout",
+    "section": "2.6 References",
+    "text": "2.6 References\nDefine the path of the bib file in the YAML, on a new line, with no indentation:\n\n[...]\nbibliography: bib/references.bib\n\nThen set the path to your file with .bib extension. In the presented example, the references.bib file is within the subfolder bib.\nIf you don’t have LaTeX, don’t worry, because the bib file with extension .bib can be created with any text editor, including RStudio.\nTo use RStudio as a text editor:\n\nOpen a new script:\n\nshift + ctrl + n\n\nSet it to be a text file:\n\n\n\n\n\n\n\n\n\n\n\nPrepare the bigliography\n\n\n@Manual{rsoft,\n    title = {R: A Language and Environment for Statistical Computing},\n    author = {{R Core Team}},\n    organization = {R Foundation for Statistical Computing},\n    address = {Vienna, Austria},\n    year = {2025},\n    url = {https://www.R-project.org/}\n}\n@Book{ggplot,\n    author = {Hadley Wickham},\n    title = {ggplot2: Elegant Graphics for Data Analysis},\n    publisher = {Springer-Verlag New York},\n    year = {2016},\n    isbn = {978-3-319-24277-4},\n    url = {https://ggplot2.tidyverse.org}\n}\n@article{epifania2024,\n  title={A guided tutorial on linear mixed-effects models for the analysis of accuracies and response times in experiments with fully crossed design.},\n  author={Epifania, Ottavia M and Anselmi, Pasquale and Robusto, Egidio},\n  journal={Psychological Methods},\n  year={2024},\n  publisher={American Psychological Association}, \n  doi={https://doi.org/10.1037/met0000708}\n}\n\nMendeley, Zotero and similar software have built-in function for exporting the bib file. Read the related documentation of these softwares. Also Google Scholar provides the bibtex for each publication:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThen, from google scholar, you can copy & paste the citation on your bib file.\nTo call a reference:\n\n@citaton-key"
+  },
+  {
+    "objectID": "html-layout.html#sec-margins",
+    "href": "html-layout.html#sec-margins",
+    "title": "HTML document: Layout",
+    "section": "3.4 Margins",
+    "text": "3.4 Margins\nAllows for placing images, code, references or equations in the margin of a document\n\nFor instance, I'm writing a document about peacocks, and I want a picture of a peacock and a little bit of text in the margin of the document, aligned with this text.\n\n::: {.column-margin}\nI want this picture displayed in the margin \n\n\n![](img/peacock.png)\n\n:::\n\nFor instance, I’m writing a document about peacocks, and I want a picture of a peacock and a little bit of text in the margin of the document, aligned with this text.\n\n\nI want this picture displayed in the margin\n\nEven references can be placed in the margin, such that they appear alongside the text where they are cited.\nStarting with the right settings in the YAML:\n\nbibliography: biblio.bib\nreference-location: margin\ncitation-location: margin\n\nThese lines of code force the citations to appear in the right margin. The citation key can happen as usual.\n\nI want to cite the `ggplot2` package because it is the best package ever [@ggplot2]\n\nI want to cite the ggplot2 package because it is the best package ever (Wickham 2016)\n\nWickham, Hadley. 2016. Ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York. https://ggplot2.tidyverse.org.\nAlso equations can be put in the margins, so that they appear along with the text.\n\nIn this equation, we show how to stanrdarzie a raw $x$ value.\n\n:::{.column-margin}\n\n$$z = \\dfrac{x - \\mu}{\\sigma}$$\n\n:::\n\nIn this equation, we show how to stanrdarzie a raw \\(x\\) value.\n\n\n\\[z = \\dfrac{x - \\mu}{\\sigma}\\]"
+  },
+  {
+    "objectID": "html-layout.html#panel-tabset",
+    "href": "html-layout.html#panel-tabset",
+    "title": "HTML document: Layout",
+    "section": "3.3 Panel Tabset",
+    "text": "3.3 Panel Tabset\n\n::: {.panel-tabset}\n\n## Aim\n\nHere I present the aim of the study \n\n## Methods\n\nHere I present the methods used to pursue the aim\n\n## Results\n\nAnd here I present the results\n\n:::\n\n\nAimMethodsResults\n\n\nHere I present the aim of the study\n\n\nHere I present the methods used to pursue the aim\n\n\nAnd here I present the results"
+  },
+  {
+    "objectID": "html-layout.html#general-layout",
+    "href": "html-layout.html#general-layout",
+    "title": "HTML document: Layout",
+    "section": "",
+    "text": "Figure 1 illustrates the default setting of an HTML page.\n\n\n\n\n\n\n\n\nFigure 1: Default layout of an HTML document\n\n\n\n\n\nThe layout is divided into three main parts:\n\nthe sidebar on the left side (red rectangle in Figure 1)\nthe body in the center (green rectangle in Figure 1)\nthe margin on the right side (yellow rectangle in Figure 1)\n\nBetween each of these parts, there is the so-called gutter (i.e., the empty space between the main parts). Its width can be modified as well in the YAML, with default values as follows:\n\nformat:\n  html: \n    grid:\n      sidebar-width: 300px\n      body-width: 900px\n      margin-width: 300px\n      gutter-width: 1.5rem\n\nThese settings will affect the entire document. Section 3 presents the layout settings for specific part of the document."
   }
 ]

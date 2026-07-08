@@ -73,14 +73,14 @@ knitr::include_graphics("img/q_visual.png")
 :::{.callout-caution collapse=true}
 ## Warning 
 
-Although at the very beginning, the use of the visual editor might be tempting, don't indulge! Using the source editor is an investiment in your future programming skills :)
+Although at the very beginning, the use of the visual editor might be tempting, don't indulge! Using the source editor is an investment in your future programming skills :)
 
 :::
 
 
 ## `toc`
 
-**T**able **O**f **C**contents: Defines the index of your document and its associated characteristics (e.g., where it is located):
+**T**able **O**f **C**ontents: Defines the index of your document and its associated characteristics (e.g., where it is located):
 
 
 ```{markdown}
@@ -205,6 +205,41 @@ It sets the language to be used in the cross-referencing of your document (see @
 
 ::::
 
+The YAML is also used to define the references for a document (e.g., the bibliography external file, the references style and so on). See @sec-biblio.
+
+## General Layout 
+
+@fig-gutter illustrates the default setting of an HTML page.
+
+```{r}
+#| echo: false
+#| label: fig-gutter
+#| fig-cap: Default layout of an HTML document
+knitr::include_graphics("img/gutter.png")
+```
+
+
+The layout is divided into three main parts: 
+
+* the `sidebar` on the left side (red rectangle in @fig-gutter)
+* the `body` in the center (green rectangle in @fig-gutter)
+* the `margin` on the right side (yellow rectangle in @fig-gutter)
+
+Between each of these parts, there is the so-called `gutter` (i.e., the empty space between the main parts). Its width can be modified as well in the YAML, with default values as follows: 
+
+```{markdwon}
+#| echo: true
+format:
+  html: 
+    grid:
+      sidebar-width: 300px
+      body-width: 900px
+      margin-width: 300px
+      gutter-width: 1.5rem
+```
+
+These settings will affect the entire document. @sec-layout presents the layout settings for specific part of the document.
+
 # Markdown formatting 
 
 ## Headings  
@@ -287,10 +322,10 @@ The text formatting is defined through specific tags:
 ```{markdown}
 #| eval: false
 #| echo: true
-textsuperscirpt^2^, textunderscript~2~
+textsuperscript^2^, textunderscript~2~
 ```
 
-textsuperscirpt^2^, textunderscript~2~
+textsuperscript^2^, textunderscript~2~
 
 ### In line code
 
@@ -306,7 +341,7 @@ textsuperscirpt^2^, textunderscript~2~
 :::{.callout-warning collapse=true}
 ## Code chunk
 
-There will be a specific lesson on the code chunks
+There will be a specific [lesson](https://arca-dpss.github.io/shine-with-quarto/code-chunk.html) on the code chunks
 :::
 
 ## Links and images 
@@ -340,6 +375,12 @@ My link is [here](https://github.com/)
 
 
 ![This is an image](img/picture.jpg){#fig-cama}
+
+:::{.callout-warning collapse=true}
+## Links & `index.qmd`
+
+As seen in the [GitHub lesson](https://arca-dpss.github.io/shine-with-quarto/git-hub.html), the `index.qmd` works as the landing page of a potential website. To include other documents and hyperlink them in the main landing page, we use the syntax for the links (see @sec-index).
+:::
 
 ## Lists 
 
@@ -417,10 +458,12 @@ This is an  equation $$z = \dfrac{\bar{x} -\mu}{\sigma}$$
 This is an  equation $$z = \dfrac{\bar{x} -\mu}{\sigma}$$
 
 
-## References
+[Here](https://artofproblemsolving.com/wiki/index.php/LaTeX:Symbols) you can find an exahustive list of the math symbols available in LaTeX. 
+
+## References {#sec-biblio}
 
 
-Define the path of the bib file in the YAML
+Define the path of the bib file in the YAML, on a new line, with no indentation:
 
 ```{markdown}
 #| echo: true
@@ -428,13 +471,15 @@ Define the path of the bib file in the YAML
 bibliography: bib/references.bib
 ```
 
-Then set your file with `.bib` extension. This file can be created with any text editor, including `RStudio`. 
+Then set the path to your file with `.bib` extension. In the presented example, the `references.bib` file is within the subfolder `bib`. 
 
-To use RStudio as a text editor> 
+If you don't have LaTeX, don't worry, because the bib file with extension `.bib` can be created with any text editor, including `RStudio`. 
+
+To use RStudio as a text editor: 
 
 1. Open a new script: 
 
-    shift + ctrl + n 
+`shift + ctrl + n` 
 
 2. Set it to be a text file: 
 
@@ -444,7 +489,7 @@ To use RStudio as a text editor>
 knitr::include_graphics("img/text-file.png")
 ```
 
-3. Prepare bigliography
+3. Prepare the bigliography
 
 ```{r}
 #| echo: true
@@ -477,9 +522,34 @@ knitr::include_graphics("img/text-file.png")
 ```
 
 
+Mendeley, Zotero and similar software have built-in function for exporting the bib file. Read the related documentation of these softwares. Also Google Scholar provides the bibtex for each publication: 
+
+:::{.g-grid}
+
+:::{.g-col-6}
+
+```{r}
+#| echo: false
+
+knitr::include_graphics("img/scholar1.png")
+```
 
 
-Mendeley, Zotero and similar software have built-in function for exporting the bib file. Read the related documentation
+:::
+
+:::{.g-col-6}
+
+```{r}
+#| echo: false
+
+knitr::include_graphics("img/scholar2.png")
+```
+
+:::
+
+:::
+
+Then, from google scholar, you can copy & paste the citation on your bib file.
 
 
 To call a reference: 
@@ -502,10 +572,10 @@ To call a reference:
 | `ggplot2 is an interesting package [@ggplot2]`                       | ggplot2 is an interesting package (Wickman, 2016)                  |
 | `bla bla bla [@epifania2024; @ggplot2]`                              | bla bla bla (Epifania et al., 2024; Wickman, 2016)                 |
 
+Further details on the citation throughout a document are provided in @sec-margins.
 
 
-
-# Document layout
+# Document layout {#sec-layout}
 
 
 ## Columns
@@ -542,15 +612,13 @@ And a picture in the right one
 
 ::::
 
-The columns are most convenient in presentation files, while the grid (see @sec-grid) is the besty option for changing the layout of a text document
+The columns are most convenient in [presentation files](https://arca-dpss.github.io/shine-with-quarto/html-presentation.html#/title-slide), while the grid (see @sec-grid) is the best option for changing the layout of a text document.
 
 ## Grid {#sec-grid}
 
-The document length is organized in 12 columns of equal width. This allows for a convenient and flexible environment for aligning the content. 
+The document body is organized in 12 columns of equal width. This allows for a convenient and flexible environment for aligning the content. 
 
 The margins (left and right) are not counted within the 12-column space: 
-
-
 
 ```{markdown}
 #| echo: true
@@ -588,7 +656,7 @@ the sum of the grid length is equal (or inferior) to 12
 ::: 
 :::
 
-## Tabset panel 
+## Panel Tabset
 
 ```{markdown}
 #| echo: true
@@ -628,9 +696,9 @@ And here I present the results
 :::
 
 
-## Margins 
+## Margins {#sec-margins}
 
-Allows for placing images, code, references or equations in the margin of a document
+Allows for placing images, [code](https://arca-dpss.github.io/shine-with-quarto/code-chunk.html), references or equations in the margin of a document
 
 
 ```{markdown}
@@ -681,6 +749,28 @@ I want to cite the `ggplot2` package because it is the best package ever [@ggplo
 
 
 I want to cite the `ggplot2` package because it is the best package ever [@ggplot2]
+
+Also equations can be put in the margins, so that they appear along with the text. 
+
+```{markdown}
+#| echo: true
+In this equation, we show how to stanrdarzie a raw $x$ value.
+
+:::{.column-margin}
+
+$$z = \dfrac{x - \mu}{\sigma}$$
+
+:::
+
+```
+
+In this equation, we show how to stanrdarzie a raw $x$ value.
+
+:::{.column-margin}
+
+$$z = \dfrac{x - \mu}{\sigma}$$
+
+:::
 
 ## Callout blocks
 
@@ -768,6 +858,7 @@ Label referencing in text
 Remember that the cross reference label depends on the language that has been set in the YAML (@sec-lang).
 
 ```{markdown}
+#| echo: true
 In @fig-cama there's a nice chameleon.
 
 ![This is an image](img/picture.jpg){#fig-cama}
@@ -776,6 +867,7 @@ In @fig-cama there's a nice chameleon.
 In @fig-cama there's a nice chameleon.
 
 ```{markdown}
+#| echo: true
 In @eq-reg we have an equation.
 
 $$y = \beta_0 + \beta_1X_1 + \varepsilon$${#eq-reg}
@@ -788,6 +880,8 @@ In @eq-reg we have an equation.
 $$y = \beta_0 + \beta_1X_1 + \varepsilon$${#eq-reg}
 
 ```{markdown}
+#| echo: true
+
 ## lang {#sec-lang}
 
 bla bla bla
@@ -798,3 +892,49 @@ bla bla bla
 @sec-lang present the language definition throughout a document. Sections, subsections etc. are all cross-referenced with the prefix `sec`
 
 It is also possible to cross reference R code, tables, and graphical output obtained from R code. These options are presented in the Code Chunk section.
+
+# `index.qmd` {#sec-index}
+
+As seen in the lesson on [GitHub](https://arca-dpss.github.io/shine-with-quarto/git-hub.html), the `index.qmd` (and specifically its rendered HTML) is used as the landing page of a document. 
+
+It can be configured as you wish, all the settings that have been presented in this lesson can be applied to `index.qmd` file.
+
+Other pages can be linked to the landing page in the form of... links. 
+
+For instance, consider that you have an R project organized as follows: 
+
+```text
+my-project/
+│
+├── index.qmd
+├── index.html
+├── data/
+│   └── mydata.csv
+├── img/
+│   ├── logo.png
+│   ├── plot.jpg
+│   └── illustration.svg
+├── bibliography/
+│   └── references.bib
+└── docs/
+    ├── about-me.qmd
+    ├── about-me.html
+    ├── cv.qmd
+    └── cv.pdf
+```
+
+As the higher level, there is the `index.qmd` file and its rendered version in HTML (that is the one actually used as the landing page). 
+
+If you need to add other documents, you just need to link them in the landing page as a link, but indicating the path of the document. 
+
+:::{.callout-tip}
+## Linkable page in the index
+
+```{markdown}
+#| echo: true
+My cv is available at [this link](docs/cv.pdf), while [here](docs/about-me.html) you can find a brief summary of my research activity.
+```
+
+:::
+
+

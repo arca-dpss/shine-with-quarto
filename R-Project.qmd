@@ -26,7 +26,7 @@ This course presents the integration between RStudio and quarto. All the code in
 > Download RStudio: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
 
 
-`RMarkdown` is the integrated markup language integrated within `RStudio` is the "predecessor" of quarto.
+`RMarkdown` is the integrated markup language integrated within `RStudio`, it  is the "predecessor" of quarto.
 
 
 Markup languages such as quarto, markdown, html, latex, are programming languages where formatting is handled by chunk codes, named `tags`.
