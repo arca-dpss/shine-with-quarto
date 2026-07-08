@@ -54,3 +54,4 @@ Lesson will be on **Thursday 9th** from 9:00 to 17:00 (with a lunch break and so
 This [compressed folder](appExamples.zip) contains some basic shiny apps that will be presented in the course.
 
 Two datsets are available [here](data.zip)
+

@@ -7,7 +7,7 @@ code-annotations: below
 
 # What is needed
 
-1. An online server hosting the application (@sec-server)
+1. An online server hosting the application (@sec-server) (which is connected to GitHub)
 2. The local version on your computer (@sec-app)
 3. The connection between the app and the online server (@sec-connect)
 4. The deployment (@sec-deploy)
