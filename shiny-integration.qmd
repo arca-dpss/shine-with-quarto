@@ -6,9 +6,9 @@ code-annotations: below
 
 # Logic
 
-:::: {.columns}
+::: {.grid}
 
-::: {.column}
+::: {.g-col-6}
 `ui` (**U**ser **I**nterface)
 
 The container, whatever sees the user
@@ -19,7 +19,7 @@ Used for displaying the results of the computations that took place in the serve
 
 :::
 
-::: {.column}
+::: {.g-col-6}
 
 `server`
 
@@ -28,9 +28,7 @@ It gets the work done, according to the configuration set in the UI
 Replaces the results into the allocated spaces
 
 :::
-
-
-::::
+:::
 
 UI and Server work in a flow, communicating to each other (@fig-uiServer).
 

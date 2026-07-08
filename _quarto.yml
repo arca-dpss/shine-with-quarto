@@ -5,6 +5,9 @@ project:
 website:
   navbar:
     search: true
+    page-navigation: true
+    reader-mode: true 
+    logo: "img/arca_logo.png"
     background: primary
     right:
       - text: "Shine with quarto"

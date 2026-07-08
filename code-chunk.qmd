@@ -30,7 +30,7 @@ library(DT)
 
 # Code chunks
 
-The code chunks are the most brilliant thing about quarto (and RMarkdown): they allow for including actual code within a docuemnt and to carry out the specified analysis while the document is compiled. Long story short: This feature allows for having the report/article, table, graphs, data, and th code used to obtain all the above mentioned elements in one unique document.
+The code chunks are the most brilliant thing about quarto (and RMarkdown): they allow for including actual code within a document and to carry out the specified analysis while the document is compiled. Long story short: This feature allows for having the report/article, table, graphs, data, and the code used to obtain all the above mentioned elements in one unique document.
 
 
 The code chunk support different languages (@fig-newChunk): 
@@ -39,6 +39,7 @@ The code chunk support different languages (@fig-newChunk):
 #| label: fig-newChunk
 #| fig-align: center
 #| fig-cap: Open new code chunk and specifiy the language
+#| echo: false
 
 include_graphics("img/newChunk.png")
 
@@ -46,7 +47,7 @@ include_graphics("img/newChunk.png")
 
 A new code code chunk can be opened with the key combination: 
 
-    shift + ctrl + i
+`shift + ctrl + i`
 
 ## Chunk options {#sec-options}
 
@@ -97,6 +98,7 @@ head(cars)
 
 
 ```{r}
+#| echo: false
 head(cars)
 ```
 
@@ -160,7 +162,7 @@ head(cars)
 
 This argument controls the way in which the results are displayed and whether they are displayed or not. 
 
-Differently from `eval: false` (i.e., the code is not executed, if there are errors in the code you will not notice it), `results` does not prevent the execution of the code but only the display of the code: 
+Differently from `eval: false` (i.e., the code is not executed, if there are errors in the code you will not notice it), `results` does not prevent the execution of the code but only the display of the results: 
 
 ```{r}
 #| results: hide
@@ -217,9 +219,9 @@ Super convenient as first code chunk to load all the packages, data, preprocessi
 
 # YAML control 
 
-@sec-options presents some of the most useful options for controlling  the behavior of the code chunks for *each specific code chunk*
+@sec-options presents some of the most useful options for controlling  the behavior of the code chunks for *each specific code chunk*.
 
-However, it is possible to control the overall behavior of the code chunks from  the YAML of the document with the `execute` argument: 
+However, it is possible to control the overall behavior of the code chunks from  the YAML of the document with the `execute` argument. The `execute` argument must be written on a new line, without indentation, then its arguments must be indented with respect to `execute`: 
 
 ```{markdown}
 #| echo: true
@@ -327,7 +329,7 @@ code-annotations: below
 
 ## External images: `.png` and `.jpg` 
 
-Instead of importing the images with the typical Markdown code (`![caption](path-to-picture/picture.png)`), they can b@figported with the `include_graphics()` function from the `knitr` package [@knitr].
+Instead of importing the images with the typical Markdown code (`![caption](path-to-picture/picture.png)`), they can be imported with the `include_graphics()` function from the `knitr` package [@knitr].
 
 
 The settings for the picture can be defined by using the settings of the code chunk (these settings can also be used for the defintion of the graphic settigns, see @sec-graphs)
@@ -388,7 +390,7 @@ The cross referencing of the picture (@fig-distribution) works as usual (`@fig-d
 ```{r}
 #| label: fig-distribution
 #| layout-ncol: 3
-#| fig-cap: Standarzied Normal Distribution
+#| fig-cap: Standardized Normal Distribution
 #| fig-subcap: 
 #|   - "Density"
 #|   - "Cumulative"
@@ -411,12 +413,23 @@ Tables can be added with the `kable()` function (included in the `knitr`) packag
 The root for cross referencing the tables is `tbl-`. 
 
 
+```{markdown}
+#| echo: true
+
+@tbl-mtcars is a table of a dataset. 
+```
+
+
 ```{r}
 #| echo: true
 #| label: tbl-mtcars
 #| tbl-cap: This is a table
 kable(head(mtcars))  
 ```
+
+
+@tbl-mtcars is a table of a dataset. 
+
 
 # Combine outputs
 

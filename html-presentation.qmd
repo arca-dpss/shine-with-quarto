@@ -239,16 +239,6 @@ This is how you do it:
 ```
 
 
-
-Create a Slide (Header 2 `##`): 
-
-```{markdown}
-#| echo: true
-## This is a slide 
-
-Here I write something concerning my topic
-```
-
 ## Define slide-specific behavior
 
 
@@ -377,11 +367,31 @@ solarized
 
 ## Absolute positions
 
+:::{.panel-tabset}
+
+## Output
+
 ![](img/punkreas.jpg){.absolute top=200 left=0 width="350" height="300"}
 
 ![](img/persiana.jpg){.absolute top=5 right=25 width="450" height="250"}
 
 ![](img/posse.jpg){.absolute bottom=0 right=100 width="500" height="400"}
+
+
+## Code 
+
+```{text}
+#| echo: true
+#| eval: false
+![](img/punkreas.jpg){.absolute top=200 left=0 width="350" height="300"}
+
+![](img/persiana.jpg){.absolute top=5 right=25 width="450" height="250"}
+
+![](img/posse.jpg){.absolute bottom=0 right=100 width="500" height="400"}
+```
+
+
+:::
 
 ## Stack content
 
@@ -391,7 +401,6 @@ solarized
 ![](img/persiana.jpg){.fragment width="450" height="250"}
 
 ![](img/posse.jpg){.fragment width="500" height="400"}
-
 :::
 
 ## Stack content: Code
@@ -412,6 +421,8 @@ solarized
 ```
 
 
+
+
 ## Pro Stacking
 
 
@@ -430,8 +441,7 @@ solarized
 :::
 :::
 
-
-## Pro stacking: Code I
+## Code 
 
 ```{markdown}
 #| echo: true
@@ -453,6 +463,10 @@ solarized
 :::
 
 ```
+
+
+
+:::
 
 
 ## Other options
