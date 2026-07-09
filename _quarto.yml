@@ -30,6 +30,8 @@ website:
         menu: 
           - text: "Shiny logic"
             href: shiny-integration.qmd
+          - text: "Deploy"
+            href: shiny-deployment.qmd
         
 
 format:
